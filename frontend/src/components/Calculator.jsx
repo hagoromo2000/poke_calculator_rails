@@ -11,7 +11,7 @@ const Calculator = () => {
         <Attacker />
         <Defender />
       </div>
-        <Environment />
+      <Environment />
     </>
   )
 }

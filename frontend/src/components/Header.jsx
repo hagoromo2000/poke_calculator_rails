@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import React from 'react'
 
 const Header = () => {
@@ -5,11 +6,10 @@ const Header = () => {
     <>
       <div className="navbar bg-primary sticky" >
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl text-white">ダメ計×育成論</a>
+          <a className="btn btn-ghost normal-case text-xl text-white"><Link to={`/`}>ダメージ計算</Link></a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 text-white">
-            <li><a>ダメージ計算</a></li>
             <li tabIndex={0}>
               <a>
                 育成論
@@ -17,7 +17,7 @@ const Header = () => {
               </a>
               <ul className="p-2 bg-primary">
                 <li><a>育成論検索</a></li>
-                <li><a>育成論投稿</a></li>
+                <li><Link to={`/posts/new/`}>育成論投稿</Link></li>
               </ul>
             </li>
             <li><a>ログイン</a></li>
