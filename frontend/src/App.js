@@ -14,7 +14,6 @@ function App() {
           <Route path={`/posts/new/`} element={<NewPost />} />
         </Routes>
       </BrowserRouter>
-
     </div>
   );
 }

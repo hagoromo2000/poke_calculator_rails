@@ -1,16 +1,15 @@
-import React from 'react'
 import { Link } from "react-router-dom"
+import React from 'react'
 
 const Header = () => {
   return (
     <>
       <div className="navbar bg-primary sticky" >
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl text-white">ダメ計×育成論</a>
+          <a className="btn btn-ghost normal-case text-xl text-white"><Link to={`/`}>ダメージ計算</Link></a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 text-white">
-            <li><Link to={`/`}>ダメージ計算</Link></li>
             <li tabIndex={0}>
               <a>
                 育成論
