@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 text-white">
-            <li><a>ダメージ計算</a></li>
+            <li><Link to={`/`}>ダメージ計算</Link></li>
             <li tabIndex={0}>
               <a>
                 育成論
@@ -17,7 +18,7 @@ const Header = () => {
               </a>
               <ul className="p-2 bg-primary">
                 <li><a>育成論検索</a></li>
-                <li><a>育成論投稿</a></li>
+                <li><Link to={`/posts/new/`}>育成論投稿</Link></li>
               </ul>
             </li>
             <li><a>ログイン</a></li>
