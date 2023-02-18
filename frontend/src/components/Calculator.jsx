@@ -1,9 +1,17 @@
 import React from 'react'
+import Attacker from './Attacker'
+import './Calculator.css'
+import Defender from './Defender'
+import Environment from './Environment'
 
 const Calculator = () => {
   return (
     <>
-      <div className="artboard phone-3 bg-white rounded-lg shadow-xl mx-auto pt-300">414×736</div>
+      <div className='md:flex'>
+        <Attacker />
+        <Defender />
+      </div>
+        <Environment />
     </>
   )
 }
