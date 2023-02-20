@@ -3,6 +3,7 @@ import Attacker from './Attacker'
 import './Calculator.css'
 import Defender from './Defender'
 import Environment from './Environment'
+import Footer from './Footer'
 
 const Calculator = () => {
   return (
@@ -12,6 +13,7 @@ const Calculator = () => {
         <Defender />
       </div>
       <Environment />
+      <Footer />
     </>
   )
 }
