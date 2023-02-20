@@ -8,11 +8,11 @@ import Footer from './Footer'
 
 
 const Calculator = () => {
-  const [attack, setAttack] = useState(0)
+  const [attack, setAttack] = useState(100)
   const [power, setPower] = useState(0)
 
-  const [hp, setHp] =useState(0)
-  const [defense, setDefense] = useState(0)
+  const [hp, setHp] =useState(100)
+  const [defense, setDefense] = useState(100)
 
   const [damage, setDamage] = useState(0)
 
