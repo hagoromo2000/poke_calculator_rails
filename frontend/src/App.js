@@ -8,7 +8,7 @@ import NewPost from "./components/NewPost";
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-r from-green-200 to-blue-200 ... ">
+      <div className="min-h-screen bg-blue-100 ... ">
         <BrowserRouter>
           <Header />
           <Routes>

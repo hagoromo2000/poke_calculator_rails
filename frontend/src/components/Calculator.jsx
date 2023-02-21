@@ -25,7 +25,7 @@ const Calculator = () => {
   return (
     <>
       <div className='md:flex'>
-        <Attacker setAttack={setAttack} setPower={setPower} />
+        <Attacker setAttack={setAttack} setPower={setPower} power={power} />
         <Defender setHp={setHp} setDefense={setDefense} />
       </div>
       <Environment />
