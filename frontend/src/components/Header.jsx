@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import React from 'react'
+import GoogleAuthButton from "./GoogleAuthButton"
 
 const Header = () => {
   return (
@@ -20,8 +21,16 @@ const Header = () => {
                 <li><Link to={`/posts/new/`}>育成論投稿</Link></li>
               </ul>
             </li>
-            <li><a>ログイン</a></li>
+            <li><label htmlFor="signup-modal">ログイン</label></li>
           </ul>
+        </div>
+      </div>
+
+      <input type="checkbox" id="signup-modal" className="modal-toggle" />
+      <div className="modal">
+        <div className="modal-box relative">
+          <label htmlFor="signup-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+          <GoogleAuthButton />
         </div>
       </div>
     </>
