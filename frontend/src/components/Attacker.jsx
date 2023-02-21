@@ -7,8 +7,10 @@ import Moves from '../json/all_moves.json'
 import Items from '../json/all_items.json'
 import Abilities from '../json/all_abilities.json'
 
-const all_moves = Moves.map(data => {
-  return { value: data, label: data.name}
+const attack_moves = Moves.filter(move => move.power !== null)
+
+const all_moves = attack_moves.map(data => {
+  return { value: data, label: data.name }
 })
 
 const all_pokemons = Pokemons.map(data => {
@@ -30,7 +32,7 @@ const Attacker = (props) => {
     setPokemon(pokemon);
   };
 
-  const [move, setMove] = useState(null);
+  const [move, setMove] = useState({value: {"name":"はたく","type":"ノーマル","power":40,"damage_class":"ぶつり"}});
   const handleMove = (move) => {
     setMove(move);
     handlePower(move);
