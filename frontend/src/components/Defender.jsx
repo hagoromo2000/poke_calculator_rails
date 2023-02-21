@@ -6,7 +6,7 @@ import Items from '../json/all_items.json'
 import Abilities from '../json/all_abilities.json'
 
 const all_pokemons = Pokemons.map(data => {
-  return { value: data.name, label: data.name }
+  return { value: data, label: data.name }
 })
 
 const all_items = Items.map(data => {
@@ -61,9 +61,19 @@ const Defender = (props) => {
     setPokemon(pokemon);
   };
 
+  const [item, setItem] = useState(null);
+  const handleItem = (item) => {
+    setItem(item);
+  };
+
   const [teraType, setTeraType] = useState('ノーマル')
   const handleTeraType = teraType => {
     setTeraType(teraType);
+  };
+
+  const [ability, setAbility] = useState(null)
+  const handleAbility = ability => {
+    setAbility(ability);
   };
 
   const handleHp = (event) => {
@@ -146,11 +156,15 @@ const Defender = (props) => {
         </div>
 
         <div className="flex mt-5 ml-4">
-          <select className="select select-secondary w-40">
-            <option disabled selected>特性を選択</option>
-            <option>しんりょく</option>
-            <option>へんげんじざい</option>
-          </select>
+          <div className="w-32">
+            <Select
+              value={ability}
+              onChange={handleAbility}
+              options={all_abilities}
+              isSearchable={true}
+              placeholder="とくせい"
+              />
+          </div>
 
           <p className='mt-auto mb-auto ml-5 text-gray-500 '>ランク 0</p>
 
@@ -165,47 +179,17 @@ const Defender = (props) => {
         </div>
 
         <div className="flex mt-5 ml-4">
-          <select className="select select-secondary w-40">
-            <option disabled selected>持ち物を選択</option>
-            <option>とつげきチョッキ</option>
-            <option>しんかのきせき</option>
-          </select>
-        </div>
-        
-      </div>
-
-
-      {/* ポケモン名モーダル */}
-      <input type="checkbox" id="attacker-pokemon-name-modal" className="modal-toggle" />
-      <div className="modal">
-        <div className="modal-box">
-          <h3 className="font-bold text-lg">ポケモンの検索窓</h3>
-          <p className="py-4">検索候補が表示されます。</p>
-          <div className="modal-action">
-            <label htmlFor="attacker-pokemon-name-modal" className="btn">決定</label>
+          <div className="w-64">
+            <Select
+              value={item}
+              onChange={handleItem}
+              options={all_items}
+              isSearchable={true}
+              placeholder="持ち物"
+              />
           </div>
         </div>
-      </div>
-
-
-      {/* テラスタイプモーダル */}
-      <input type="checkbox" id="tera-type-modal-3" className="modal-toggle" />
-      <div className="modal">
-        <div className="modal-box relative">
-          <label htmlFor="tera-type-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-          <h3 className="text-lg font-bold">テラスタイプモーダル</h3>
-          <p className="py-4">テラスタイプの選択</p>
-        </div>
-      </div>
-
-      {/* わざモーダル */}
-      <input type="checkbox" id="move-modal" className="modal-toggle" />
-      <div className="modal">
-        <div className="modal-box relative">
-          <label htmlFor="move-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-          <h3 className="text-lg font-bold">わざの検索窓</h3>
-          <p className="py-4">わざの検索結果</p>
-        </div>
+        
       </div>
     </>
   )

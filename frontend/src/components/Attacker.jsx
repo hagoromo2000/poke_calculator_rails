@@ -32,6 +32,16 @@ const Attacker = (props) => {
     setPokemon(pokemon);
   };
 
+  const [item, setItem] = useState(null);
+  const handleItem = (item) => {
+    setItem(item);
+  };
+
+  const [ability, setAbility] = useState(null)
+  const handleAbility = ability => {
+    setAbility(ability);
+  };
+
   const [move, setMove] = useState({value: {"name":"はたく","type":"ノーマル","power":40,"damage_class":"ぶつり"}});
   const handleMove = (move) => {
     setMove(move);
@@ -101,11 +111,15 @@ const Attacker = (props) => {
         
         <div className="flex mt-5 ml-4">
           {/* 特性 */}
-          <select className="select select-secondary w-40">
-            <option disabled selected>特性を選択</option>
-            <option>しんりょく</option>
-            <option>へんげんじざい</option>
-          </select>
+          <div className="w-32">
+            <Select
+              value={ability}
+              onChange={handleAbility}
+              options={all_abilities}
+              isSearchable={true}
+              placeholder="とくせい"
+              />
+          </div>
 
           {/* 能力ランク */}
           <p className='mt-auto mb-auto ml-5 text-gray-500 '>ランク 0</p>
@@ -122,11 +136,15 @@ const Attacker = (props) => {
 
         {/* 持ち物 */}
         <div className="flex mt-5 ml-4">
-          <select className="select select-secondary w-40">
-            <option disabled selected>持ち物を選択</option>
-            <option>こだわりハチマキ</option>
-            <option>こだわりメガネ</option>
-          </select>
+          <div className="w-64">
+            <Select
+              value={item}
+              onChange={handleItem}
+              options={all_items}
+              isSearchable={true}
+              placeholder="持ち物"
+              />
+          </div>
         </div>
 
         <div className="flex mt-5 ml-4">
