@@ -7,19 +7,19 @@ import Items from '../json/all_items.json'
 import Abilities from '../json/all_abilities.json'
 
 const options = Moves.map(data => {
-  return { name: data.name, label: data.name}
+  return { value: data.name, label: data.name}
 })
 
 const all_pokemons = Pokemons.map(data => {
-  return { name: data.name, label: data.name }
+  return { value: data.name, label: data.name }
 })
 
 const all_items = Items.map(data => {
-  return { name: data.name, label: data.name }
+  return { value: data.name, label: data.name }
 })
 
 const all_abilities = Abilities.map(data => {
-  return { name: data.name, label: data.name }
+  return { value: data.name, label: data.name }
 })
 
 
@@ -303,18 +303,6 @@ const NewPost = () => {
           <button className="btn btn-active btn-primary text-gray-200">投稿</button>
         </div>
       </div>
-
-      {/* ポケモン名モーダル */}
-      <input type="checkbox" id="attacker-pokemon-name-modal" className="modal-toggle" />
-        <div className="modal">
-          <div className="modal-box">
-            <h3 className="font-bold text-lg">ポケモンの検索窓</h3>
-            <p className="py-4">検索候補が表示されます。</p>
-            <div className="modal-action">
-              <label htmlFor="attacker-pokemon-name-modal" className="btn">決定</label>
-            </div>
-          </div>
-        </div>
 
     </>
   )

@@ -1,7 +1,70 @@
-import React from 'react'
+import React, {useState} from 'react'
+import Select from 'react-select'
 import './Calculator.css'
+import Pokemons from '../json/all_pokemons.json'
+import Items from '../json/all_items.json'
+import Abilities from '../json/all_abilities.json'
+
+const all_pokemons = Pokemons.map(data => {
+  return { value: data.name, label: data.name }
+})
+
+const all_items = Items.map(data => {
+  return { value: data.name, label: data.name }
+})
+
+const all_abilities = Abilities.map(data => {
+  return { value: data.name, label: data.name }
+})
+
+const all_types= [
+  {value: "ノーマル",
+   label: "ノーマル"},
+  {value: "ほのお",
+   label: "ほのお"} ,
+  {value: "みず",
+   label: "みず"},
+  {value: "くさ",
+   label: "くさ"},
+  {value: "こおり",
+   label: "こおり"},
+  {value: "かくとう",
+   label: "かくとう"},
+  {value: "どく",
+   label: "どく"},
+  {value: "じめん",
+   label: "じめん"},
+  {value: "ひこう",
+   label: "ひこう"},
+  {value: "エスパー",
+   label: "エスパー"},
+  {value: "むし",
+   label: "むし"},
+  {value: "いわ",
+   label: "いわ"},
+  {value: "ゴースト",
+   label: "ゴースト"},
+  {value: "ドラゴン",
+   label: "ドラゴン"},
+  {value: "あく",
+   label: "あく"},
+  {value: "はがね",
+   label: "はがね"},
+  {value: "フェアリー",
+   label: "フェアリー"},
+]
 
 const Defender = (props) => {
+
+  const [pokemon, setPokemon] = useState(null);
+  const handlePokemon = (pokemon) => {
+    setPokemon(pokemon);
+  };
+
+  const [teraType, setTeraType] = useState('ノーマル')
+  const handleTeraType = teraType => {
+    setTeraType(teraType);
+  };
 
   const handleHp = (event) => {
     props.setHp(event.target.value)
@@ -21,33 +84,51 @@ const Defender = (props) => {
         </div>
 
         {/* ポケモン選択モーダル　*/}
-        <label htmlFor="attacker-pokemon-name-modal" className="btn btn-outline btn-wide btn-secondary mt-5 ml-4 ">クリックしてポケモンを選択</label>
+        <div className="w-64 mt-5 ml-4">
+          <Select
+            value={pokemon}
+            onChange={handlePokemon}
+            options={all_pokemons}
+            isSearchable={true}
+            placeholder="ポケモンを選択"
+            />
+        </div>
         
         <div className="flex mt-5">
 
           {/* HP実数値 */}
           <div className="relative">
             <input type="number" onChange={handleHp} id="hp_floating_filled" className="block rounded-t-lg px-1 pb-2.5 pt-5  ml-4 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer " placeholder=" " />
-            <label for="hp_floating_filled" className="ml-4 absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">HP実数値</label>
+            <label for="hp_floating_filled" className="ml-4 absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">HP実数値</label>
           </div>
 
           <div className="relative ml-4">
             <input type="number" id="hp_ev_floating_filled" className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer " placeholder=" " />
-            <label for="hp_ev_floating_filled" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">HP努力値</label>
+            <label for="hp_ev_floating_filled" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">HP努力値</label>
           </div>
 
-          <label htmlFor="tera-type-modal-3" className="btn btn-outline ml-2 btn-secondary">テラスタイプ</label>
+          <div className='ml-4 mt-2'>
+            <div className="w-32">
+              <Select
+                value={teraType}
+                onChange={handleTeraType}
+                options={all_types}
+                isSearchable={true}
+                placeholder="テラス"
+                />
+            </div>
+          </div>
         </div>
 
         <div className="flex mt-5">
           <div className="relative">
             <input type="number" onChange={handleDefense} id="defense_floating_filled" className="block rounded-t-lg px-1 pb-2.5 pt-5  ml-4 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer " placeholder=" " />
-            <label for="defense_floating_filled" className="ml-4 absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">B実数値</label>
+            <label for="defense_floating_filled" className="ml-4 absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">B実数値</label>
           </div>
 
           <div className="relative ml-4">
             <input type="number" id="defense_ev_floating_filled" className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer " placeholder=" " />
-            <label for="defense_ev_floating_filled" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">B努力値</label>
+            <label for="defense_ev_floating_filled" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">B努力値</label>
           </div>
 
           <label className='mt-auto mx-auto mb-auto text-gray-500 '></label>
