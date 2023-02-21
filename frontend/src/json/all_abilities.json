@@ -1,3 +1,4 @@
+[
 {"name":"あくしゅう","english_name":"stench"},
 {"name":"あめふらし","english_name":"drizzle"},
 {"name":"かそく","english_name":"speed-boost"},
@@ -295,4 +296,5 @@
 {"name":"どくげしょう","english_name":"toxic-debris"},
 {"name":"テイルアーマー","english_name":"armor-tail"},
 {"name":"どしょく","english_name":"earth-eater"},
-{"name":"きんしのちから","english_name":"mycelium-might"},
+{"name":"きんしのちから","english_name":"mycelium-might"}
+]
