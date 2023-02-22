@@ -15,12 +15,18 @@ const Calculator = () => {
 
   const [hp, setHp] =useState(100)
   const [defense, setDefense] = useState(100)
+  const [specialDefense, setSpecialDefense] = useState(100)
 
   const [damage, setDamage] = useState(0)
 
   useEffect(() => {
     setDamage(() => {
-      return 22 * power * attack / defense / 50 + 2
+      if(damageClass === "ぶつり"){
+        return 22 * power * attack / defense / 50 + 2
+      }else{
+        return 22 * power * specialAttack / defense / 50 + 2
+      }
+
     })
   },[attack, power, defense])
 

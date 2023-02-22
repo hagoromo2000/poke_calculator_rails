@@ -54,6 +54,7 @@ const all_types= [
    label: "フェアリー"},
 ]
 
+//　コンポーネント
 const Defender = (props) => {
 
   const [pokemon, setPokemon] = useState(null);

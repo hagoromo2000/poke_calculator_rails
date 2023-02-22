@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Select from 'react-select'
 import './Calculator.css'
 import Pokemons from '../json/all_pokemons.json'
@@ -25,11 +25,16 @@ const all_abilities = Abilities.map(data => {
   return { value: data.name, label: data.name }
 })
 
+// コンポーネント
 const Attacker = (props) => {
 
-  const [pokemon, setPokemon] = useState(Pokemons[0]);
+  const [pokemon, setPokemon] = useState({ value: Pokemons[0] });
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
+    const attack_value = Math.floor(((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 +5) * 1)
+    props.setAttack(attack_value)
+    const special_attack_value = Math.floor(((pokemon.value.special_attack * 2 + 31 + special_attack_ev / 4) / 2 +5) * 1)
+    props.setSpecialAttack(special_attack_value)
   };
 
   const [item, setItem] = useState(null);
@@ -48,21 +53,31 @@ const Attacker = (props) => {
     handlePower(move);
   };
 
+  // 攻撃努力値と実数値を連動させる処理
+  const [attack_ev, setAttack_ev] = useState(0)
   const handleAttack = (event) => {
-    const attack_ev = event.target.value
-    const attack_value = Math.floor(((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 +5) * 1)
+    setAttack_ev(event.target.value)
+  }
+  // useStateは非同期処理のためhandleAttack内に以下の処理を書くと値の反映に1操作分のラグが生じてしまう、useEffectを用いて
+  useEffect(() => {
+    // attack_evの値が変更された後に実行される
+    const attack_value = Math.floor(((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 + 5) * 1)
     props.setAttack(attack_value)
-  }
+  }, [attack_ev])
 
+  // 特攻努力値と実数値を連動させる処理
+  const [special_attack_ev, setSpecialAttack_ev] = useState(0)
   const handleSpecialAttack = (event) => {
-    const special_attack_ev = event.target.value
-    const special_attack_value = Math.floor(((pokemon.value.special_attack * 2 + 31 + special_attack_ev / 4) / 2 +5) * 1)
-    props.setSpecialAttack(special_attack_value)
+    setSpecialAttack_ev(event.target.value)
   }
+  useEffect(() => {
+    const special_attack_value = Math.floor(((pokemon.value.special_attack * 2 + 31 + special_attack_ev / 4) / 2 + 5) * 1)
+    props.setSpecialAttack(special_attack_value)
+  }, [special_attack_ev])
 
   const handlePower = (move) => {
     props.setPower(move.value.power)
-    console.log(move.value.power)
+    props.setDamageClass(move.value.damage_class)
   }
   
 
