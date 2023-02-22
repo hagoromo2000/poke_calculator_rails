@@ -31,13 +31,13 @@ const Attacker = (props) => {
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
     const attack_value = Math.floor(
-      ((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 + 5) * 1
+      ((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 + 5) * attackNature
     );
     props.setAttack(attack_value);
     const special_attack_value = Math.floor(
       ((pokemon.value.special_attack * 2 + 31 + special_attack_ev / 4) / 2 +
         5) *
-        1
+        specialAttackNature
     );
     props.setSpecialAttack(special_attack_value);
   };
@@ -53,16 +53,24 @@ const Attacker = (props) => {
   };
 
   const [move, setMove] = useState({
-    value: {
-      name: "はたく",
-      type: "ノーマル",
-      power: 40,
-      damage_class: "ぶつり",
-    },
+    value: Moves[0],
   });
   const handleMove = (move) => {
     setMove(move);
     handlePower(move);
+  };
+
+  // 性格補正の制御
+  // 攻撃の性格補正の制御
+  const [attackNature, setAttackNature] = useState(1);
+  const handleAttackNature = (event) => {
+    setAttackNature(event);
+  };
+
+  // 特攻の性格補正の制御
+  const [specialAttackNature, setSpecialAttackNature] = useState(1);
+  const handleSpecialAttackNature = (event) => {
+    setSpecialAttackNature(event);
   };
 
   // 攻撃努力値と実数値を連動させる処理
@@ -74,10 +82,10 @@ const Attacker = (props) => {
   useEffect(() => {
     // attack_evの値が変更された後に実行される
     const attack_value = Math.floor(
-      ((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 + 5) * 1
+      ((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 + 5) * attackNature
     );
     props.setAttack(attack_value);
-  }, [attack_ev]);
+  }, [attack_ev, attackNature]);
 
   // 特攻努力値と実数値を連動させる処理
   const [special_attack_ev, setSpecialAttack_ev] = useState(0);
@@ -88,11 +96,12 @@ const Attacker = (props) => {
     const special_attack_value = Math.floor(
       ((pokemon.value.special_attack * 2 + 31 + special_attack_ev / 4) / 2 +
         5) *
-        1
+        specialAttackNature
     );
     props.setSpecialAttack(special_attack_value);
-  }, [special_attack_ev]);
+  }, [special_attack_ev, specialAttackNature]);
 
+  // 技威力の制御
   const handlePower = (move) => {
     props.setPower(move.value.power);
     props.setDamageClass(move.value.damage_class);
@@ -120,6 +129,7 @@ const Attacker = (props) => {
             />
           </div>
 
+          {/* テラスタル */}
           <img
             src="/tera-icon.png"
             className="mt-auto mb-auto ml-4 w-10 h-10 cursor-pointer"
@@ -147,7 +157,7 @@ const Attacker = (props) => {
               placeholder=" "
             />
             <label
-              htmlfor="attack_ev_floating_filled"
+              htmlFor="attack_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               A努力値
@@ -162,18 +172,27 @@ const Attacker = (props) => {
           >
             <button
               type="button"
+              onClick={() => {
+                handleAttackNature(1.1);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               1.1
             </button>
             <button
               type="button"
+              onClick={() => {
+                handleAttackNature(1);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               性格
             </button>
             <button
               type="button"
+              onClick={() => {
+                handleAttackNature(0.9);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               0.9
@@ -201,7 +220,7 @@ const Attacker = (props) => {
               placeholder=" "
             />
             <label
-              htmlfor="attack_ev_floating_filled"
+              htmlFor="attack_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               C努力値
@@ -216,18 +235,27 @@ const Attacker = (props) => {
           >
             <button
               type="button"
+              onClick={() => {
+                handleSpecialAttackNature(1.1);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               1.1
             </button>
             <button
               type="button"
+              onClick={() => {
+                handleSpecialAttackNature(1);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               性格
             </button>
             <button
               type="button"
+              onClick={() => {
+                handleSpecialAttackNature(0.9);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               0.9
@@ -279,6 +307,7 @@ const Attacker = (props) => {
           </div>
         </div>
 
+        {/* わざ */}
         <div className="flex mt-5 ml-4">
           <div className="w-64">
             <Select
@@ -290,6 +319,7 @@ const Attacker = (props) => {
             />
           </div>
 
+          {/* わざ威力 */}
           <div className="relative ml-4">
             <input
               type="number"
@@ -300,8 +330,8 @@ const Attacker = (props) => {
               placeholder=" "
             />
             <label
-              htmlfor="attack_ev_floating_filled"
-              className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+              htmlFor="attack_ev_floating_filled"
+              className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               威力
             </label>

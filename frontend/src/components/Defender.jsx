@@ -153,7 +153,7 @@ const Defender = (props) => {
               placeholder=" "
             />
             <label
-              for="hp_ev_floating_filled"
+              htmlFor="hp_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               H努力値
@@ -194,7 +194,7 @@ const Defender = (props) => {
               placeholder=" "
             />
             <label
-              for="defense_ev_floating_filled"
+              htmlFor="defense_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               B努力値
@@ -248,7 +248,7 @@ const Defender = (props) => {
               placeholder=" "
             />
             <label
-              for="defense_ev_floating_filled"
+              htmlFor="defense_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               D努力値
