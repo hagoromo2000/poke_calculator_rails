@@ -9,7 +9,9 @@ import Footer from './Footer'
 
 const Calculator = () => {
   const [attack, setAttack] = useState(100)
+  const [specialAttack, setSpecialAttack] = useState(100)
   const [power, setPower] = useState(0)
+  const [damageClass, setDamageClass] = useState('ぶつり')
 
   const [hp, setHp] =useState(100)
   const [defense, setDefense] = useState(100)
@@ -25,7 +27,7 @@ const Calculator = () => {
   return (
     <>
       <div className='md:flex'>
-        <Attacker setAttack={setAttack} setPower={setPower} power={power} />
+        <Attacker setAttack={setAttack} setSpecialAttack={setSpecialAttack} setPower={setPower} setDamageClass={setDamageClass} power={power} attack={attack} specialAttack={specialAttack}  />
         <Defender setHp={setHp} setDefense={setDefense} />
       </div>
       <div className='h-64 bg-blue-100'>

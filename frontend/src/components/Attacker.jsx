@@ -7,14 +7,14 @@ import Moves from '../json/all_moves.json'
 import Items from '../json/all_items.json'
 import Abilities from '../json/all_abilities.json'
 
+// 以下セレクトボックスの選択肢を生成する処理
 const attack_moves = Moves.filter(move => move.power !== null)
-
 const all_moves = attack_moves.map(data => {
   return { value: data, label: data.name }
 })
 
 const all_pokemons = Pokemons.map(data => {
-  return { value: data.name, label: data.name }
+  return { value: data, label: data.name }
 })
 
 const all_items = Items.map(data => {
@@ -27,7 +27,7 @@ const all_abilities = Abilities.map(data => {
 
 const Attacker = (props) => {
 
-  const [pokemon, setPokemon] = useState(null);
+  const [pokemon, setPokemon] = useState(Pokemons[0]);
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
   };
@@ -49,7 +49,15 @@ const Attacker = (props) => {
   };
 
   const handleAttack = (event) => {
-    props.setAttack(event.target.value)
+    const attack_ev = event.target.value
+    const attack_value = Math.floor(((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 +5) * 1)
+    props.setAttack(attack_value)
+  }
+
+  const handleSpecialAttack = (event) => {
+    const special_attack_ev = event.target.value
+    const special_attack_value = Math.floor(((pokemon.value.special_attack * 2 + 31 + special_attack_ev / 4) / 2 +5) * 1)
+    props.setSpecialAttack(special_attack_value)
   }
 
   const handlePower = (move) => {
@@ -83,15 +91,44 @@ const Attacker = (props) => {
 
         <div className="flex mt-5">
           {/* 攻撃実数値 */}
-          <div className="relative">
-            <input type="number" onChange={handleAttack} id="attack_floating_filled" className="block rounded-t-lg px-1 pb-2.5 pt-5  ml-4 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer " placeholder=" " />
-            <label htmlfor="attack_floating_filled" className="ml-4 absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">実数値</label>
+          <div className="pl-5 text-gray-600">
+            <label className="text-xs">A実数値</label>
+            <p>{props.attack}</p>
           </div>
 
           {/* 攻撃努力値 */}
           <div className="relative ml-4">
-            <input type="number" id="attack_ev_floating_filled" className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer " placeholder=" " />
-            <label htmlfor="attack_ev_floating_filled" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">努力値</label>
+            <input type="number" onChange={handleAttack} id="attack_ev_floating_filled" min="0" max="252" step="4" className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer " placeholder=" " />
+            <label htmlfor="attack_ev_floating_filled" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">A努力値</label>
+          </div>
+
+          {/* 性格補正 */}
+          <label className='mt-auto mx-auto mb-auto text-gray-500 '></label>
+          <div className="inline-flex rounded-md shadow-sm ml-4 mr-4 " role="group">
+            <button type="button" className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+              1.1
+            </button>
+            <button type="button" className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+              性格
+            </button>
+            <button type="button" className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+              0.9
+            </button>
+          </div>
+        </div>
+
+        <div className="flex mt-5">
+          {/* 特攻実数値 */}
+          <div className="pl-5 text-gray-600">
+            <label className="text-xs">C実数値</label>
+            <p>{props.specialAttack}</p>
+          </div>
+
+
+          {/* 特攻努力値 */}
+          <div className="relative ml-4">
+            <input type="number" onChange={handleSpecialAttack} min="0" max="252" step="4" id="attack_ev_floating_filled" className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer " placeholder=" " />
+            <label htmlfor="attack_ev_floating_filled" className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">C努力値</label>
           </div>
 
           {/* 性格補正 */}
