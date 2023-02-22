@@ -5,7 +5,7 @@ import './Calculator.css'
 const Environment = () => {
   return (
     <>
-      <div className="artboard phone-6 bg-white rounded-lg shadow-xl mx-auto mt-10 ">
+      <div className="artboard phone-6 bg-white rounded-lg shadow-xl mx-auto mt-10 mb-32 b-32">
         <div className="flex flex-row bg-gradient-to-r from-green-200 to-green-500" >
           <p className="pt-5 pl-5 mb-5 font-bold " >環境</p>
         </div>
