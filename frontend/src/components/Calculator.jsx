@@ -28,7 +28,9 @@ const Calculator = () => {
         <Attacker setAttack={setAttack} setPower={setPower} power={power} />
         <Defender setHp={setHp} setDefense={setDefense} />
       </div>
-      <Environment />
+      <div className='h-64 bg-blue-100'>
+        <Environment />
+      </div>
       <Footer damage={damage} hp={hp}/>
     </>
   )
