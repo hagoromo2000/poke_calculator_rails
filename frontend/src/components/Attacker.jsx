@@ -78,7 +78,9 @@ const Attacker = (props) => {
   const handleAttack = (event) => {
     setAttack_ev(event.target.value);
   };
-  // useStateは非同期処理のためhandleAttack内に以下の処理を書くと値の反映に1操作分のラグが生じてしまう、useEffectを用いて
+
+  // useStateは非同期処理のためhandleAttack内に以下の処理を書くと値の反映に1操作分のラグが生じてしまう、そのためuseEffectを用いる
+  // 攻撃努力値と性格補正が変化した際、副作用で実数値を再計算
   useEffect(() => {
     // attack_evの値が変更された後に実行される
     const attack_value = Math.floor(
@@ -92,6 +94,8 @@ const Attacker = (props) => {
   const handleSpecialAttack = (event) => {
     setSpecialAttack_ev(event.target.value);
   };
+
+  // 特攻努力値と性格補正が変化した際、副作用で実数値を再計算
   useEffect(() => {
     const special_attack_value = Math.floor(
       ((pokemon.value.special_attack * 2 + 31 + special_attack_ev / 4) / 2 +

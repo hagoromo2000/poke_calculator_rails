@@ -47,13 +47,14 @@ const Defender = (props) => {
     );
     props.setHp(hp_value);
     const defense_value = Math.floor(
-      ((pokemon.value.defense * 2 + 31 + defense_ev / 4) / 2 + 5) * 1
+      ((pokemon.value.defense * 2 + 31 + defense_ev / 4) / 2 + 5) *
+        defenseNature
     );
     props.setDefense(defense_value);
     const special_defense_value = Math.floor(
       ((pokemon.value.special_defense * 2 + 31 + specialDefense_ev / 4) / 2 +
         5) *
-        1
+        specialDefenseNature
     );
     props.setSpecialDefense(special_defense_value);
   };
@@ -71,6 +72,19 @@ const Defender = (props) => {
   const [ability, setAbility] = useState(null);
   const handleAbility = (ability) => {
     setAbility(ability);
+  };
+
+  // 性格補正の制御
+  // 攻撃の性格補正の制御
+  const [defenseNature, setDefenseNature] = useState(1);
+  const handleDefenseNature = (event) => {
+    setDefenseNature(event);
+  };
+
+  // 特攻の性格補正の制御
+  const [specialDefenseNature, setSpecialDefenseNature] = useState(1);
+  const handleSpecialDefenseNature = (event) => {
+    setSpecialDefenseNature(event);
   };
 
   // HP努力値と実数値を連動させる処理
@@ -92,12 +106,14 @@ const Defender = (props) => {
     setDefense_ev(event.target.value);
   };
 
+  // 防御努力値と性格補正が変化した際、副作用で実数値を再計算
   useEffect(() => {
     const defense_value = Math.floor(
-      (pokemon.value.defense * 2 + 31 + defense_ev / 4) / 2 + 5
+      ((pokemon.value.defense * 2 + 31 + defense_ev / 4) / 2 + 5) *
+        defenseNature
     );
     props.setDefense(defense_value);
-  }, [defense_ev]);
+  }, [defense_ev, defenseNature]);
 
   // 特防努力値と実数値を連動させる処理
   const [specialDefense_ev, setSpecialDefense_ev] = useState(0);
@@ -105,12 +121,15 @@ const Defender = (props) => {
     setSpecialDefense_ev(event.target.value);
   };
 
+  // 特防努力値と性格補正が変化した際、副作用で実数値を再計算
   useEffect(() => {
     const special_defense_value = Math.floor(
-      (pokemon.value.special_defense * 2 + 31 + specialDefense_ev / 4) / 2 + 5
+      ((pokemon.value.special_defense * 2 + 31 + specialDefense_ev / 4) / 2 +
+        5) *
+        specialDefenseNature
     );
     props.setSpecialDefense(special_defense_value);
-  }, [specialDefense_ev]);
+  }, [specialDefense_ev, specialDefenseNature]);
 
   return (
     <>
@@ -209,18 +228,27 @@ const Defender = (props) => {
           >
             <button
               type="button"
+              onClick={() => {
+                handleDefenseNature(1.1);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               1.1
             </button>
             <button
               type="button"
+              onClick={() => {
+                handleDefenseNature(1);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               性格
             </button>
             <button
               type="button"
+              onClick={() => {
+                handleDefenseNature(0.9);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               0.9
@@ -263,18 +291,27 @@ const Defender = (props) => {
           >
             <button
               type="button"
+              onClick={() => {
+                handleSpecialDefenseNature(1.1);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               1.1
             </button>
             <button
               type="button"
+              onClick={() => {
+                handleSpecialDefenseNature(1);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               性格
             </button>
             <button
               type="button"
+              onClick={() => {
+                handleSpecialDefenseNature(0.9);
+              }}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               0.9
