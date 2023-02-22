@@ -43,7 +43,7 @@ const Defender = (props) => {
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
     const hp_value = Math.floor(
-      (pokemon.value.hp * 2 + 31 + hp_ev / 4) / 2 + 5
+      (pokemon.value.hp * 2 + 31 + hp_ev / 4) / 2 + 60
     );
     props.setHp(hp_value);
     const defense_value = Math.floor(
@@ -76,18 +76,41 @@ const Defender = (props) => {
   // HP努力値と実数値を連動させる処理
   const [hp_ev, setHp_ev] = useState(0);
   const handleHp = (event) => {
-    props.setHp_ev(event.target.value);
+    setHp_ev(event.target.value);
   };
+  // 努力値が変更されると副作用で実数値が計算される
+  useEffect(() => {
+    const hp_value = Math.floor(
+      (pokemon.value.hp * 2 + 31 + hp_ev / 4) / 2 + 60
+    );
+    props.setHp(hp_value);
+  }, [hp_ev]);
 
+  // 防御努力値と実数値を連動させる処理
   const [defense_ev, setDefense_ev] = useState(0);
   const handleDefense = (event) => {
-    props.setDefense_ev(event.target.value);
+    setDefense_ev(event.target.value);
   };
 
+  useEffect(() => {
+    const defense_value = Math.floor(
+      (pokemon.value.defense * 2 + 31 + defense_ev / 4) / 2 + 5
+    );
+    props.setDefense(defense_value);
+  }, [defense_ev]);
+
+  // 特防努力値と実数値を連動させる処理
   const [specialDefense_ev, setSpecialDefense_ev] = useState(0);
   const handleSpecialDefense = (event) => {
-    props.setSpecialDefense_ev(event.target.value);
+    setSpecialDefense_ev(event.target.value);
   };
+
+  useEffect(() => {
+    const special_defense_value = Math.floor(
+      (pokemon.value.special_defense * 2 + 31 + specialDefense_ev / 4) / 2 + 5
+    );
+    props.setSpecialDefense(special_defense_value);
+  }, [specialDefense_ev]);
 
   return (
     <>
@@ -121,6 +144,10 @@ const Defender = (props) => {
           <div className="relative ml-4">
             <input
               type="number"
+              onChange={handleHp}
+              min="0"
+              max="252"
+              step="4"
               id="hp_ev_floating_filled"
               className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer "
               placeholder=" "
@@ -159,6 +186,10 @@ const Defender = (props) => {
             <input
               type="number"
               id="defense_ev_floating_filled"
+              onChange={handleDefense}
+              min="0"
+              max="252"
+              step="4"
               className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer "
               placeholder=" "
             />
@@ -208,6 +239,10 @@ const Defender = (props) => {
           <div className="relative ml-4">
             <input
               type="number"
+              onChange={handleSpecialDefense}
+              min="0"
+              max="252"
+              step="4"
               id="defense_ev_floating_filled"
               className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer "
               placeholder=" "
