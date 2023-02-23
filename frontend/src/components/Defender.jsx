@@ -87,6 +87,18 @@ const Defender = (props) => {
     setSpecialDefenseNature(event);
   };
 
+  // Rank補正の制御
+  const handleRankIncrease = () => {
+    if (props.defenseRank <= 5) {
+      props.setDefenseRank(props.defenseRank + 1);
+    }
+  };
+  const handleRankDecrease = () => {
+    if (props.defenseRank >= -5) {
+      props.setDefenseRank(props.defenseRank - 1);
+    }
+  };
+
   // HP努力値と実数値を連動させる処理
   const [hp_ev, setHp_ev] = useState(0);
   const handleHp = (event) => {
@@ -330,17 +342,22 @@ const Defender = (props) => {
             />
           </div>
 
-          <p className="mt-auto mb-auto ml-5 text-gray-500 ">ランク 0</p>
+          {/* 能力ランク */}
+          <p className="mt-auto mb-auto ml-5 text-gray-500 ">
+            ランク {(props.defenseRank < 0 ? "" : "+") + props.defenseRank}
+          </p>
 
           <div className="inline-flex rounded-md shadow-smm ml-5" role="group">
             <button
               type="button"
+              onClick={handleRankIncrease}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               +
             </button>
             <button
               type="button"
+              onClick={handleRankDecrease}
               className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-r-md hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white"
             >
               -

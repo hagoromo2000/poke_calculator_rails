@@ -20,6 +20,7 @@ const Calculator = () => {
   const [hp, setHp] = useState(100);
   const [defense, setDefense] = useState(100);
   const [specialDefense, setSpecialDefense] = useState(100);
+  const [defenseRank, setDefenseRank] = useState(0);
 
   const [damage, setDamage] = useState(0);
   const [minDamage, setMinDamage] = useState(0);
@@ -89,9 +90,11 @@ const Calculator = () => {
           setHp={setHp}
           setDefense={setDefense}
           setSpecialDefense={setSpecialDefense}
+          setDefenseRank={setDefenseRank}
           hp={hp}
           defense={defense}
           specialDefense={specialDefense}
+          defenseRank={defenseRank}
         />
       </div>
       <div className="h-64 bg-blue-100">
