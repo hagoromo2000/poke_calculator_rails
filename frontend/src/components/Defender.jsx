@@ -18,6 +18,7 @@ const all_abilities = Abilities.map((data) => {
 });
 
 const all_types = [
+  { value: null, label: "なし" },
   { value: "ノーマル", label: "ノーマル" },
   { value: "ほのお", label: "ほのお" },
   { value: "みず", label: "みず" },
@@ -331,6 +332,7 @@ const Defender = (props) => {
           </div>
         </div>
 
+        {/* とくせい */}
         <div className="flex mt-5 ml-4">
           <div className="w-32">
             <Select
@@ -365,6 +367,7 @@ const Defender = (props) => {
           </div>
         </div>
 
+        {/* 持ち物 */}
         <div className="flex mt-5 ml-4">
           <div className="w-64">
             <Select

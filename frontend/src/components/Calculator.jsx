@@ -30,24 +30,60 @@ const Calculator = () => {
   useEffect(() => {
     setDamage(() => {
       let baseDamage = 0;
+      let attackRankMultiplier = 1;
+      let defenseRankMultiplier = 1;
+      // 能力ランクによるステータス倍率の設定
 
-      //   ダメージ=攻撃側のレベル×2÷5+2→切り捨て
-      // 　×物理技(特殊技)の威力×攻撃側のこうげき(とくこう)÷防御側のぼうぎょ(とくぼう)→切り捨て
-      // 　÷50+2→切り捨て
-      // 　×乱数(0.85, 0.86, …… ,0.99, 1.00 の何れか)→切り捨て
+      if (attackerRank >= 0) {
+        attackRankMultiplier = (2 + attackerRank) / 2;
+      } else {
+        attackRankMultiplier = 2 / (2 - attackerRank);
+      }
+
+      console.log(attackRankMultiplier);
+      if (defenseRank >= 0) {
+        defenseRankMultiplier = (2 + defenseRank) / 2;
+      } else {
+        defenseRankMultiplier = 2 / (2 - defenseRank);
+      }
+
+      // ダメージ=攻撃側のレベル×2÷5+2→切り捨て
+      // ×物理技(特殊技)の威力×攻撃側のこうげき(とくこう)÷防御側のぼうぎょ(とくぼう)→切り捨て
+      // ÷50+2→切り捨て
+      // ×乱数(0.85, 0.86, …… ,0.99, 1.00 の何れか)→切り捨て
       if (damageClass === "ぶつり") {
         baseDamage = Math.floor(
-          Math.floor((22 * power * attack) / defense) / 50 + 2
+          Math.floor(
+            (22 * power * (attack * attackRankMultiplier)) /
+              (defense * defenseRankMultiplier)
+          ) /
+            50 +
+            2
         );
       } else {
         baseDamage = Math.floor(
-          Math.floor((22 * power * specialAttack) / specialDefense) / 50 + 2
+          Math.floor(
+            (22 * power * (specialAttack * attackRankMultiplier)) /
+              (specialDefense * defenseRankMultiplier)
+          ) /
+            50 +
+            2
         );
       }
 
       return baseDamage;
     });
-  }, [attack, power, defense, specialAttack, specialDefense, hp, damageClass]);
+  }, [
+    attack,
+    power,
+    defense,
+    specialAttack,
+    specialDefense,
+    hp,
+    damageClass,
+    attackerRank,
+    defenseRank,
+  ]);
 
   // 基礎ダメージが計算されると、乱数幅を掛けた最大ダメージと最小ダメージが算出され、それに各種倍率を掛けて最終的なダメージが算出される。
   useEffect(() => {
@@ -62,9 +98,11 @@ const Calculator = () => {
       stab = stab + 0.5;
     }
 
+    // ダメージの乱数幅を制御
     let minBaseDamage = Math.floor(damage * 0.85);
     let maxBaseDamage = damage;
 
+    // 各種補正をかけた後四捨五入（本来は五捨五超入だが、暫定的に設定)
     setMinDamage(Math.round(minBaseDamage * stab));
     setMaxDamage(Math.round(maxBaseDamage * stab));
   }, [damage, attackerTerastal, moveType]);
