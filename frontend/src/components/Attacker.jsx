@@ -27,19 +27,28 @@ const all_abilities = Abilities.map((data) => {
 
 // コンポーネント
 const Attacker = (props) => {
+  // ポケモンの種族値、タイプの処理
   const [pokemon, setPokemon] = useState({ value: Pokemons[0] }); // {value : {ポケモンデータ}}の形にしないとhandleAttackで初期値を読み込めずエラー
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
+
+    // 攻撃実数値の計算
     const attack_value = Math.floor(
       ((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 + 5) * attackNature
     );
     props.setAttack(attack_value);
+
+    // 特攻実数値の計算
     const special_attack_value = Math.floor(
       ((pokemon.value.special_attack * 2 + 31 + special_attack_ev / 4) / 2 +
         5) *
         specialAttackNature
     );
     props.setSpecialAttack(special_attack_value);
+
+    // タイプのセット
+    props.setAttackerFirstType(pokemon.value.type1);
+    props.setAttackerSecondType(pokemon.value.type2);
   };
 
   const [item, setItem] = useState(null);
@@ -59,7 +68,9 @@ const Attacker = (props) => {
   const handleMove = (move) => {
     setMove(move);
     props.setDamageClass(move.value.damage_class);
-    handlePower(move);
+    props.setPower(move.value.power);
+    props.setMoveType(move.value.type);
+    //handlePower(move);
   };
 
   // 性格補正の制御
@@ -107,11 +118,9 @@ const Attacker = (props) => {
     props.setSpecialAttack(special_attack_value);
   }, [special_attack_ev, specialAttackNature]);
 
-  // 技威力の制御
-  const handlePower = (move) => {
-    props.setPower(move.value.power);
-    props.setDamageClass(move.value.damage_class);
-  };
+  // 技威力の制御　handleMoveに処理を移管したためコメントアウト(威力の入力受付をする際に復活の可能性あり)
+  //const handlePower = (move) => {
+  //};
 
   return (
     <>
@@ -329,7 +338,7 @@ const Attacker = (props) => {
           <div className="relative ml-4">
             <input
               type="number"
-              onChange={handlePower}
+              // onChange={handlePower}
               value={move.value.power}
               id="attack_ev_floating_filled"
               className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer "

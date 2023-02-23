@@ -8,8 +8,11 @@ import Footer from "./Footer";
 const Calculator = () => {
   const [attack, setAttack] = useState(100);
   const [specialAttack, setSpecialAttack] = useState(100);
+  const [moveType, setMoveType] = useState(null);
   const [power, setPower] = useState(0);
   const [damageClass, setDamageClass] = useState("ぶつり");
+  const [attackerFirstType, setAttackerFirstType] = useState(null);
+  const [attackerSecondType, setAttackerSecondType] = useState(null);
 
   const [hp, setHp] = useState(100);
   const [defense, setDefense] = useState(100);
@@ -19,11 +22,13 @@ const Calculator = () => {
 
   useEffect(() => {
     setDamage(() => {
+      let baseDamage = 0;
       if (damageClass === "ぶつり") {
-        return (22 * power * attack) / defense / 50 + 2;
+        baseDamage = (22 * power * attack) / defense / 50 + 2;
       } else {
-        return (22 * power * specialAttack) / defense / 50 + 2;
+        baseDamage = (22 * power * specialAttack) / defense / 50 + 2;
       }
+      return baseDamage;
     });
   }, [attack, power, defense, specialAttack, specialDefense, hp, damageClass]);
 
@@ -33,8 +38,11 @@ const Calculator = () => {
         <Attacker
           setAttack={setAttack}
           setSpecialAttack={setSpecialAttack}
+          setMoveType={setMoveType}
           setPower={setPower}
           setDamageClass={setDamageClass}
+          setAttackerFirstType={setAttackerFirstType}
+          setAttackerSecondType={setAttackerSecondType}
           power={power}
           attack={attack}
           specialAttack={specialAttack}
