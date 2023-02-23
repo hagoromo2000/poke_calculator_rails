@@ -15,6 +15,7 @@ const Calculator = () => {
   const [attackerFirstType, setAttackerFirstType] = useState(null);
   const [attackerSecondType, setAttackerSecondType] = useState(null);
   const [attackerTerastal, setAttackerTerastal] = useToggle(false);
+  const [attackerRank, setAttackerRank] = useState(0);
 
   const [hp, setHp] = useState(100);
   const [defense, setDefense] = useState(100);
@@ -78,9 +79,11 @@ const Calculator = () => {
           setAttackerFirstType={setAttackerFirstType}
           setAttackerSecondType={setAttackerSecondType}
           setAttackerTerastal={setAttackerTerastal}
+          setAttackerRank={setAttackerRank}
           power={power}
           attack={attack}
           specialAttack={specialAttack}
+          attackerRank={attackerRank}
         />
         <Defender
           setHp={setHp}
