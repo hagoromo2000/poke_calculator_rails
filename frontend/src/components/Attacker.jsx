@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import "./Calculator.css";
 import Pokemons from "../json/all_pokemons.json";
@@ -7,7 +6,7 @@ import Moves from "../json/all_moves.json";
 import Items from "../json/all_items.json";
 import Abilities from "../json/all_abilities.json";
 
-// 以下セレクトボックスの選択肢を生成する処理
+// 以下、サーチャブルセレクトボックスの選択肢をJSONから生成する処理
 const attack_moves = Moves.filter((move) => move.power !== null);
 const all_moves = attack_moves.map((data) => {
   return { value: data, label: data.name };
@@ -51,11 +50,13 @@ const Attacker = (props) => {
     props.setAttackerSecondType(pokemon.value.type2);
   };
 
+  // 持ち物の制御
   const [item, setItem] = useState(null);
   const handleItem = (item) => {
     setItem(item);
   };
 
+  // 特性の制御
   const [ability, setAbility] = useState(null);
   const handleAbility = (ability) => {
     setAbility(ability);
@@ -125,9 +126,9 @@ const Attacker = (props) => {
   return (
     <>
       <div className="artboard phone-5 bg-white rounded-lg shadow-xl mx-auto mt-10 ">
-        <div className="flex flex-row bg-gradient-to-r from-red-200 to-red-500">
+        <div className="flex flex-row bg-gradient-to-r from-red-200 to-red-200">
           <p className="pt-5 pl-5 font-bold ">攻撃側</p>
-          <button className="btn brn-primary ml-32 mt-2 mb-2">
+          <button className="btn btn-primary ml-32 mt-2 mb-2">
             育成論から呼び出す
           </button>
         </div>
@@ -143,13 +144,6 @@ const Attacker = (props) => {
               placeholder="ポケモンを選択"
             />
           </div>
-
-          {/* テラスタル */}
-          <img
-            src="/tera-icon.png"
-            className="mt-auto mb-auto ml-4 w-10 h-10 cursor-pointer"
-            alt="terastal"
-          />
         </div>
 
         <div className="flex mt-5">
@@ -319,6 +313,18 @@ const Attacker = (props) => {
               isSearchable={true}
               placeholder="持ち物"
             />
+          </div>
+
+          {/* テラスタル */}
+          <div className="form-control">
+            <label className="label cursor-pointer">
+              <span className="label-text text-gray-500">テラス</span>
+              <input
+                type="checkbox"
+                onClick={props.setAttackerTerastal}
+                className="toggle toggle-error"
+              />
+            </label>
           </div>
         </div>
 
