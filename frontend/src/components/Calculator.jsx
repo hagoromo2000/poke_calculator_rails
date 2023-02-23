@@ -40,7 +40,6 @@ const Calculator = () => {
         attackRankMultiplier = 2 / (2 - attackerRank);
       }
 
-      console.log(attackRankMultiplier);
       if (defenseRank >= 0) {
         defenseRankMultiplier = (2 + defenseRank) / 2;
       } else {
@@ -48,7 +47,7 @@ const Calculator = () => {
       }
 
       // ダメージ=攻撃側のレベル×2÷5+2→切り捨て
-      // ×物理技(特殊技)の威力×攻撃側のこうげき(とくこう)÷防御側のぼうぎょ(とくぼう)→切り捨て
+      // ×物理技(特殊技)の威力×(攻撃側のこうげき(とくこう)*ランク補正)÷(防御側のぼうぎょ(とくぼう)*ランク補正)→切り捨て
       // ÷50+2→切り捨て
       // ×乱数(0.85, 0.86, …… ,0.99, 1.00 の何れか)→切り捨て
       if (damageClass === "ぶつり") {
