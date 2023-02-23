@@ -46,7 +46,7 @@ const Calculator = () => {
         defenseRankMultiplier = 2 / (2 - defenseRank);
       }
 
-      // ダメージ=攻撃側のレベル×2÷5+2→切り捨て
+      // ダメージ=攻撃側のレベル×2÷5+2→切り捨て 今回はレベル50固定なので22で確定
       // ×物理技(特殊技)の威力×(攻撃側のこうげき(とくこう)*ランク補正)÷(防御側のぼうぎょ(とくぼう)*ランク補正)→切り捨て
       // ÷50+2→切り捨て
       // ×乱数(0.85, 0.86, …… ,0.99, 1.00 の何れか)→切り捨て
@@ -101,7 +101,7 @@ const Calculator = () => {
     let minBaseDamage = Math.floor(damage * 0.85);
     let maxBaseDamage = damage;
 
-    // 各種補正をかけた後四捨五入（本来は五捨五超入だが、暫定的に設定)
+    // 各種補正を乗算した後四捨五入（本来は五捨五超入だが、暫定的に設定)
     setMinDamage(Math.round(minBaseDamage * stab));
     setMaxDamage(Math.round(maxBaseDamage * stab));
   }, [damage, attackerTerastal, moveType]);
