@@ -25,7 +25,7 @@ const Calculator = () => {
         return (22 * power * specialAttack) / defense / 50 + 2;
       }
     });
-  }, [attack, power, defense]);
+  }, [attack, power, defense, specialAttack, specialDefense, hp, damageClass]);
 
   return (
     <>

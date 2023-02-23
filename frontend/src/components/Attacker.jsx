@@ -52,11 +52,13 @@ const Attacker = (props) => {
     setAbility(ability);
   };
 
+  // わざ、ダメージ種別(物理,特殊)の制御
   const [move, setMove] = useState({
     value: Moves[0],
   });
   const handleMove = (move) => {
     setMove(move);
+    props.setDamageClass(move.value.damage_class);
     handlePower(move);
   };
 
