@@ -28,9 +28,21 @@ const Calculator = () => {
       } else {
         baseDamage = (22 * power * specialAttack) / defense / 50 + 2;
       }
+      if (attackerFirstType === moveType || attackerSecondType === moveType) {
+        baseDamage = baseDamage * 1.5;
+      }
       return baseDamage;
     });
-  }, [attack, power, defense, specialAttack, specialDefense, hp, damageClass]);
+  }, [
+    attack,
+    power,
+    defense,
+    specialAttack,
+    specialDefense,
+    hp,
+    damageClass,
+    moveType,
+  ]);
 
   return (
     <>
