@@ -1,19 +1,27 @@
-import { GoogleLogin } from '@react-oauth/google';
+import React from "react";
+import { auth, provider } from "../firebase";
+import { signInWithPopup } from "firebase/auth";
 
 const GoogleAuthButton = () => {
-  const handleLoginSuccess = (response) => {
-    // Googleログイン成功時の処理
-  }
-
-  const handleLoginFailure = (error) => {
-    // Googleログイン失敗時の処理
-  }
-
   return (
     <>
-    <div>googleログインボタン</div>
+      <SignInButton />
     </>
   );
 };
 
-export default GoogleAuthButton
+export default GoogleAuthButton;
+
+//　Googleボタンでサインアップ
+function SignInButton() {
+  const signInWithGoogle = () => {
+    // firebaseを使ってGoogleでサインアップ
+    signInWithPopup(auth, provider);
+  };
+
+  return (
+    <button onClick={signInWithGoogle} className="btn">
+      <p>Googleでサインイン</p>
+    </button>
+  );
+}

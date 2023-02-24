@@ -105,6 +105,7 @@ const Calculator = () => {
     setMinDamage(Math.round(minBaseDamage * stab));
     setMaxDamage(Math.round(maxBaseDamage * stab));
   }, [damage, attackerTerastal, moveType]);
+
   return (
     <>
       <div className="md:flex">
@@ -134,7 +135,7 @@ const Calculator = () => {
           defenseRank={defenseRank}
         />
       </div>
-      <div className="h-64 bg-blue-100">
+      <div className="h-64 bg-blue-50">
         <Environment />
       </div>
       <Footer
