@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCDTs8v2iHw9udRQZ0PPyS2TfnQ41uG598",
-  authDomain: "poke-calculator-acbba.firebaseapp.com",
-  projectId: "poke-calculator-acbba",
-  storageBucket: "poke-calculator-acbba.appspot.com",
-  messagingSenderId: "370290780058",
-  appId: "1:370290780058:web:c3ca8eecbbc55c3a6d3c23",
-  measurementId: "G-PMBFL5CLHS",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
