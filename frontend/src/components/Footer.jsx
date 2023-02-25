@@ -24,11 +24,22 @@ const Footer = (props) => {
             </div>
           </div>
           <div className="w-full">
-            <p className="flex justify-end mr-10">
-              {props.minDamage} ~ {props.maxDamage} (
-              {((props.minDamage / props.hp) * 100).toFixed(1)}% ~{" "}
-              {((props.maxDamage / props.hp) * 100).toFixed(1)}%)
-            </p>
+            <div className="flex justify-end mr-10">
+              <div className="mr-2">
+                {props.compatibility >= 2 ? (
+                  <p>こうかばつぐん </p>
+                ) : props.compatibility === 0 ? (
+                  <p>こうかなし</p>
+                ) : props.compatibility < 1 ? (
+                  <p>こうかいまひとつ </p>
+                ) : null}
+              </div>
+              <p>
+                {props.minDamage} ~ {props.maxDamage} (
+                {((props.minDamage / props.hp) * 100).toFixed(1)}% ~{" "}
+                {((props.maxDamage / props.hp) * 100).toFixed(1)}%)
+              </p>
+            </div>
           </div>
         </div>
       </footer>

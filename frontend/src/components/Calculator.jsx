@@ -161,6 +161,7 @@ const Calculator = () => {
         minDamage={minDamage}
         maxDamage={maxDamage}
         hp={hp}
+        compatibility={compatibility}
       />
     </>
   );
