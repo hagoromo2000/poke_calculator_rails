@@ -43,21 +43,31 @@ const Defender = (props) => {
   const [pokemon, setPokemon] = useState({ value: Pokemons[0] });
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
+
+    // HP実数値のセット
     const hp_value = Math.floor(
       (pokemon.value.hp * 2 + 31 + hp_ev / 4) / 2 + 60
     );
     props.setHp(hp_value);
+
+    // 防御実数値のセット
     const defense_value = Math.floor(
       ((pokemon.value.defense * 2 + 31 + defense_ev / 4) / 2 + 5) *
         defenseNature
     );
     props.setDefense(defense_value);
+
+    // 特防実数値のセット
     const special_defense_value = Math.floor(
       ((pokemon.value.special_defense * 2 + 31 + specialDefense_ev / 4) / 2 +
         5) *
         specialDefenseNature
     );
     props.setSpecialDefense(special_defense_value);
+
+    // タイプのセット
+    props.setDefenseType1(pokemon.value.type1);
+    props.setDefenseType2(pokemon.value.type2);
   };
 
   const [item, setItem] = useState(null);
@@ -65,9 +75,9 @@ const Defender = (props) => {
     setItem(item);
   };
 
-  const [teraType, setTeraType] = useState("ノーマル");
   const handleTeraType = (teraType) => {
-    setTeraType(teraType);
+    props.setTeraType(teraType);
+    console.log(props.teraType);
   };
 
   const [ability, setAbility] = useState(null);
@@ -196,7 +206,7 @@ const Defender = (props) => {
           <div className="ml-4 mt-2">
             <div className="w-32">
               <Select
-                value={teraType}
+                value={props.teraType}
                 onChange={handleTeraType}
                 options={all_types}
                 isSearchable={true}

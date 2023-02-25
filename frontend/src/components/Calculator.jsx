@@ -5,6 +5,7 @@ import "./Calculator.css";
 import Defender from "./Defender";
 import Environment from "./Environment";
 import Footer from "./Footer";
+import TypeCompatibility from "./TypeCompatibility";
 
 const Calculator = () => {
   const [attack, setAttack] = useState(100);
@@ -21,10 +22,14 @@ const Calculator = () => {
   const [defense, setDefense] = useState(100);
   const [specialDefense, setSpecialDefense] = useState(100);
   const [defenseRank, setDefenseRank] = useState(0);
+  const [teraType, setTeraType] = useState(null);
+  const [defenseType1, setDefenseType1] = useState(null);
+  const [defenseType2, setDefenseType2] = useState(null);
 
   const [damage, setDamage] = useState(0);
   const [minDamage, setMinDamage] = useState(0);
   const [maxDamage, setMaxDamage] = useState(0);
+  const [compatibility, setCompatibility] = useState(1);
 
   //　各種値が変化すると、副作用で基礎ダメージが計算される。
   useEffect(() => {
@@ -32,8 +37,8 @@ const Calculator = () => {
       let baseDamage = 0;
       let attackRankMultiplier = 1;
       let defenseRankMultiplier = 1;
-      // 能力ランクによるステータス倍率の設定
 
+      // 能力ランクによるステータス倍率の設定
       if (attackerRank >= 0) {
         attackRankMultiplier = (2 + attackerRank) / 2;
       } else {
@@ -45,6 +50,11 @@ const Calculator = () => {
       } else {
         defenseRankMultiplier = 2 / (2 - defenseRank);
       }
+
+      //タイプ相性によるダメージ倍率の設定
+      setCompatibility(
+        TypeCompatibility(moveType, teraType, defenseType1, defenseType2)
+      );
 
       // ダメージ=攻撃側のレベル×2÷5+2→切り捨て 今回はレベル50固定なので22で確定
       // ×物理技(特殊技)の威力×(攻撃側のこうげき(とくこう)*ランク補正)÷(防御側のぼうぎょ(とくぼう)*ランク補正)→切り捨て
@@ -102,8 +112,12 @@ const Calculator = () => {
     let maxBaseDamage = damage;
 
     // 各種補正を乗算した後四捨五入（本来は五捨五超入だが、暫定的に設定)
-    setMinDamage(Math.round(minBaseDamage * stab));
-    setMaxDamage(Math.round(maxBaseDamage * stab));
+    minBaseDamage = Math.round(minBaseDamage * stab);
+    maxBaseDamage = Math.round(maxBaseDamage * stab);
+
+    console.log(compatibility);
+    setMinDamage(Math.floor(minBaseDamage * compatibility));
+    setMaxDamage(Math.floor(maxBaseDamage * compatibility));
   }, [damage, attackerTerastal, moveType]);
 
   return (
@@ -129,10 +143,14 @@ const Calculator = () => {
           setDefense={setDefense}
           setSpecialDefense={setSpecialDefense}
           setDefenseRank={setDefenseRank}
+          setTeraType={setTeraType}
+          setDefenseType1={setDefenseType1}
+          setDefenseType2={setDefenseType2}
           hp={hp}
           defense={defense}
           specialDefense={specialDefense}
           defenseRank={defenseRank}
+          teraType={teraType}
         />
       </div>
       <div className="h-64 bg-blue-50">
