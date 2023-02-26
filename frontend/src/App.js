@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Calculator from "./components/Calculator";
+import Calculator from "./pages/Calculator";
 import Header from "./components/Header";
-import IndexPosts from "./components/IndexPosts";
-import NewPost from "./components/NewPost";
+import IndexPosts from "./pages/IndexPosts";
+import NewPost from "./pages/NewPost";
 
 function App() {
   return (

@@ -1,1 +1,5287 @@
-[{"name":"はたく","type":"ノーマル","power":40,"damage_class":"ぶつり"},{"name":"ひっかく","type":"ノーマル","power":40,"damage_class":"ぶつり"},{"name":"テレポート","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ナイトヘッド","type":"ゴースト","power":null,"damage_class":"とくしゅ"},{"name":"ものまね","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"いやなおと","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"かげぶんしん","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"じこさいせい","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"かたくなる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ちいさくなる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"えんまく","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"あやしいひかり","type":"ゴースト","power":null,"damage_class":"へんか"},{"name":"はさむ","type":"ノーマル","power":55,"damage_class":"ぶつり"},{"name":"からにこもる","type":"みず","power":null,"damage_class":"へんか"},{"name":"まるくなる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"バリアー","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ひかりのかべ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"くろいきり","type":"こおり","power":null,"damage_class":"へんか"},{"name":"リフレクター","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"きあいだめ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"がまん","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"ゆびをふる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"オウムがえし","type":"ひこう","power":null,"damage_class":"へんか"},{"name":"ハサミギロチン","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"じばく","type":"ノーマル","power":200,"damage_class":"ぶつり"},{"name":"タマゴばくだん","type":"ノーマル","power":100,"damage_class":"ぶつり"},{"name":"したでなめる","type":"ゴースト","power":30,"damage_class":"ぶつり"},{"name":"スモッグ","type":"どく","power":30,"damage_class":"とくしゅ"},{"name":"ヘドロこうげき","type":"どく","power":65,"damage_class":"とくしゅ"},{"name":"ホネこんぼう","type":"じめん","power":65,"damage_class":"ぶつり"},{"name":"だいもんじ","type":"ほのお","power":110,"damage_class":"とくしゅ"},{"name":"たきのぼり","type":"みず","power":80,"damage_class":"ぶつり"},{"name":"からではさむ","type":"みず","power":35,"damage_class":"ぶつり"},{"name":"スピードスター","type":"ノーマル","power":60,"damage_class":"とくしゅ"},{"name":"かまいたち","type":"ノーマル","power":80,"damage_class":"とくしゅ"},{"name":"ロケットずつき","type":"ノーマル","power":130,"damage_class":"ぶつり"},{"name":"とげキャノン","type":"ノーマル","power":20,"damage_class":"ぶつり"},{"name":"からみつく","type":"ノーマル","power":10,"damage_class":"ぶつり"},{"name":"ドわすれ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"スプーンまげ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"タマゴうみ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"とびひざげり","type":"かくとう","power":130,"damage_class":"ぶつり"},{"name":"へびにらみ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ゆめくい","type":"エスパー","power":100,"damage_class":"とくしゅ"},{"name":"どくガス","type":"どく","power":null,"damage_class":"へんか"},{"name":"つるぎのまい","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"たまなげ","type":"ノーマル","power":15,"damage_class":"ぶつり"},{"name":"きゅうけつ","type":"むし","power":80,"damage_class":"ぶつり"},{"name":"あくまのキッス","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ゴッドバード","type":"ひこう","power":140,"damage_class":"ぶつり"},{"name":"へんしん","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"あわ","type":"みず","power":40,"damage_class":"とくしゅ"},{"name":"ピヨピヨパンチ","type":"ノーマル","power":70,"damage_class":"ぶつり"},{"name":"キノコのほうし","type":"くさ","power":null,"damage_class":"へんか"},{"name":"フラッシュ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"サイコウェーブ","type":"エスパー","power":null,"damage_class":"とくしゅ"},{"name":"いあいぎり","type":"ノーマル","power":50,"damage_class":"ぶつり"},{"name":"はねる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"とける","type":"どく","power":null,"damage_class":"へんか"},{"name":"クラブハンマー","type":"みず","power":100,"damage_class":"ぶつり"},{"name":"だいばくはつ","type":"ノーマル","power":250,"damage_class":"ぶつり"},{"name":"みだれひっかき","type":"ノーマル","power":18,"damage_class":"ぶつり"},{"name":"ホネブーメラン","type":"じめん","power":50,"damage_class":"ぶつり"},{"name":"ねむる","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"いわなだれ","type":"いわ","power":75,"damage_class":"ぶつり"},{"name":"ひっさつまえば","type":"ノーマル","power":80,"damage_class":"ぶつり"},{"name":"かくばる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"かぜおこし","type":"ひこう","power":40,"damage_class":"とくしゅ"},{"name":"テクスチャー","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"トライアタック","type":"ノーマル","power":80,"damage_class":"とくしゅ"},{"name":"いかりのまえば","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"きりさく","type":"ノーマル","power":70,"damage_class":"ぶつり"},{"name":"みがわり","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"わるあがき","type":"ノーマル","power":50,"damage_class":"ぶつり"},{"name":"スケッチ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"トリプルキック","type":"かくとう","power":10,"damage_class":"ぶつり"},{"name":"どろぼう","type":"あく","power":60,"damage_class":"ぶつり"},{"name":"クモのす","type":"むし","power":null,"damage_class":"へんか"},{"name":"つばさでうつ","type":"ひこう","power":60,"damage_class":"ぶつり"},{"name":"こころのめ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"あくむ","type":"ゴースト","power":null,"damage_class":"へんか"},{"name":"かえんぐるま","type":"ほのお","power":60,"damage_class":"ぶつり"},{"name":"いびき","type":"ノーマル","power":50,"damage_class":"とくしゅ"},{"name":"のろい","type":"ゴースト","power":null,"damage_class":"へんか"},{"name":"じたばた","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"テクスチャー２","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"エアロブラスト","type":"ひこう","power":100,"damage_class":"とくしゅ"},{"name":"わたほうし","type":"くさ","power":null,"damage_class":"へんか"},{"name":"きしかいせい","type":"かくとう","power":null,"damage_class":"ぶつり"},{"name":"ふきとばし","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"うらみ","type":"ゴースト","power":null,"damage_class":"へんか"},{"name":"こなゆき","type":"こおり","power":40,"damage_class":"とくしゅ"},{"name":"まもる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"マッハパンチ","type":"かくとう","power":40,"damage_class":"ぶつり"},{"name":"こわいかお","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"だましうち","type":"あく","power":60,"damage_class":"ぶつり"},{"name":"てんしのキッス","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"はらだいこ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ヘドロばくだん","type":"どく","power":90,"damage_class":"とくしゅ"},{"name":"どろかけ","type":"じめん","power":20,"damage_class":"とくしゅ"},{"name":"そらをとぶ","type":"ひこう","power":90,"damage_class":"ぶつり"},{"name":"オクタンほう","type":"みず","power":65,"damage_class":"とくしゅ"},{"name":"まきびし","type":"じめん","power":null,"damage_class":"へんか"},{"name":"でんじほう","type":"でんき","power":120,"damage_class":"とくしゅ"},{"name":"みやぶる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"みちづれ","type":"ゴースト","power":null,"damage_class":"へんか"},{"name":"ほろびのうた","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"こごえるかぜ","type":"こおり","power":55,"damage_class":"とくしゅ"},{"name":"みきり","type":"かくとう","power":null,"damage_class":"へんか"},{"name":"ボーンラッシュ","type":"じめん","power":25,"damage_class":"ぶつり"},{"name":"ロックオン","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"からてチョップ","type":"かくとう","power":50,"damage_class":"ぶつり"},{"name":"しめつける","type":"ノーマル","power":15,"damage_class":"ぶつり"},{"name":"げきりん","type":"ドラゴン","power":120,"damage_class":"ぶつり"},{"name":"すなあらし","type":"いわ","power":null,"damage_class":"へんか"},{"name":"ギガドレイン","type":"くさ","power":75,"damage_class":"とくしゅ"},{"name":"こらえる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"あまえる","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"ころがる","type":"いわ","power":30,"damage_class":"ぶつり"},{"name":"みねうち","type":"ノーマル","power":40,"damage_class":"ぶつり"},{"name":"いばる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ミルクのみ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"スパーク","type":"でんき","power":65,"damage_class":"ぶつり"},{"name":"たたきつける","type":"ノーマル","power":80,"damage_class":"ぶつり"},{"name":"れんぞくぎり","type":"むし","power":40,"damage_class":"ぶつり"},{"name":"はがねのつばさ","type":"はがね","power":70,"damage_class":"ぶつり"},{"name":"くろいまなざし","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"メロメロ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ねごと","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"いやしのすず","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"おんがえし","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"プレゼント","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"やつあたり","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"しんぴのまもり","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"つるのムチ","type":"くさ","power":45,"damage_class":"ぶつり"},{"name":"いたみわけ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"せいなるほのお","type":"ほのお","power":100,"damage_class":"ぶつり"},{"name":"マグニチュード","type":"じめん","power":null,"damage_class":"ぶつり"},{"name":"ばくれつパンチ","type":"かくとう","power":100,"damage_class":"ぶつり"},{"name":"メガホーン","type":"むし","power":120,"damage_class":"ぶつり"},{"name":"りゅうのいぶき","type":"ドラゴン","power":60,"damage_class":"とくしゅ"},{"name":"バトンタッチ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"アンコール","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"おいうち","type":"あく","power":40,"damage_class":"ぶつり"},{"name":"こうそくスピン","type":"ノーマル","power":50,"damage_class":"ぶつり"},{"name":"ふみつけ","type":"ノーマル","power":65,"damage_class":"ぶつり"},{"name":"あまいかおり","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"アイアンテール","type":"はがね","power":100,"damage_class":"ぶつり"},{"name":"メタルクロー","type":"はがね","power":50,"damage_class":"ぶつり"},{"name":"あてみなげ","type":"かくとう","power":70,"damage_class":"ぶつり"},{"name":"あさのひざし","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"こうごうせい","type":"くさ","power":null,"damage_class":"へんか"},{"name":"つきのひかり","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"めざめるパワー","type":"ノーマル","power":60,"damage_class":"とくしゅ"},{"name":"クロスチョップ","type":"かくとう","power":100,"damage_class":"ぶつり"},{"name":"たつまき","type":"ドラゴン","power":40,"damage_class":"とくしゅ"},{"name":"にどげり","type":"かくとう","power":30,"damage_class":"ぶつり"},{"name":"あまごい","type":"みず","power":null,"damage_class":"へんか"},{"name":"にほんばれ","type":"ほのお","power":null,"damage_class":"へんか"},{"name":"かみくだく","type":"あく","power":80,"damage_class":"ぶつり"},{"name":"ミラーコート","type":"エスパー","power":null,"damage_class":"とくしゅ"},{"name":"じこあんじ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"しんそく","type":"ノーマル","power":80,"damage_class":"ぶつり"},{"name":"げんしのちから","type":"いわ","power":60,"damage_class":"とくしゅ"},{"name":"シャドーボール","type":"ゴースト","power":80,"damage_class":"とくしゅ"},{"name":"みらいよち","type":"エスパー","power":120,"damage_class":"とくしゅ"},{"name":"いわくだき","type":"かくとう","power":40,"damage_class":"ぶつり"},{"name":"メガトンキック","type":"ノーマル","power":120,"damage_class":"ぶつり"},{"name":"うずしお","type":"みず","power":35,"damage_class":"とくしゅ"},{"name":"ふくろだたき","type":"あく","power":null,"damage_class":"ぶつり"},{"name":"ねこだまし","type":"ノーマル","power":40,"damage_class":"ぶつり"},{"name":"さわぐ","type":"ノーマル","power":90,"damage_class":"とくしゅ"},{"name":"たくわえる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"はきだす","type":"ノーマル","power":null,"damage_class":"とくしゅ"},{"name":"のみこむ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ねっぷう","type":"ほのお","power":95,"damage_class":"とくしゅ"},{"name":"あられ","type":"こおり","power":null,"damage_class":"へんか"},{"name":"いちゃもん","type":"あく","power":null,"damage_class":"へんか"},{"name":"とびげり","type":"かくとう","power":100,"damage_class":"ぶつり"},{"name":"おだてる","type":"あく","power":null,"damage_class":"へんか"},{"name":"おにび","type":"ほのお","power":null,"damage_class":"へんか"},{"name":"おきみやげ","type":"あく","power":null,"damage_class":"へんか"},{"name":"からげんき","type":"ノーマル","power":70,"damage_class":"ぶつり"},{"name":"きあいパンチ","type":"かくとう","power":150,"damage_class":"ぶつり"},{"name":"きつけ","type":"ノーマル","power":70,"damage_class":"ぶつり"},{"name":"このゆびとまれ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"しぜんのちから","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"じゅうでん","type":"でんき","power":null,"damage_class":"へんか"},{"name":"ちょうはつ","type":"あく","power":null,"damage_class":"へんか"},{"name":"まわしげり","type":"かくとう","power":60,"damage_class":"ぶつり"},{"name":"てだすけ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"トリック","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"なりきり","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ねがいごと","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ねこのて","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ねをはる","type":"くさ","power":null,"damage_class":"へんか"},{"name":"ばかぢから","type":"かくとう","power":120,"damage_class":"ぶつり"},{"name":"マジックコート","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"リサイクル","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"リベンジ","type":"かくとう","power":60,"damage_class":"ぶつり"},{"name":"すなかけ","type":"じめん","power":null,"damage_class":"へんか"},{"name":"かわらわり","type":"かくとう","power":75,"damage_class":"ぶつり"},{"name":"あくび","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"はたきおとす","type":"あく","power":65,"damage_class":"ぶつり"},{"name":"がむしゃら","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"ふんか","type":"ほのお","power":150,"damage_class":"とくしゅ"},{"name":"スキルスワップ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ふういん","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"リフレッシュ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"おんねん","type":"ゴースト","power":null,"damage_class":"へんか"},{"name":"よこどり","type":"あく","power":null,"damage_class":"へんか"},{"name":"ずつき","type":"ノーマル","power":70,"damage_class":"ぶつり"},{"name":"ひみつのちから","type":"ノーマル","power":70,"damage_class":"ぶつり"},{"name":"ダイビング","type":"みず","power":80,"damage_class":"ぶつり"},{"name":"つっぱり","type":"かくとう","power":15,"damage_class":"ぶつり"},{"name":"ほごしょく","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ほたるび","type":"むし","power":null,"damage_class":"へんか"},{"name":"ラスターパージ","type":"エスパー","power":70,"damage_class":"とくしゅ"},{"name":"ミストボール","type":"エスパー","power":70,"damage_class":"とくしゅ"},{"name":"フェザーダンス","type":"ひこう","power":null,"damage_class":"へんか"},{"name":"フラフラダンス","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ブレイズキック","type":"ほのお","power":85,"damage_class":"ぶつり"},{"name":"おうふくビンタ","type":"ノーマル","power":15,"damage_class":"ぶつり"},{"name":"つのでつく","type":"ノーマル","power":65,"damage_class":"ぶつり"},{"name":"どろあそび","type":"じめん","power":null,"damage_class":"へんか"},{"name":"アイスボール","type":"こおり","power":30,"damage_class":"ぶつり"},{"name":"ニードルアーム","type":"くさ","power":60,"damage_class":"ぶつり"},{"name":"なまける","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ハイパーボイス","type":"ノーマル","power":90,"damage_class":"とくしゅ"},{"name":"どくどくのキバ","type":"どく","power":50,"damage_class":"ぶつり"},{"name":"ブレイククロー","type":"ノーマル","power":75,"damage_class":"ぶつり"},{"name":"ブラストバーン","type":"ほのお","power":150,"damage_class":"とくしゅ"},{"name":"ハイドロカノン","type":"みず","power":150,"damage_class":"とくしゅ"},{"name":"コメットパンチ","type":"はがね","power":90,"damage_class":"ぶつり"},{"name":"みだれづき","type":"ノーマル","power":15,"damage_class":"ぶつり"},{"name":"おどろかす","type":"ゴースト","power":30,"damage_class":"ぶつり"},{"name":"ウェザーボール","type":"ノーマル","power":50,"damage_class":"とくしゅ"},{"name":"アロマセラピー","type":"くさ","power":null,"damage_class":"へんか"},{"name":"うそなき","type":"あく","power":null,"damage_class":"へんか"},{"name":"エアカッター","type":"ひこう","power":60,"damage_class":"とくしゅ"},{"name":"オーバーヒート","type":"ほのお","power":130,"damage_class":"とくしゅ"},{"name":"かぎわける","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"がんせきふうじ","type":"いわ","power":60,"damage_class":"ぶつり"},{"name":"ぎんいろのかぜ","type":"むし","power":60,"damage_class":"とくしゅ"},{"name":"きんぞくおん","type":"はがね","power":null,"damage_class":"へんか"},{"name":"つのドリル","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"くさぶえ","type":"くさ","power":null,"damage_class":"へんか"},{"name":"くすぐる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"コスモパワー","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"しおふき","type":"みず","power":150,"damage_class":"とくしゅ"},{"name":"シグナルビーム","type":"むし","power":75,"damage_class":"とくしゅ"},{"name":"シャドーパンチ","type":"ゴースト","power":60,"damage_class":"ぶつり"},{"name":"じんつうりき","type":"エスパー","power":80,"damage_class":"とくしゅ"},{"name":"スカイアッパー","type":"かくとう","power":85,"damage_class":"ぶつり"},{"name":"すなじごく","type":"じめん","power":35,"damage_class":"ぶつり"},{"name":"ぜったいれいど","type":"こおり","power":null,"damage_class":"とくしゅ"},{"name":"たいあたり","type":"ノーマル","power":40,"damage_class":"ぶつり"},{"name":"だくりゅう","type":"みず","power":90,"damage_class":"とくしゅ"},{"name":"タネマシンガン","type":"くさ","power":25,"damage_class":"ぶつり"},{"name":"つばめがえし","type":"ひこう","power":60,"damage_class":"ぶつり"},{"name":"つららばり","type":"こおり","power":25,"damage_class":"ぶつり"},{"name":"てっぺき","type":"はがね","power":null,"damage_class":"へんか"},{"name":"とおせんぼう","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"とおぼえ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ドラゴンクロー","type":"ドラゴン","power":80,"damage_class":"ぶつり"},{"name":"ハードプラント","type":"くさ","power":150,"damage_class":"とくしゅ"},{"name":"ビルドアップ","type":"かくとう","power":null,"damage_class":"へんか"},{"name":"のしかかり","type":"ノーマル","power":85,"damage_class":"ぶつり"},{"name":"とびはねる","type":"ひこう","power":85,"damage_class":"ぶつり"},{"name":"マッドショット","type":"じめん","power":55,"damage_class":"とくしゅ"},{"name":"ポイズンテール","type":"どく","power":50,"damage_class":"ぶつり"},{"name":"ほしがる","type":"ノーマル","power":60,"damage_class":"ぶつり"},{"name":"ボルテッカー","type":"でんき","power":120,"damage_class":"ぶつり"},{"name":"マジカルリーフ","type":"くさ","power":60,"damage_class":"とくしゅ"},{"name":"みずあそび","type":"みず","power":null,"damage_class":"へんか"},{"name":"めいそう","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"リーフブレード","type":"くさ","power":90,"damage_class":"ぶつり"},{"name":"りゅうのまい","type":"ドラゴン","power":null,"damage_class":"へんか"},{"name":"まきつく","type":"ノーマル","power":15,"damage_class":"ぶつり"},{"name":"ロックブラスト","type":"いわ","power":25,"damage_class":"ぶつり"},{"name":"でんげきは","type":"でんき","power":60,"damage_class":"とくしゅ"},{"name":"みずのはどう","type":"みず","power":60,"damage_class":"とくしゅ"},{"name":"はめつのねがい","type":"はがね","power":140,"damage_class":"とくしゅ"},{"name":"サイコブースト","type":"エスパー","power":140,"damage_class":"とくしゅ"},{"name":"はねやすめ","type":"ひこう","power":null,"damage_class":"へんか"},{"name":"じゅうりょく","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ミラクルアイ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"めざましビンタ","type":"かくとう","power":70,"damage_class":"ぶつり"},{"name":"アームハンマー","type":"かくとう","power":100,"damage_class":"ぶつり"},{"name":"とっしん","type":"ノーマル","power":90,"damage_class":"ぶつり"},{"name":"ジャイロボール","type":"はがね","power":null,"damage_class":"ぶつり"},{"name":"いやしのねがい","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"しおみず","type":"みず","power":65,"damage_class":"とくしゅ"},{"name":"しぜんのめぐみ","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"フェイント","type":"ノーマル","power":30,"damage_class":"ぶつり"},{"name":"ついばむ","type":"ひこう","power":60,"damage_class":"ぶつり"},{"name":"おいかぜ","type":"ひこう","power":null,"damage_class":"へんか"},{"name":"つぼをつく","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"メタルバースト","type":"はがね","power":null,"damage_class":"ぶつり"},{"name":"とんぼがえり","type":"むし","power":70,"damage_class":"ぶつり"},{"name":"あばれる","type":"ノーマル","power":120,"damage_class":"ぶつり"},{"name":"インファイト","type":"かくとう","power":120,"damage_class":"ぶつり"},{"name":"しっぺがえし","type":"あく","power":50,"damage_class":"ぶつり"},{"name":"ダメおし","type":"あく","power":60,"damage_class":"ぶつり"},{"name":"さしおさえ","type":"あく","power":null,"damage_class":"へんか"},{"name":"なげつける","type":"あく","power":null,"damage_class":"ぶつり"},{"name":"サイコシフト","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"きりふだ","type":"ノーマル","power":null,"damage_class":"とくしゅ"},{"name":"かいふくふうじ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"しぼりとる","type":"ノーマル","power":null,"damage_class":"とくしゅ"},{"name":"パワートリック","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"すてみタックル","type":"ノーマル","power":120,"damage_class":"ぶつり"},{"name":"いえき","type":"どく","power":null,"damage_class":"へんか"},{"name":"おまじない","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"さきどり","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"まねっこ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"パワースワップ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ガードスワップ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"おしおき","type":"あく","power":null,"damage_class":"ぶつり"},{"name":"とっておき","type":"ノーマル","power":140,"damage_class":"ぶつり"},{"name":"なやみのタネ","type":"くさ","power":null,"damage_class":"へんか"},{"name":"ふいうち","type":"あく","power":70,"damage_class":"ぶつり"},{"name":"しっぽをふる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"どくびし","type":"どく","power":null,"damage_class":"へんか"},{"name":"ハートスワップ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"アクアリング","type":"みず","power":null,"damage_class":"へんか"},{"name":"でんじふゆう","type":"でんき","power":null,"damage_class":"へんか"},{"name":"フレアドライブ","type":"ほのお","power":120,"damage_class":"ぶつり"},{"name":"はっけい","type":"かくとう","power":60,"damage_class":"ぶつり"},{"name":"はどうだん","type":"かくとう","power":80,"damage_class":"とくしゅ"},{"name":"ロックカット","type":"いわ","power":null,"damage_class":"へんか"},{"name":"どくづき","type":"どく","power":80,"damage_class":"ぶつり"},{"name":"あくのはどう","type":"あく","power":80,"damage_class":"とくしゅ"},{"name":"れんぞくパンチ","type":"ノーマル","power":18,"damage_class":"ぶつり"},{"name":"どくばり","type":"どく","power":15,"damage_class":"ぶつり"},{"name":"つじぎり","type":"あく","power":70,"damage_class":"ぶつり"},{"name":"アクアテール","type":"みず","power":90,"damage_class":"ぶつり"},{"name":"タネばくだん","type":"くさ","power":80,"damage_class":"ぶつり"},{"name":"エアスラッシュ","type":"ひこう","power":75,"damage_class":"とくしゅ"},{"name":"シザークロス","type":"むし","power":80,"damage_class":"ぶつり"},{"name":"むしのさざめき","type":"むし","power":90,"damage_class":"とくしゅ"},{"name":"りゅうのはどう","type":"ドラゴン","power":85,"damage_class":"とくしゅ"},{"name":"ドラゴンダイブ","type":"ドラゴン","power":100,"damage_class":"ぶつり"},{"name":"パワージェム","type":"いわ","power":80,"damage_class":"とくしゅ"},{"name":"ドレインパンチ","type":"かくとう","power":75,"damage_class":"ぶつり"},{"name":"ダブルニードル","type":"むし","power":25,"damage_class":"ぶつり"},{"name":"しんくうは","type":"かくとう","power":40,"damage_class":"とくしゅ"},{"name":"きあいだま","type":"かくとう","power":120,"damage_class":"とくしゅ"},{"name":"エナジーボール","type":"くさ","power":90,"damage_class":"とくしゅ"},{"name":"ブレイブバード","type":"ひこう","power":120,"damage_class":"ぶつり"},{"name":"だいちのちから","type":"じめん","power":90,"damage_class":"とくしゅ"},{"name":"すりかえ","type":"あく","power":null,"damage_class":"へんか"},{"name":"ギガインパクト","type":"ノーマル","power":150,"damage_class":"ぶつり"},{"name":"わるだくみ","type":"あく","power":null,"damage_class":"へんか"},{"name":"バレットパンチ","type":"はがね","power":40,"damage_class":"ぶつり"},{"name":"ゆきなだれ","type":"こおり","power":60,"damage_class":"ぶつり"},{"name":"ミサイルばり","type":"むし","power":25,"damage_class":"ぶつり"},{"name":"こおりのつぶて","type":"こおり","power":40,"damage_class":"ぶつり"},{"name":"シャドークロー","type":"ゴースト","power":70,"damage_class":"ぶつり"},{"name":"かみなりのキバ","type":"でんき","power":65,"damage_class":"ぶつり"},{"name":"こおりのキバ","type":"こおり","power":65,"damage_class":"ぶつり"},{"name":"ほのおのキバ","type":"ほのお","power":65,"damage_class":"ぶつり"},{"name":"かげうち","type":"ゴースト","power":40,"damage_class":"ぶつり"},{"name":"どろばくだん","type":"じめん","power":65,"damage_class":"とくしゅ"},{"name":"サイコカッター","type":"エスパー","power":70,"damage_class":"ぶつり"},{"name":"しねんのずつき","type":"エスパー","power":80,"damage_class":"ぶつり"},{"name":"ミラーショット","type":"はがね","power":65,"damage_class":"とくしゅ"},{"name":"にらみつける","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ラスターカノン","type":"はがね","power":80,"damage_class":"とくしゅ"},{"name":"ロッククライム","type":"ノーマル","power":90,"damage_class":"ぶつり"},{"name":"きりばらい","type":"ひこう","power":null,"damage_class":"へんか"},{"name":"トリックルーム","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"りゅうせいぐん","type":"ドラゴン","power":130,"damage_class":"とくしゅ"},{"name":"ほうでん","type":"でんき","power":80,"damage_class":"とくしゅ"},{"name":"ふんえん","type":"ほのお","power":80,"damage_class":"とくしゅ"},{"name":"リーフストーム","type":"くさ","power":130,"damage_class":"とくしゅ"},{"name":"パワーウィップ","type":"くさ","power":120,"damage_class":"ぶつり"},{"name":"がんせきほう","type":"いわ","power":150,"damage_class":"ぶつり"},{"name":"かみつく","type":"あく","power":60,"damage_class":"ぶつり"},{"name":"クロスポイズン","type":"どく","power":70,"damage_class":"ぶつり"},{"name":"ダストシュート","type":"どく","power":120,"damage_class":"ぶつり"},{"name":"アイアンヘッド","type":"はがね","power":80,"damage_class":"ぶつり"},{"name":"マグネットボム","type":"はがね","power":60,"damage_class":"ぶつり"},{"name":"ストーンエッジ","type":"いわ","power":100,"damage_class":"ぶつり"},{"name":"ゆうわく","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ステルスロック","type":"いわ","power":null,"damage_class":"へんか"},{"name":"くさむすび","type":"くさ","power":null,"damage_class":"とくしゅ"},{"name":"おしゃべり","type":"ひこう","power":65,"damage_class":"とくしゅ"},{"name":"さばきのつぶて","type":"ノーマル","power":100,"damage_class":"とくしゅ"},{"name":"なきごえ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"むしくい","type":"むし","power":60,"damage_class":"ぶつり"},{"name":"チャージビーム","type":"でんき","power":50,"damage_class":"とくしゅ"},{"name":"ウッドハンマー","type":"くさ","power":120,"damage_class":"ぶつり"},{"name":"アクアジェット","type":"みず","power":40,"damage_class":"ぶつり"},{"name":"こうげきしれい","type":"むし","power":90,"damage_class":"ぶつり"},{"name":"ぼうぎょしれい","type":"むし","power":null,"damage_class":"へんか"},{"name":"かいふくしれい","type":"むし","power":null,"damage_class":"へんか"},{"name":"もろはのずつき","type":"いわ","power":150,"damage_class":"ぶつり"},{"name":"ダブルアタック","type":"ノーマル","power":35,"damage_class":"ぶつり"},{"name":"ときのほうこう","type":"ドラゴン","power":150,"damage_class":"とくしゅ"},{"name":"ほえる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"あくうせつだん","type":"ドラゴン","power":100,"damage_class":"とくしゅ"},{"name":"みかづきのまい","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"にぎりつぶす","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"マグマストーム","type":"ほのお","power":100,"damage_class":"とくしゅ"},{"name":"ダークホール","type":"あく","power":null,"damage_class":"へんか"},{"name":"シードフレア","type":"くさ","power":120,"damage_class":"とくしゅ"},{"name":"あやしいかぜ","type":"ゴースト","power":60,"damage_class":"とくしゅ"},{"name":"シャドーダイブ","type":"ゴースト","power":120,"damage_class":"ぶつり"},{"name":"つめとぎ","type":"あく","power":null,"damage_class":"へんか"},{"name":"ワイドガード","type":"いわ","power":null,"damage_class":"へんか"},{"name":"うたう","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ガードシェア","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"パワーシェア","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ワンダールーム","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"サイコショック","type":"エスパー","power":80,"damage_class":"とくしゅ"},{"name":"ベノムショック","type":"どく","power":65,"damage_class":"とくしゅ"},{"name":"ボディパージ","type":"はがね","power":null,"damage_class":"へんか"},{"name":"いかりのこな","type":"むし","power":null,"damage_class":"へんか"},{"name":"テレキネシス","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"マジックルーム","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"うちおとす","type":"いわ","power":50,"damage_class":"ぶつり"},{"name":"ちょうおんぱ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"やまあらし","type":"かくとう","power":60,"damage_class":"ぶつり"},{"name":"はじけるほのお","type":"ほのお","power":70,"damage_class":"とくしゅ"},{"name":"ヘドロウェーブ","type":"どく","power":95,"damage_class":"とくしゅ"},{"name":"ちょうのまい","type":"むし","power":null,"damage_class":"へんか"},{"name":"ヘビーボンバー","type":"はがね","power":null,"damage_class":"ぶつり"},{"name":"シンクロノイズ","type":"エスパー","power":120,"damage_class":"とくしゅ"},{"name":"エレキボール","type":"でんき","power":null,"damage_class":"とくしゅ"},{"name":"みずびたし","type":"みず","power":null,"damage_class":"へんか"},{"name":"ニトロチャージ","type":"ほのお","power":50,"damage_class":"ぶつり"},{"name":"とぐろをまく","type":"どく","power":null,"damage_class":"へんか"},{"name":"ソニックブーム","type":"ノーマル","power":null,"damage_class":"とくしゅ"},{"name":"ローキック","type":"かくとう","power":65,"damage_class":"ぶつり"},{"name":"アシッドボム","type":"どく","power":40,"damage_class":"とくしゅ"},{"name":"イカサマ","type":"あく","power":95,"damage_class":"ぶつり"},{"name":"シンプルビーム","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"なかまづくり","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"おさきにどうぞ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"りんしょう","type":"ノーマル","power":60,"damage_class":"とくしゅ"},{"name":"エコーボイス","type":"ノーマル","power":40,"damage_class":"とくしゅ"},{"name":"なしくずし","type":"ノーマル","power":70,"damage_class":"ぶつり"},{"name":"クリアスモッグ","type":"どく","power":50,"damage_class":"とくしゅ"},{"name":"メガトンパンチ","type":"ノーマル","power":80,"damage_class":"ぶつり"},{"name":"かなしばり","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"アシストパワー","type":"エスパー","power":20,"damage_class":"とくしゅ"},{"name":"ファストガード","type":"かくとう","power":null,"damage_class":"へんか"},{"name":"サイドチェンジ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ねっとう","type":"みず","power":80,"damage_class":"とくしゅ"},{"name":"からをやぶる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"いやしのはどう","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"たたりめ","type":"ゴースト","power":65,"damage_class":"とくしゅ"},{"name":"フリーフォール","type":"ひこう","power":60,"damage_class":"ぶつり"},{"name":"ギアチェンジ","type":"はがね","power":null,"damage_class":"へんか"},{"name":"ともえなげ","type":"かくとう","power":60,"damage_class":"ぶつり"},{"name":"ようかいえき","type":"どく","power":40,"damage_class":"とくしゅ"},{"name":"やきつくす","type":"ほのお","power":60,"damage_class":"とくしゅ"},{"name":"さきおくり","type":"あく","power":null,"damage_class":"へんか"},{"name":"アクロバット","type":"ひこう","power":55,"damage_class":"ぶつり"},{"name":"ミラータイプ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"かたきうち","type":"ノーマル","power":70,"damage_class":"ぶつり"},{"name":"いのちがけ","type":"かくとう","power":null,"damage_class":"とくしゅ"},{"name":"ギフトパス","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"れんごく","type":"ほのお","power":100,"damage_class":"とくしゅ"},{"name":"みずのちかい","type":"みず","power":80,"damage_class":"とくしゅ"},{"name":"ほのおのちかい","type":"ほのお","power":80,"damage_class":"とくしゅ"},{"name":"ひのこ","type":"ほのお","power":40,"damage_class":"とくしゅ"},{"name":"くさのちかい","type":"くさ","power":80,"damage_class":"とくしゅ"},{"name":"ボルトチェンジ","type":"でんき","power":70,"damage_class":"とくしゅ"},{"name":"むしのていこう","type":"むし","power":50,"damage_class":"とくしゅ"},{"name":"じならし","type":"じめん","power":60,"damage_class":"ぶつり"},{"name":"こおりのいぶき","type":"こおり","power":60,"damage_class":"とくしゅ"},{"name":"ドラゴンテール","type":"ドラゴン","power":60,"damage_class":"ぶつり"},{"name":"ふるいたてる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"エレキネット","type":"でんき","power":55,"damage_class":"とくしゅ"},{"name":"ワイルドボルト","type":"でんき","power":90,"damage_class":"ぶつり"},{"name":"ドリルライナー","type":"じめん","power":80,"damage_class":"ぶつり"},{"name":"かえんほうしゃ","type":"ほのお","power":90,"damage_class":"とくしゅ"},{"name":"ダブルチョップ","type":"ドラゴン","power":40,"damage_class":"ぶつり"},{"name":"ハートスタンプ","type":"エスパー","power":60,"damage_class":"ぶつり"},{"name":"ウッドホーン","type":"くさ","power":75,"damage_class":"ぶつり"},{"name":"せいなるつるぎ","type":"かくとう","power":90,"damage_class":"ぶつり"},{"name":"シェルブレード","type":"みず","power":75,"damage_class":"ぶつり"},{"name":"ヒートスタンプ","type":"ほのお","power":null,"damage_class":"ぶつり"},{"name":"グラスミキサー","type":"くさ","power":65,"damage_class":"とくしゅ"},{"name":"ハードローラー","type":"むし","power":65,"damage_class":"ぶつり"},{"name":"コットンガード","type":"くさ","power":null,"damage_class":"へんか"},{"name":"ナイトバースト","type":"あく","power":85,"damage_class":"とくしゅ"},{"name":"しろいきり","type":"こおり","power":null,"damage_class":"へんか"},{"name":"サイコブレイク","type":"エスパー","power":100,"damage_class":"とくしゅ"},{"name":"スイープビンタ","type":"ノーマル","power":25,"damage_class":"ぶつり"},{"name":"ぼうふう","type":"ひこう","power":110,"damage_class":"とくしゅ"},{"name":"アフロブレイク","type":"ノーマル","power":120,"damage_class":"ぶつり"},{"name":"ギアソーサー","type":"はがね","power":50,"damage_class":"ぶつり"},{"name":"かえんだん","type":"ほのお","power":100,"damage_class":"とくしゅ"},{"name":"テクノバスター","type":"ノーマル","power":120,"damage_class":"とくしゅ"},{"name":"いにしえのうた","type":"ノーマル","power":75,"damage_class":"とくしゅ"},{"name":"しんぴのつるぎ","type":"かくとう","power":85,"damage_class":"とくしゅ"},{"name":"こごえるせかい","type":"こおり","power":65,"damage_class":"とくしゅ"},{"name":"みずでっぽう","type":"みず","power":40,"damage_class":"とくしゅ"},{"name":"らいげき","type":"でんき","power":130,"damage_class":"ぶつり"},{"name":"あおいほのお","type":"ほのお","power":130,"damage_class":"とくしゅ"},{"name":"ほのおのまい","type":"ほのお","power":80,"damage_class":"とくしゅ"},{"name":"フリーズボルト","type":"こおり","power":140,"damage_class":"ぶつり"},{"name":"コールドフレア","type":"こおり","power":140,"damage_class":"とくしゅ"},{"name":"バークアウト","type":"あく","power":55,"damage_class":"とくしゅ"},{"name":"つららおとし","type":"こおり","power":85,"damage_class":"ぶつり"},{"name":"Ｖジェネレート","type":"ほのお","power":180,"damage_class":"ぶつり"},{"name":"クロスフレイム","type":"ほのお","power":100,"damage_class":"とくしゅ"},{"name":"クロスサンダー","type":"でんき","power":100,"damage_class":"ぶつり"},{"name":"ハイドロポンプ","type":"みず","power":110,"damage_class":"とくしゅ"},{"name":"フライングプレス","type":"かくとう","power":100,"damage_class":"ぶつり"},{"name":"たたみがえし","type":"かくとう","power":null,"damage_class":"へんか"},{"name":"ゲップ","type":"どく","power":120,"damage_class":"とくしゅ"},{"name":"たがやす","type":"じめん","power":null,"damage_class":"へんか"},{"name":"ねばねばネット","type":"むし","power":null,"damage_class":"へんか"},{"name":"とどめばり","type":"むし","power":50,"damage_class":"ぶつり"},{"name":"ゴーストダイブ","type":"ゴースト","power":90,"damage_class":"ぶつり"},{"name":"ハロウィン","type":"ゴースト","power":null,"damage_class":"へんか"},{"name":"おたけび","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"プラズマシャワー","type":"でんき","power":null,"damage_class":"へんか"},{"name":"なみのり","type":"みず","power":90,"damage_class":"とくしゅ"},{"name":"パラボラチャージ","type":"でんき","power":65,"damage_class":"とくしゅ"},{"name":"もりののろい","type":"くさ","power":null,"damage_class":"へんか"},{"name":"はなふぶき","type":"くさ","power":90,"damage_class":"ぶつり"},{"name":"フリーズドライ","type":"こおり","power":70,"damage_class":"とくしゅ"},{"name":"チャームボイス","type":"フェアリー","power":40,"damage_class":"とくしゅ"},{"name":"すてゼリフ","type":"あく","power":null,"damage_class":"へんか"},{"name":"ひっくりかえす","type":"あく","power":null,"damage_class":"へんか"},{"name":"ドレインキッス","type":"フェアリー","power":50,"damage_class":"とくしゅ"},{"name":"トリックガード","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"フラワーガード","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"れいとうビーム","type":"こおり","power":90,"damage_class":"とくしゅ"},{"name":"グラスフィールド","type":"くさ","power":null,"damage_class":"へんか"},{"name":"ミストフィールド","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"そうでん","type":"でんき","power":null,"damage_class":"へんか"},{"name":"じゃれつく","type":"フェアリー","power":90,"damage_class":"ぶつり"},{"name":"ようせいのかぜ","type":"フェアリー","power":40,"damage_class":"とくしゅ"},{"name":"ムーンフォース","type":"フェアリー","power":95,"damage_class":"とくしゅ"},{"name":"ばくおんぱ","type":"ノーマル","power":140,"damage_class":"とくしゅ"},{"name":"フェアリーロック","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"キングシールド","type":"はがね","power":null,"damage_class":"へんか"},{"name":"なかよくする","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ふぶき","type":"こおり","power":110,"damage_class":"とくしゅ"},{"name":"ないしょばなし","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ダイヤストーム","type":"いわ","power":100,"damage_class":"ぶつり"},{"name":"スチームバースト","type":"みず","power":110,"damage_class":"とくしゅ"},{"name":"いじげんホール","type":"エスパー","power":80,"damage_class":"とくしゅ"},{"name":"みずしゅりけん","type":"みず","power":15,"damage_class":"とくしゅ"},{"name":"マジカルフレイム","type":"ほのお","power":75,"damage_class":"とくしゅ"},{"name":"ニードルガード","type":"くさ","power":null,"damage_class":"へんか"},{"name":"アロマミスト","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"かいでんぱ","type":"でんき","power":null,"damage_class":"へんか"},{"name":"ベノムトラップ","type":"どく","power":null,"damage_class":"へんか"},{"name":"ネコにこばん","type":"ノーマル","power":40,"damage_class":"ぶつり"},{"name":"サイケこうせん","type":"エスパー","power":65,"damage_class":"とくしゅ"},{"name":"ふんじん","type":"むし","power":null,"damage_class":"へんか"},{"name":"ジオコントロール","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"じばそうさ","type":"でんき","power":null,"damage_class":"へんか"},{"name":"ハッピータイム","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"エレキフィールド","type":"でんき","power":null,"damage_class":"へんか"},{"name":"マジカルシャイン","type":"フェアリー","power":80,"damage_class":"とくしゅ"},{"name":"おいわい","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"てをつなぐ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"つぶらなひとみ","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"ほっぺすりすり","type":"でんき","power":20,"damage_class":"ぶつり"},{"name":"バブルこうせん","type":"みず","power":65,"damage_class":"とくしゅ"},{"name":"てかげん","type":"ノーマル","power":40,"damage_class":"ぶつり"},{"name":"まとわりつく","type":"むし","power":20,"damage_class":"とくしゅ"},{"name":"グロウパンチ","type":"かくとう","power":40,"damage_class":"ぶつり"},{"name":"デスウイング","type":"ひこう","power":80,"damage_class":"とくしゅ"},{"name":"サウザンアロー","type":"じめん","power":90,"damage_class":"ぶつり"},{"name":"サウザンウェーブ","type":"じめん","power":90,"damage_class":"ぶつり"},{"name":"グランドフォース","type":"じめん","power":90,"damage_class":"ぶつり"},{"name":"はめつのひかり","type":"フェアリー","power":140,"damage_class":"とくしゅ"},{"name":"こんげんのはどう","type":"みず","power":110,"damage_class":"とくしゅ"},{"name":"だんがいのつるぎ","type":"じめん","power":120,"damage_class":"ぶつり"},{"name":"オーロラビーム","type":"こおり","power":65,"damage_class":"とくしゅ"},{"name":"ガリョウテンセイ","type":"ひこう","power":120,"damage_class":"ぶつり"},{"name":"いじげんラッシュ","type":"あく","power":100,"damage_class":"ぶつり"},{"name":"ウルトラダッシュアタック","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"ウルトラダッシュアタック","type":"ノーマル","power":null,"damage_class":"とくしゅ"},{"name":"ぜんりょくむそうげきれつけん","type":"かくとう","power":null,"damage_class":"ぶつり"},{"name":"ぜんりょくむそうげきれつけん","type":"かくとう","power":null,"damage_class":"とくしゅ"},{"name":"ファイナルダイブクラッシュ","type":"ひこう","power":null,"damage_class":"ぶつり"},{"name":"ファイナルダイブクラッシュ","type":"ひこう","power":null,"damage_class":"とくしゅ"},{"name":"アシッドポイズンデリート","type":"どく","power":null,"damage_class":"ぶつり"},{"name":"アシッドポイズンデリート","type":"どく","power":null,"damage_class":"とくしゅ"},{"name":"はかいこうせん","type":"ノーマル","power":150,"damage_class":"とくしゅ"},{"name":"ライジングランドオーバー","type":"じめん","power":null,"damage_class":"ぶつり"},{"name":"ライジングランドオーバー","type":"じめん","power":null,"damage_class":"とくしゅ"},{"name":"ワールズエンドフォール","type":"いわ","power":null,"damage_class":"ぶつり"},{"name":"ワールズエンドフォール","type":"いわ","power":null,"damage_class":"とくしゅ"},{"name":"ぜったいほしょくかいてんざん","type":"むし","power":null,"damage_class":"ぶつり"},{"name":"ぜったいほしょくかいてんざん","type":"むし","power":null,"damage_class":"とくしゅ"},{"name":"むげんあんやへのいざない","type":"ゴースト","power":null,"damage_class":"ぶつり"},{"name":"むげんあんやへのいざない","type":"ゴースト","power":null,"damage_class":"とくしゅ"},{"name":"ちょうぜつらせんれんげき","type":"はがね","power":null,"damage_class":"ぶつり"},{"name":"ちょうぜつらせんれんげき","type":"はがね","power":null,"damage_class":"とくしゅ"},{"name":"つつく","type":"ひこう","power":35,"damage_class":"ぶつり"},{"name":"ダイナミックフルフレイム","type":"ほのお","power":null,"damage_class":"ぶつり"},{"name":"ダイナミックフルフレイム","type":"ほのお","power":null,"damage_class":"とくしゅ"},{"name":"スーパーアクアトルネード","type":"みず","power":null,"damage_class":"ぶつり"},{"name":"スーパーアクアトルネード","type":"みず","power":null,"damage_class":"とくしゅ"},{"name":"ブルームシャインエクストラ","type":"くさ","power":null,"damage_class":"ぶつり"},{"name":"ブルームシャインエクストラ","type":"くさ","power":null,"damage_class":"とくしゅ"},{"name":"スパーキングギガボルト","type":"でんき","power":null,"damage_class":"ぶつり"},{"name":"スパーキングギガボルト","type":"でんき","power":null,"damage_class":"とくしゅ"},{"name":"マキシマムサイブレイカー","type":"エスパー","power":null,"damage_class":"ぶつり"},{"name":"マキシマムサイブレイカー","type":"エスパー","power":null,"damage_class":"とくしゅ"},{"name":"ドリルくちばし","type":"ひこう","power":80,"damage_class":"ぶつり"},{"name":"レイジングジオフリーズ","type":"こおり","power":null,"damage_class":"ぶつり"},{"name":"レイジングジオフリーズ","type":"こおり","power":null,"damage_class":"とくしゅ"},{"name":"アルティメットドラゴンバーン","type":"ドラゴン","power":null,"damage_class":"ぶつり"},{"name":"アルティメットドラゴンバーン","type":"ドラゴン","power":null,"damage_class":"とくしゅ"},{"name":"ブラックホールイクリプス","type":"あく","power":null,"damage_class":"ぶつり"},{"name":"ブラックホールイクリプス","type":"あく","power":null,"damage_class":"とくしゅ"},{"name":"ラブリースターインパクト","type":"フェアリー","power":null,"damage_class":"ぶつり"},{"name":"ラブリースターインパクト","type":"フェアリー","power":null,"damage_class":"とくしゅ"},{"name":"ひっさつのピカチュート","type":"でんき","power":210,"damage_class":"ぶつり"},{"name":"すなあつめ","type":"じめん","power":null,"damage_class":"へんか"},{"name":"じごくぐるま","type":"かくとう","power":80,"damage_class":"ぶつり"},{"name":"であいがしら","type":"むし","power":90,"damage_class":"ぶつり"},{"name":"トーチカ","type":"どく","power":null,"damage_class":"へんか"},{"name":"かげぬい","type":"ゴースト","power":80,"damage_class":"ぶつり"},{"name":"ＤＤラリアット","type":"あく","power":85,"damage_class":"ぶつり"},{"name":"うたかたのアリア","type":"みず","power":90,"damage_class":"とくしゅ"},{"name":"アイスハンマー","type":"こおり","power":100,"damage_class":"ぶつり"},{"name":"フラワーヒール","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"１０まんばりき","type":"じめん","power":95,"damage_class":"ぶつり"},{"name":"ちからをすいとる","type":"くさ","power":null,"damage_class":"へんか"},{"name":"ソーラーブレード","type":"くさ","power":125,"damage_class":"ぶつり"},{"name":"けたぐり","type":"かくとう","power":null,"damage_class":"ぶつり"},{"name":"このは","type":"くさ","power":40,"damage_class":"ぶつり"},{"name":"スポットライト","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"どくのいと","type":"どく","power":null,"damage_class":"へんか"},{"name":"とぎすます","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"アシストギア","type":"はがね","power":null,"damage_class":"へんか"},{"name":"じごくづき","type":"あく","power":80,"damage_class":"ぶつり"},{"name":"かふんだんご","type":"むし","power":90,"damage_class":"とくしゅ"},{"name":"アンカーショット","type":"はがね","power":80,"damage_class":"ぶつり"},{"name":"サイコフィールド","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"とびかかる","type":"むし","power":80,"damage_class":"ぶつり"},{"name":"カウンター","type":"かくとう","power":null,"damage_class":"ぶつり"},{"name":"ほのおのムチ","type":"ほのお","power":80,"damage_class":"ぶつり"},{"name":"つけあがる","type":"あく","power":20,"damage_class":"ぶつり"},{"name":"もえつきる","type":"ほのお","power":130,"damage_class":"とくしゅ"},{"name":"スピードスワップ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"スマートホーン","type":"はがね","power":70,"damage_class":"ぶつり"},{"name":"じょうか","type":"どく","power":null,"damage_class":"へんか"},{"name":"めざめるダンス","type":"ノーマル","power":90,"damage_class":"とくしゅ"},{"name":"コアパニッシャー","type":"ドラゴン","power":100,"damage_class":"とくしゅ"},{"name":"トロピカルキック","type":"くさ","power":70,"damage_class":"ぶつり"},{"name":"さいはい","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ちきゅうなげ","type":"かくとう","power":null,"damage_class":"ぶつり"},{"name":"くちばしキャノン","type":"ひこう","power":100,"damage_class":"ぶつり"},{"name":"スケイルノイズ","type":"ドラゴン","power":110,"damage_class":"とくしゅ"},{"name":"ドラゴンハンマー","type":"ドラゴン","power":90,"damage_class":"ぶつり"},{"name":"ぶんまわす","type":"あく","power":60,"damage_class":"ぶつり"},{"name":"オーロラベール","type":"こおり","power":null,"damage_class":"へんか"},{"name":"シャドーアローズストライク","type":"ゴースト","power":180,"damage_class":"ぶつり"},{"name":"ハイパーダーククラッシャー","type":"あく","power":180,"damage_class":"ぶつり"},{"name":"わだつみのシンフォニア","type":"みず","power":195,"damage_class":"とくしゅ"},{"name":"ガーディアン・デ・アローラ","type":"フェアリー","power":null,"damage_class":"とくしゅ"},{"name":"しちせいだっこんたい","type":"ゴースト","power":195,"damage_class":"ぶつり"},{"name":"ほのおのパンチ","type":"ほのお","power":75,"damage_class":"ぶつり"},{"name":"かいりき","type":"ノーマル","power":80,"damage_class":"ぶつり"},{"name":"ライトニングサーフライド","type":"でんき","power":175,"damage_class":"とくしゅ"},{"name":"ほんきをだす　こうげき","type":"ノーマル","power":210,"damage_class":"ぶつり"},{"name":"ナインエボルブースト","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"オリジンズスーパーノヴァ","type":"エスパー","power":185,"damage_class":"とくしゅ"},{"name":"トラップシェル","type":"ほのお","power":150,"damage_class":"とくしゅ"},{"name":"フルールカノン","type":"フェアリー","power":130,"damage_class":"とくしゅ"},{"name":"サイコファング","type":"エスパー","power":85,"damage_class":"ぶつり"},{"name":"じだんだ","type":"じめん","power":75,"damage_class":"ぶつり"},{"name":"シャドーボーン","type":"ゴースト","power":85,"damage_class":"ぶつり"},{"name":"アクセルロック","type":"いわ","power":40,"damage_class":"ぶつり"},{"name":"すいとる","type":"くさ","power":20,"damage_class":"とくしゅ"},{"name":"アクアブレイク","type":"みず","power":85,"damage_class":"ぶつり"},{"name":"プリズムレーザー","type":"エスパー","power":160,"damage_class":"とくしゅ"},{"name":"シャドースチール","type":"ゴースト","power":90,"damage_class":"ぶつり"},{"name":"メテオドライブ","type":"はがね","power":100,"damage_class":"ぶつり"},{"name":"シャドーレイ","type":"ゴースト","power":100,"damage_class":"とくしゅ"},{"name":"なみだめ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"びりびりちくちく","type":"でんき","power":80,"damage_class":"ぶつり"},{"name":"しぜんのいかり","type":"フェアリー","power":null,"damage_class":"とくしゅ"},{"name":"マルチアタック","type":"ノーマル","power":120,"damage_class":"ぶつり"},{"name":"１０００まんボルト","type":"でんき","power":195,"damage_class":"とくしゅ"},{"name":"メガドレイン","type":"くさ","power":40,"damage_class":"とくしゅ"},{"name":"ビックリヘッド","type":"ほのお","power":150,"damage_class":"とくしゅ"},{"name":"プラズマフィスト","type":"でんき","power":100,"damage_class":"ぶつり"},{"name":"フォトンゲイザー","type":"エスパー","power":100,"damage_class":"とくしゅ"},{"name":"てんこがすめつぼうのひかり","type":"エスパー","power":200,"damage_class":"とくしゅ"},{"name":"サンシャインスマッシャー","type":"はがね","power":200,"damage_class":"ぶつり"},{"name":"ムーンライトブラスター","type":"ゴースト","power":200,"damage_class":"とくしゅ"},{"name":"ぽかぼかフレンドタイム","type":"フェアリー","power":190,"damage_class":"ぶつり"},{"name":"ラジアルエッジストーム","type":"いわ","power":190,"damage_class":"ぶつり"},{"name":"ブレイジングソウルビート","type":"ドラゴン","power":185,"damage_class":"とくしゅ"},{"name":"ばちばちアクセル","type":"でんき","power":80,"damage_class":"ぶつり"},{"name":"やどりぎのタネ","type":"くさ","power":null,"damage_class":"へんか"},{"name":"ざぶざぶサーフ","type":"みず","power":90,"damage_class":"とくしゅ"},{"name":"ふわふわフォール","type":"ひこう","power":90,"damage_class":"ぶつり"},{"name":"ピカピカサンダー","type":"でんき","power":null,"damage_class":"とくしゅ"},{"name":"いきいきバブル","type":"みず","power":60,"damage_class":"とくしゅ"},{"name":"びりびりエレキ","type":"でんき","power":60,"damage_class":"とくしゅ"},{"name":"めらめらバーン","type":"ほのお","power":60,"damage_class":"ぶつり"},{"name":"どばどばオーラ","type":"エスパー","power":80,"damage_class":"とくしゅ"},{"name":"わるわるゾーン","type":"あく","power":80,"damage_class":"とくしゅ"},{"name":"すくすくボンバー","type":"くさ","power":100,"damage_class":"ぶつり"},{"name":"こちこちフロスト","type":"こおり","power":100,"damage_class":"とくしゅ"},{"name":"せいちょう","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"きらきらストーム","type":"フェアリー","power":120,"damage_class":"とくしゅ"},{"name":"ブイブイブレイク","type":"ノーマル","power":null,"damage_class":"ぶつり"},{"name":"ダブルパンツァー","type":"はがね","power":60,"damage_class":"ぶつり"},{"name":"ダイウォール","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ダイマックスほう","type":"ドラゴン","power":100,"damage_class":"とくしゅ"},{"name":"ねらいうち","type":"みず","power":80,"damage_class":"とくしゅ"},{"name":"くらいつく","type":"あく","power":80,"damage_class":"ぶつり"},{"name":"ほおばる","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"はいすいのじん","type":"かくとう","power":null,"damage_class":"へんか"},{"name":"タールショット","type":"いわ","power":null,"damage_class":"へんか"},{"name":"はっぱカッター","type":"くさ","power":55,"damage_class":"ぶつり"},{"name":"まほうのこな","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ドラゴンアロー","type":"ドラゴン","power":50,"damage_class":"ぶつり"},{"name":"おちゃかい","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"たこがため","type":"かくとう","power":null,"damage_class":"へんか"},{"name":"でんげきくちばし","type":"でんき","power":85,"damage_class":"ぶつり"},{"name":"エラがみ","type":"みず","power":85,"damage_class":"ぶつり"},{"name":"コートチェンジ","type":"ノーマル","power":null,"damage_class":"へんか"},{"name":"ダイバーン","type":"ほのお","power":100,"damage_class":"ぶつり"},{"name":"ダイワーム","type":"むし","power":10,"damage_class":"ぶつり"},{"name":"ダイサンダー","type":"でんき","power":10,"damage_class":"ぶつり"},{"name":"ソーラービーム","type":"くさ","power":120,"damage_class":"とくしゅ"},{"name":"ダイアタック","type":"ノーマル","power":10,"damage_class":"ぶつり"},{"name":"ダイナックル","type":"かくとう","power":10,"damage_class":"ぶつり"},{"name":"ダイホロウ","type":"ゴースト","power":10,"damage_class":"ぶつり"},{"name":"ダイアイス","type":"こおり","power":10,"damage_class":"ぶつり"},{"name":"ダイアシッド","type":"どく","power":10,"damage_class":"ぶつり"},{"name":"ダイストリーム","type":"みず","power":10,"damage_class":"ぶつり"},{"name":"ダイジェット","type":"ひこう","power":10,"damage_class":"ぶつり"},{"name":"ダイフェアリー","type":"フェアリー","power":10,"damage_class":"ぶつり"},{"name":"ダイドラグーン","type":"ドラゴン","power":10,"damage_class":"ぶつり"},{"name":"ダイサイコ","type":"エスパー","power":10,"damage_class":"ぶつり"},{"name":"どくのこな","type":"どく","power":null,"damage_class":"へんか"},{"name":"ダイロック","type":"いわ","power":10,"damage_class":"ぶつり"},{"name":"ダイアース","type":"じめん","power":10,"damage_class":"ぶつり"},{"name":"ダイアーク","type":"あく","power":10,"damage_class":"ぶつり"},{"name":"ダイソウゲン","type":"くさ","power":10,"damage_class":"ぶつり"},{"name":"ダイスチル","type":"はがね","power":10,"damage_class":"ぶつり"},{"name":"ソウルビート","type":"ドラゴン","power":null,"damage_class":"へんか"},{"name":"ボディプレス","type":"かくとう","power":80,"damage_class":"ぶつり"},{"name":"デコレーション","type":"フェアリー","power":null,"damage_class":"へんか"},{"name":"ドラムアタック","type":"くさ","power":80,"damage_class":"ぶつり"},{"name":"トラバサミ","type":"くさ","power":35,"damage_class":"ぶつり"},{"name":"しびれごな","type":"くさ","power":null,"damage_class":"へんか"},{"name":"かえんボール","type":"ほのお","power":120,"damage_class":"ぶつり"},{"name":"きょじゅうざん","type":"はがね","power":100,"damage_class":"ぶつり"},{"name":"きょじゅうだん","type":"はがね","power":100,"damage_class":"ぶつり"},{"name":"オーラぐるま","type":"でんき","power":110,"damage_class":"ぶつり"},{"name":"ワイドブレイカー","type":"ドラゴン","power":60,"damage_class":"ぶつり"},{"name":"えだづき","type":"くさ","power":40,"damage_class":"ぶつり"},{"name":"オーバードライブ","type":"でんき","power":80,"damage_class":"とくしゅ"},{"name":"りんごさん","type":"くさ","power":80,"damage_class":"とくしゅ"},{"name":"Ｇのちから","type":"くさ","power":80,"damage_class":"ぶつり"},{"name":"ソウルクラッシュ","type":"フェアリー","power":75,"damage_class":"ぶつり"},{"name":"ねむりごな","type":"くさ","power":null,"damage_class":"へんか"},{"name":"ワンダースチーム","type":"フェアリー","power":90,"damage_class":"とくしゅ"},{"name":"いのちのしずく","type":"みず","power":null,"damage_class":"へんか"},{"name":"ブロッキング","type":"あく","power":null,"damage_class":"へんか"},{"name":"どげざつき","type":"あく","power":80,"damage_class":"ぶつり"},{"name":"スターアサルト","type":"かくとう","power":150,"damage_class":"ぶつり"},{"name":"ムゲンダイビーム","type":"ドラゴン","power":160,"damage_class":"とくしゅ"},{"name":"てっていこうせん","type":"はがね","power":140,"damage_class":"とくしゅ"},{"name":"ワイドフォース","type":"エスパー","power":80,"damage_class":"とくしゅ"},{"name":"アイアンローラー","type":"はがね","power":130,"damage_class":"ぶつり"},{"name":"スケイルショット","type":"ドラゴン","power":25,"damage_class":"ぶつり"},{"name":"れいとうパンチ","type":"こおり","power":75,"damage_class":"ぶつり"},{"name":"はなびらのまい","type":"くさ","power":120,"damage_class":"とくしゅ"},{"name":"メテオビーム","type":"いわ","power":120,"damage_class":"とくしゅ"},{"name":"シェルアームズ","type":"どく","power":90,"damage_class":"とくしゅ"},{"name":"ミストバースト","type":"フェアリー","power":100,"damage_class":"とくしゅ"},{"name":"グラススライダー","type":"くさ","power":70,"damage_class":"ぶつり"},{"name":"ライジングボルト","type":"でんき","power":70,"damage_class":"とくしゅ"},{"name":"だいちのはどう","type":"ノーマル","power":50,"damage_class":"とくしゅ"},{"name":"はいよるいちげき","type":"むし","power":70,"damage_class":"ぶつり"},{"name":"しっとのほのお","type":"ほのお","power":70,"damage_class":"とくしゅ"},{"name":"うっぷんばらし","type":"あく","power":75,"damage_class":"ぶつり"},{"name":"ポルターガイスト","type":"ゴースト","power":110,"damage_class":"ぶつり"},{"name":"いとをはく","type":"むし","power":null,"damage_class":"へんか"},{"name":"ふしょくガス","type":"どく","power":null,"damage_class":"へんか"},{"name":"コーチング","type":"かくとう","power":null,"damage_class":"へんか"},{"name":"クイックターン","type":"みず","power":60,"damage_class":"ぶつり"},{"name":"トリプルアクセル","type":"こおり","power":20,"damage_class":"ぶつり"},{"name":"ダブルウイング","type":"ひこう","power":40,"damage_class":"ぶつり"},{"name":"ねっさのだいち","type":"じめん","power":70,"damage_class":"とくしゅ"},{"name":"ジャングルヒール","type":"くさ","power":null,"damage_class":"へんか"},{"name":"あんこくきょうだ","type":"あく","power":80,"damage_class":"ぶつり"},{"name":"すいりゅうれんだ","type":"みず","power":25,"damage_class":"ぶつり"},{"name":"サンダープリズン","type":"でんき","power":80,"damage_class":"とくしゅ"},{"name":"りゅうのいかり","type":"ドラゴン","power":null,"damage_class":"とくしゅ"},{"name":"ドラゴンエナジー","type":"ドラゴン","power":150,"damage_class":"とくしゅ"},{"name":"いてつくしせん","type":"エスパー","power":90,"damage_class":"とくしゅ"},{"name":"もえあがるいかり","type":"あく","power":90,"damage_class":"とくしゅ"},{"name":"らいめいげり","type":"かくとう","power":90,"damage_class":"ぶつり"},{"name":"ブリザードランス","type":"こおり","power":130,"damage_class":"ぶつり"},{"name":"アストラルビット","type":"ゴースト","power":120,"damage_class":"とくしゅ"},{"name":"ぶきみなじゅもん","type":"エスパー","power":80,"damage_class":"とくしゅ"},{"name":"フェイタルクロー","type":"どく","power":80,"damage_class":"ぶつり"},{"name":"バリアーラッシュ","type":"エスパー","power":70,"damage_class":"ぶつり"},{"name":"パワーシフト","type":"ノーマル","power":0,"damage_class":"へんか"},{"name":"ほのおのうず","type":"ほのお","power":35,"damage_class":"とくしゅ"},{"name":"がんせきアックス","type":"いわ","power":65,"damage_class":"ぶつり"},{"name":"はるのあらし","type":"フェアリー","power":100,"damage_class":"とくしゅ"},{"name":"しんぴのちから","type":"エスパー","power":70,"damage_class":"とくしゅ"},{"name":"だいふんげき","type":"ほのお","power":120,"damage_class":"ぶつり"},{"name":"ウェーブタックル","type":"みず","power":120,"damage_class":"ぶつり"},{"name":"クロロブラスト","type":"くさ","power":150,"damage_class":"とくしゅ"},{"name":"ひょうざんおろし","type":"こおり","power":100,"damage_class":"ぶつり"},{"name":"しょうりのまい","type":"かくとう","power":0,"damage_class":"へんか"},{"name":"ぶちかまし","type":"じめん","power":120,"damage_class":"ぶつり"},{"name":"どくばりセンボン","type":"どく","power":60,"damage_class":"ぶつり"},{"name":"でんきショック","type":"でんき","power":40,"damage_class":"とくしゅ"},{"name":"オーラウイング","type":"エスパー","power":80,"damage_class":"とくしゅ"},{"name":"うらみつらみ","type":"ゴースト","power":75,"damage_class":"とくしゅ"},{"name":"たてこもる","type":"はがね","power":0,"damage_class":"へんか"},{"name":"３ぼんのや","type":"かくとう","power":90,"damage_class":"ぶつり"},{"name":"ひゃっきやこう","type":"ゴースト","power":60,"damage_class":"とくしゅ"},{"name":"ひけん・ちえなみ","type":"あく","power":65,"damage_class":"ぶつり"},{"name":"こがらしあらし","type":"ひこう","power":100,"damage_class":"とくしゅ"},{"name":"かみなりあらし","type":"でんき","power":100,"damage_class":"とくしゅ"},{"name":"ねっさのあらし","type":"じめん","power":100,"damage_class":"とくしゅ"},{"name":"みかづきのいのり","type":"エスパー","power":0,"damage_class":"へんか"},{"name":"１０まんボルト","type":"でんき","power":90,"damage_class":"とくしゅ"},{"name":"ブレイブチャージ","type":"エスパー","power":0,"damage_class":"へんか"},{"name":"テラバースト","type":"ノーマル","power":80,"damage_class":"とくしゅ"},{"name":"スレッドトラップ","type":"むし","power":0,"damage_class":"へんか"},{"name":"かかとおとし","type":"かくとう","power":120,"damage_class":"ぶつり"},{"name":"おはかまいり","type":"ゴースト","power":50,"damage_class":"ぶつり"},{"name":"ルミナコリジョン","type":"エスパー","power":80,"damage_class":"とくしゅ"},{"name":"いっちょうあがり","type":"ドラゴン","power":80,"damage_class":"ぶつり"},{"name":"ジェットパンチ","type":"みず","power":60,"damage_class":"ぶつり"},{"name":"ハバネロエキス","type":"くさ","power":0,"damage_class":"へんか"},{"name":"ホイールスピン","type":"はがね","power":100,"damage_class":"ぶつり"},{"name":"でんじは","type":"でんき","power":null,"damage_class":"へんか"},{"name":"ネズミざん","type":"ノーマル","power":20,"damage_class":"ぶつり"},{"name":"アイススピナー","type":"こおり","power":80,"damage_class":"ぶつり"},{"name":"きょけんとつげき","type":"ドラゴン","power":120,"damage_class":"ぶつり"},{"name":"さいきのいのり","type":"ノーマル","power":0,"damage_class":"へんか"},{"name":"しおづけ","type":"いわ","power":40,"damage_class":"ぶつり"},{"name":"トリプルダイブ","type":"みず","power":30,"damage_class":"ぶつり"},{"name":"キラースピン","type":"どく","power":30,"damage_class":"ぶつり"},{"name":"うつしえ","type":"ノーマル","power":0,"damage_class":"へんか"},{"name":"みおけずる","type":"ノーマル","power":0,"damage_class":"へんか"},{"name":"ドゲザン","type":"あく","power":85,"damage_class":"ぶつり"},{"name":"かみなり","type":"でんき","power":110,"damage_class":"とくしゅ"},{"name":"トリックフラワー","type":"くさ","power":70,"damage_class":"ぶつり"},{"name":"フレアソング","type":"ほのお","power":80,"damage_class":"とくしゅ"},{"name":"アクアステップ","type":"みず","power":80,"damage_class":"ぶつり"},{"name":"レイジングブル","type":"ノーマル","power":90,"damage_class":"ぶつり"},{"name":"ゴールドラッシュ","type":"はがね","power":120,"damage_class":"とくしゅ"},{"name":"はたく","type":"ノーマル","power":40,"damage_class":"ぶつり"},{"name":"はたく","type":"ノーマル","power":40,"damage_class":"ぶつり"},{"name":"カタストロフィ","type":"あく","power":1,"damage_class":"とくしゅ"},{"name":"アクセルブレイク","type":"かくとう","power":100,"damage_class":"ぶつり"},{"name":"イナズマドライブ","type":"でんき","power":100,"damage_class":"とくしゅ"},{"name":"いわおとし","type":"いわ","power":50,"damage_class":"ぶつり"},{"name":"しっぽきり","type":"ノーマル","power":0,"damage_class":"へんか"},{"name":"さむいギャグ","type":"こおり","power":0,"damage_class":"へんか"},{"name":"おかたづけ","type":"ノーマル","power":0,"damage_class":"へんか"},{"name":"ゆきげしき","type":"こおり","power":0,"damage_class":"へんか"},{"name":"とびつく","type":"むし","power":50,"damage_class":"ぶつり"},{"name":"くさわけ","type":"くさ","power":50,"damage_class":"ぶつり"},{"name":"ひやみず","type":"みず","power":50,"damage_class":"とくしゅ"},{"name":"ハイパードリル","type":"ノーマル","power":100,"damage_class":"ぶつり"},{"name":"ツインビーム","type":"エスパー","power":40,"damage_class":"とくしゅ"},{"name":"ふんどのこぶし","type":"ゴースト","power":50,"damage_class":"ぶつり"},{"name":"じしん","type":"じめん","power":100,"damage_class":"ぶつり"},{"name":"アーマーキャノン","type":"ほのお","power":120,"damage_class":"とくしゅ"},{"name":"むねんのつるぎ","type":"ほのお","power":90,"damage_class":"ぶつり"},{"name":"てんこうそうげき","type":"でんき","power":120,"damage_class":"ぶつり"},{"name":"デカハンマー","type":"はがね","power":160,"damage_class":"ぶつり"},{"name":"ほうふく","type":"あく","power":1,"damage_class":"ぶつり"},{"name":"アクアカッター","type":"みず","power":70,"damage_class":"ぶつり"},{"name":"バーンアクセル","type":"ほのお","power":80,"damage_class":"ぶつり"},{"name":"ダークアクセル","type":"あく","power":80,"damage_class":"ぶつり"},{"name":"ポイズンアクセル","type":"どく","power":100,"damage_class":"ぶつり"},{"name":"ファイトアクセル","type":"かくとう","power":100,"damage_class":"ぶつり"},{"name":"かみなりパンチ","type":"でんき","power":75,"damage_class":"ぶつり"},{"name":"じわれ","type":"じめん","power":null,"damage_class":"ぶつり"},{"name":"マジカルアクセル","type":"フェアリー","power":100,"damage_class":"ぶつり"},{"name":"あなをほる","type":"じめん","power":80,"damage_class":"ぶつり"},{"name":"どくどく","type":"どく","power":null,"damage_class":"へんか"},{"name":"ねんりき","type":"エスパー","power":50,"damage_class":"とくしゅ"},{"name":"サイコキネシス","type":"エスパー","power":90,"damage_class":"とくしゅ"},{"name":"さいみんじゅつ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"ヨガのポーズ","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"こうそくいどう","type":"エスパー","power":null,"damage_class":"へんか"},{"name":"でんこうせっか","type":"ノーマル","power":40,"damage_class":"ぶつり"},{"name":"いかり","type":"ノーマル","power":20,"damage_class":"ぶつり"}]
+[
+  {
+    "name": "はたく",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ひっかく",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "テレポート",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ナイトヘッド",
+    "type": "ゴースト",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ものまね",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "いやなおと",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かげぶんしん",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "じこさいせい",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かたくなる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ちいさくなる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "えんまく",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "あやしいひかり",
+    "type": "ゴースト",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "はさむ",
+    "type": "ノーマル",
+    "power": 55,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "からにこもる",
+    "type": "みず",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "まるくなる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "バリアー",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ひかりのかべ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "くろいきり",
+    "type": "こおり",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "リフレクター",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "きあいだめ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "がまん",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ゆびをふる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "オウムがえし",
+    "type": "ひこう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ハサミギロチン",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "じばく",
+    "type": "ノーマル",
+    "power": 200,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "タマゴばくだん",
+    "type": "ノーマル",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "したでなめる",
+    "type": "ゴースト",
+    "power": 30,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "スモッグ",
+    "type": "どく",
+    "power": 30,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ヘドロこうげき",
+    "type": "どく",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ホネこんぼう",
+    "type": "じめん",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "だいもんじ",
+    "type": "ほのお",
+    "power": 110,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "たきのぼり",
+    "type": "みず",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "からではさむ",
+    "type": "みず",
+    "power": 35,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "スピードスター",
+    "type": "ノーマル",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "かまいたち",
+    "type": "ノーマル",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ロケットずつき",
+    "type": "ノーマル",
+    "power": 130,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "とげキャノン",
+    "type": "ノーマル",
+    "power": 20,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "からみつく",
+    "type": "ノーマル",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ドわすれ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "スプーンまげ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "タマゴうみ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "とびひざげり",
+    "type": "かくとう",
+    "power": 130,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "へびにらみ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ゆめくい",
+    "type": "エスパー",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "どくガス",
+    "type": "どく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "つるぎのまい",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "たまなげ",
+    "type": "ノーマル",
+    "power": 15,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "きゅうけつ",
+    "type": "むし",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "あくまのキッス",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ゴッドバード",
+    "type": "ひこう",
+    "power": 140,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "へんしん",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  { "name": "あわ", "type": "みず", "power": 40, "damage_class": "とくしゅ" },
+  {
+    "name": "ピヨピヨパンチ",
+    "type": "ノーマル",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "キノコのほうし",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "フラッシュ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "サイコウェーブ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "いあいぎり",
+    "type": "ノーマル",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "はねる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  { "name": "とける", "type": "どく", "power": null, "damage_class": "へんか" },
+  {
+    "name": "クラブハンマー",
+    "type": "みず",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "だいばくはつ",
+    "type": "ノーマル",
+    "power": 250,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "みだれひっかき",
+    "type": "ノーマル",
+    "power": 18,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ホネブーメラン",
+    "type": "じめん",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ねむる",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "いわなだれ",
+    "type": "いわ",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ひっさつまえば",
+    "type": "ノーマル",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "かくばる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かぜおこし",
+    "type": "ひこう",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "テクスチャー",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "トライアタック",
+    "type": "ノーマル",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "いかりのまえば",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "きりさく",
+    "type": "ノーマル",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "みがわり",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "わるあがき",
+    "type": "ノーマル",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "スケッチ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "トリプルキック",
+    "type": "かくとう",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  { "name": "どろぼう", "type": "あく", "power": 60, "damage_class": "ぶつり" },
+  {
+    "name": "クモのす",
+    "type": "むし",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "つばさでうつ",
+    "type": "ひこう",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "こころのめ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "あくむ",
+    "type": "ゴースト",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かえんぐるま",
+    "type": "ほのお",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "いびき",
+    "type": "ノーマル",
+    "power": 50,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "のろい",
+    "type": "ゴースト",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "じたばた",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "テクスチャー２",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "エアロブラスト",
+    "type": "ひこう",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "わたほうし",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "きしかいせい",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ふきとばし",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "うらみ",
+    "type": "ゴースト",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "こなゆき",
+    "type": "こおり",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "まもる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "マッハパンチ",
+    "type": "かくとう",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "こわいかお",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "だましうち",
+    "type": "あく",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "てんしのキッス",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "はらだいこ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ヘドロばくだん",
+    "type": "どく",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "どろかけ",
+    "type": "じめん",
+    "power": 20,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "そらをとぶ",
+    "type": "ひこう",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "オクタンほう",
+    "type": "みず",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "まきびし",
+    "type": "じめん",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "でんじほう",
+    "type": "でんき",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みやぶる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "みちづれ",
+    "type": "ゴースト",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ほろびのうた",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "こごえるかぜ",
+    "type": "こおり",
+    "power": 55,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みきり",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ボーンラッシュ",
+    "type": "じめん",
+    "power": 25,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ロックオン",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "からてチョップ",
+    "type": "かくとう",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "しめつける",
+    "type": "ノーマル",
+    "power": 15,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "げきりん",
+    "type": "ドラゴン",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "すなあらし",
+    "type": "いわ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ギガドレイン",
+    "type": "くさ",
+    "power": 75,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "こらえる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "あまえる",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  { "name": "ころがる", "type": "いわ", "power": 30, "damage_class": "ぶつり" },
+  {
+    "name": "みねうち",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "いばる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ミルクのみ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "スパーク",
+    "type": "でんき",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "たたきつける",
+    "type": "ノーマル",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "れんぞくぎり",
+    "type": "むし",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "はがねのつばさ",
+    "type": "はがね",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "くろいまなざし",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "メロメロ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ねごと",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "いやしのすず",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "おんがえし",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "プレゼント",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "やつあたり",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "しんぴのまもり",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "つるのムチ",
+    "type": "くさ",
+    "power": 45,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "いたみわけ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "せいなるほのお",
+    "type": "ほのお",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "マグニチュード",
+    "type": "じめん",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ばくれつパンチ",
+    "type": "かくとう",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "メガホーン",
+    "type": "むし",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "りゅうのいぶき",
+    "type": "ドラゴン",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "バトンタッチ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "アンコール",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  { "name": "おいうち", "type": "あく", "power": 40, "damage_class": "ぶつり" },
+  {
+    "name": "こうそくスピン",
+    "type": "ノーマル",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ふみつけ",
+    "type": "ノーマル",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "あまいかおり",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "アイアンテール",
+    "type": "はがね",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "メタルクロー",
+    "type": "はがね",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "あてみなげ",
+    "type": "かくとう",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "あさのひざし",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "こうごうせい",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "つきのひかり",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "めざめるパワー",
+    "type": "ノーマル",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "クロスチョップ",
+    "type": "かくとう",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "たつまき",
+    "type": "ドラゴン",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "にどげり",
+    "type": "かくとう",
+    "power": 30,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "あまごい",
+    "type": "みず",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "にほんばれ",
+    "type": "ほのお",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かみくだく",
+    "type": "あく",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ミラーコート",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "じこあんじ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "しんそく",
+    "type": "ノーマル",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "げんしのちから",
+    "type": "いわ",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "シャドーボール",
+    "type": "ゴースト",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みらいよち",
+    "type": "エスパー",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "いわくだき",
+    "type": "かくとう",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "メガトンキック",
+    "type": "ノーマル",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "うずしお",
+    "type": "みず",
+    "power": 35,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ふくろだたき",
+    "type": "あく",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ねこだまし",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "さわぐ",
+    "type": "ノーマル",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "たくわえる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "はきだす",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "のみこむ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ねっぷう",
+    "type": "ほのお",
+    "power": 95,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "あられ",
+    "type": "こおり",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "いちゃもん",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "とびげり",
+    "type": "かくとう",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "おだてる",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "おにび",
+    "type": "ほのお",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "おきみやげ",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "からげんき",
+    "type": "ノーマル",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "きあいパンチ",
+    "type": "かくとう",
+    "power": 150,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "きつけ",
+    "type": "ノーマル",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "このゆびとまれ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "しぜんのちから",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "じゅうでん",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ちょうはつ",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "まわしげり",
+    "type": "かくとう",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "てだすけ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "トリック",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "なりきり",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ねがいごと",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ねこのて",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ねをはる",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ばかぢから",
+    "type": "かくとう",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "マジックコート",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "リサイクル",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "リベンジ",
+    "type": "かくとう",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "すなかけ",
+    "type": "じめん",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かわらわり",
+    "type": "かくとう",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "あくび",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "はたきおとす",
+    "type": "あく",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "がむしゃら",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ふんか",
+    "type": "ほのお",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "スキルスワップ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ふういん",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "リフレッシュ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "おんねん",
+    "type": "ゴースト",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "よこどり",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ずつき",
+    "type": "ノーマル",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ひみつのちから",
+    "type": "ノーマル",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイビング",
+    "type": "みず",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "つっぱり",
+    "type": "かくとう",
+    "power": 15,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ほごしょく",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ほたるび",
+    "type": "むし",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ラスターパージ",
+    "type": "エスパー",
+    "power": 70,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ミストボール",
+    "type": "エスパー",
+    "power": 70,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "フェザーダンス",
+    "type": "ひこう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "フラフラダンス",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ブレイズキック",
+    "type": "ほのお",
+    "power": 85,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "おうふくビンタ",
+    "type": "ノーマル",
+    "power": 15,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "つのでつく",
+    "type": "ノーマル",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "どろあそび",
+    "type": "じめん",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "アイスボール",
+    "type": "こおり",
+    "power": 30,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ニードルアーム",
+    "type": "くさ",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "なまける",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ハイパーボイス",
+    "type": "ノーマル",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "どくどくのキバ",
+    "type": "どく",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ブレイククロー",
+    "type": "ノーマル",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ブラストバーン",
+    "type": "ほのお",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ハイドロカノン",
+    "type": "みず",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "コメットパンチ",
+    "type": "はがね",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "みだれづき",
+    "type": "ノーマル",
+    "power": 15,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "おどろかす",
+    "type": "ゴースト",
+    "power": 30,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ウェザーボール",
+    "type": "ノーマル",
+    "power": 50,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "アロマセラピー",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "うそなき",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "エアカッター",
+    "type": "ひこう",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "オーバーヒート",
+    "type": "ほのお",
+    "power": 130,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "かぎわける",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "がんせきふうじ",
+    "type": "いわ",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ぎんいろのかぜ",
+    "type": "むし",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "きんぞくおん",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "つのドリル",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "くさぶえ",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "くすぐる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "コスモパワー",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "しおふき",
+    "type": "みず",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "シグナルビーム",
+    "type": "むし",
+    "power": 75,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "シャドーパンチ",
+    "type": "ゴースト",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "じんつうりき",
+    "type": "エスパー",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "スカイアッパー",
+    "type": "かくとう",
+    "power": 85,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "すなじごく",
+    "type": "じめん",
+    "power": 35,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ぜったいれいど",
+    "type": "こおり",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "たいあたり",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "だくりゅう",
+    "type": "みず",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "タネマシンガン",
+    "type": "くさ",
+    "power": 25,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "つばめがえし",
+    "type": "ひこう",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "つららばり",
+    "type": "こおり",
+    "power": 25,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "てっぺき",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "とおせんぼう",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "とおぼえ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ドラゴンクロー",
+    "type": "ドラゴン",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ハードプラント",
+    "type": "くさ",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ビルドアップ",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "のしかかり",
+    "type": "ノーマル",
+    "power": 85,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "とびはねる",
+    "type": "ひこう",
+    "power": 85,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "マッドショット",
+    "type": "じめん",
+    "power": 55,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ポイズンテール",
+    "type": "どく",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ほしがる",
+    "type": "ノーマル",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ボルテッカー",
+    "type": "でんき",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "マジカルリーフ",
+    "type": "くさ",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みずあそび",
+    "type": "みず",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "めいそう",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "リーフブレード",
+    "type": "くさ",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "りゅうのまい",
+    "type": "ドラゴン",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "まきつく",
+    "type": "ノーマル",
+    "power": 15,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ロックブラスト",
+    "type": "いわ",
+    "power": 25,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "でんげきは",
+    "type": "でんき",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みずのはどう",
+    "type": "みず",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "はめつのねがい",
+    "type": "はがね",
+    "power": 140,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "サイコブースト",
+    "type": "エスパー",
+    "power": 140,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "はねやすめ",
+    "type": "ひこう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "じゅうりょく",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ミラクルアイ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "めざましビンタ",
+    "type": "かくとう",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "アームハンマー",
+    "type": "かくとう",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "とっしん",
+    "type": "ノーマル",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ジャイロボール",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "いやしのねがい",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "しおみず",
+    "type": "みず",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "しぜんのめぐみ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "フェイント",
+    "type": "ノーマル",
+    "power": 30,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ついばむ",
+    "type": "ひこう",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "おいかぜ",
+    "type": "ひこう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "つぼをつく",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "メタルバースト",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "とんぼがえり",
+    "type": "むし",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "あばれる",
+    "type": "ノーマル",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "インファイト",
+    "type": "かくとう",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "しっぺがえし",
+    "type": "あく",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  { "name": "ダメおし", "type": "あく", "power": 60, "damage_class": "ぶつり" },
+  {
+    "name": "さしおさえ",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "なげつける",
+    "type": "あく",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "サイコシフト",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "きりふだ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "かいふくふうじ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "しぼりとる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "パワートリック",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "すてみタックル",
+    "type": "ノーマル",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  { "name": "いえき", "type": "どく", "power": null, "damage_class": "へんか" },
+  {
+    "name": "おまじない",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "さきどり",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "まねっこ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "パワースワップ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ガードスワップ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "おしおき",
+    "type": "あく",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "とっておき",
+    "type": "ノーマル",
+    "power": 140,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "なやみのタネ",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  { "name": "ふいうち", "type": "あく", "power": 70, "damage_class": "ぶつり" },
+  {
+    "name": "しっぽをふる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "どくびし",
+    "type": "どく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ハートスワップ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "アクアリング",
+    "type": "みず",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "でんじふゆう",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "フレアドライブ",
+    "type": "ほのお",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "はっけい",
+    "type": "かくとう",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "はどうだん",
+    "type": "かくとう",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ロックカット",
+    "type": "いわ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  { "name": "どくづき", "type": "どく", "power": 80, "damage_class": "ぶつり" },
+  {
+    "name": "あくのはどう",
+    "type": "あく",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "れんぞくパンチ",
+    "type": "ノーマル",
+    "power": 18,
+    "damage_class": "ぶつり"
+  },
+  { "name": "どくばり", "type": "どく", "power": 15, "damage_class": "ぶつり" },
+  { "name": "つじぎり", "type": "あく", "power": 70, "damage_class": "ぶつり" },
+  {
+    "name": "アクアテール",
+    "type": "みず",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "タネばくだん",
+    "type": "くさ",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "エアスラッシュ",
+    "type": "ひこう",
+    "power": 75,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "シザークロス",
+    "type": "むし",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "むしのさざめき",
+    "type": "むし",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "りゅうのはどう",
+    "type": "ドラゴン",
+    "power": 85,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ドラゴンダイブ",
+    "type": "ドラゴン",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "パワージェム",
+    "type": "いわ",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ドレインパンチ",
+    "type": "かくとう",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダブルニードル",
+    "type": "むし",
+    "power": 25,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "しんくうは",
+    "type": "かくとう",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "きあいだま",
+    "type": "かくとう",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "エナジーボール",
+    "type": "くさ",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ブレイブバード",
+    "type": "ひこう",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "だいちのちから",
+    "type": "じめん",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "すりかえ",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ギガインパクト",
+    "type": "ノーマル",
+    "power": 150,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "わるだくみ",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "バレットパンチ",
+    "type": "はがね",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ゆきなだれ",
+    "type": "こおり",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ミサイルばり",
+    "type": "むし",
+    "power": 25,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "こおりのつぶて",
+    "type": "こおり",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "シャドークロー",
+    "type": "ゴースト",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "かみなりのキバ",
+    "type": "でんき",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "こおりのキバ",
+    "type": "こおり",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ほのおのキバ",
+    "type": "ほのお",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "かげうち",
+    "type": "ゴースト",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "どろばくだん",
+    "type": "じめん",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "サイコカッター",
+    "type": "エスパー",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "しねんのずつき",
+    "type": "エスパー",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ミラーショット",
+    "type": "はがね",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "にらみつける",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ラスターカノン",
+    "type": "はがね",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ロッククライム",
+    "type": "ノーマル",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "きりばらい",
+    "type": "ひこう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "トリックルーム",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "りゅうせいぐん",
+    "type": "ドラゴン",
+    "power": 130,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ほうでん",
+    "type": "でんき",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ふんえん",
+    "type": "ほのお",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "リーフストーム",
+    "type": "くさ",
+    "power": 130,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "パワーウィップ",
+    "type": "くさ",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "がんせきほう",
+    "type": "いわ",
+    "power": 150,
+    "damage_class": "ぶつり"
+  },
+  { "name": "かみつく", "type": "あく", "power": 60, "damage_class": "ぶつり" },
+  {
+    "name": "クロスポイズン",
+    "type": "どく",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダストシュート",
+    "type": "どく",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "アイアンヘッド",
+    "type": "はがね",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "マグネットボム",
+    "type": "はがね",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ストーンエッジ",
+    "type": "いわ",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ゆうわく",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ステルスロック",
+    "type": "いわ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "くさむすび",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "おしゃべり",
+    "type": "ひこう",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "さばきのつぶて",
+    "type": "ノーマル",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "なきごえ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  { "name": "むしくい", "type": "むし", "power": 60, "damage_class": "ぶつり" },
+  {
+    "name": "チャージビーム",
+    "type": "でんき",
+    "power": 50,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ウッドハンマー",
+    "type": "くさ",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "アクアジェット",
+    "type": "みず",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "こうげきしれい",
+    "type": "むし",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ぼうぎょしれい",
+    "type": "むし",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かいふくしれい",
+    "type": "むし",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "もろはのずつき",
+    "type": "いわ",
+    "power": 150,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダブルアタック",
+    "type": "ノーマル",
+    "power": 35,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ときのほうこう",
+    "type": "ドラゴン",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ほえる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "あくうせつだん",
+    "type": "ドラゴン",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みかづきのまい",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "にぎりつぶす",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "マグマストーム",
+    "type": "ほのお",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ダークホール",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "シードフレア",
+    "type": "くさ",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "あやしいかぜ",
+    "type": "ゴースト",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "シャドーダイブ",
+    "type": "ゴースト",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "つめとぎ",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ワイドガード",
+    "type": "いわ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "うたう",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ガードシェア",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "パワーシェア",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ワンダールーム",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "サイコショック",
+    "type": "エスパー",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ベノムショック",
+    "type": "どく",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ボディパージ",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "いかりのこな",
+    "type": "むし",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "テレキネシス",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "マジックルーム",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "うちおとす",
+    "type": "いわ",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ちょうおんぱ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "やまあらし",
+    "type": "かくとう",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "はじけるほのお",
+    "type": "ほのお",
+    "power": 70,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ヘドロウェーブ",
+    "type": "どく",
+    "power": 95,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ちょうのまい",
+    "type": "むし",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ヘビーボンバー",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "シンクロノイズ",
+    "type": "エスパー",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "エレキボール",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みずびたし",
+    "type": "みず",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ニトロチャージ",
+    "type": "ほのお",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "とぐろをまく",
+    "type": "どく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ソニックブーム",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ローキック",
+    "type": "かくとう",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "アシッドボム",
+    "type": "どく",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  { "name": "イカサマ", "type": "あく", "power": 95, "damage_class": "ぶつり" },
+  {
+    "name": "シンプルビーム",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "なかまづくり",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "おさきにどうぞ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "りんしょう",
+    "type": "ノーマル",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "エコーボイス",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "なしくずし",
+    "type": "ノーマル",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "クリアスモッグ",
+    "type": "どく",
+    "power": 50,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "メガトンパンチ",
+    "type": "ノーマル",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "かなしばり",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "アシストパワー",
+    "type": "エスパー",
+    "power": 20,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ファストガード",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "サイドチェンジ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ねっとう",
+    "type": "みず",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "からをやぶる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "いやしのはどう",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "たたりめ",
+    "type": "ゴースト",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "フリーフォール",
+    "type": "ひこう",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ギアチェンジ",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ともえなげ",
+    "type": "かくとう",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ようかいえき",
+    "type": "どく",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "やきつくす",
+    "type": "ほのお",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "さきおくり",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "アクロバット",
+    "type": "ひこう",
+    "power": 55,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ミラータイプ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かたきうち",
+    "type": "ノーマル",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "いのちがけ",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ギフトパス",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "れんごく",
+    "type": "ほのお",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みずのちかい",
+    "type": "みず",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ほのおのちかい",
+    "type": "ほのお",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ひのこ",
+    "type": "ほのお",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "くさのちかい",
+    "type": "くさ",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ボルトチェンジ",
+    "type": "でんき",
+    "power": 70,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "むしのていこう",
+    "type": "むし",
+    "power": 50,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "じならし",
+    "type": "じめん",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "こおりのいぶき",
+    "type": "こおり",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ドラゴンテール",
+    "type": "ドラゴン",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ふるいたてる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "エレキネット",
+    "type": "でんき",
+    "power": 55,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ワイルドボルト",
+    "type": "でんき",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ドリルライナー",
+    "type": "じめん",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "かえんほうしゃ",
+    "type": "ほのお",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ダブルチョップ",
+    "type": "ドラゴン",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ハートスタンプ",
+    "type": "エスパー",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ウッドホーン",
+    "type": "くさ",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "せいなるつるぎ",
+    "type": "かくとう",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "シェルブレード",
+    "type": "みず",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ヒートスタンプ",
+    "type": "ほのお",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "グラスミキサー",
+    "type": "くさ",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ハードローラー",
+    "type": "むし",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "コットンガード",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ナイトバースト",
+    "type": "あく",
+    "power": 85,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "しろいきり",
+    "type": "こおり",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "サイコブレイク",
+    "type": "エスパー",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "スイープビンタ",
+    "type": "ノーマル",
+    "power": 25,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ぼうふう",
+    "type": "ひこう",
+    "power": 110,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "アフロブレイク",
+    "type": "ノーマル",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ギアソーサー",
+    "type": "はがね",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "かえんだん",
+    "type": "ほのお",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "テクノバスター",
+    "type": "ノーマル",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "いにしえのうた",
+    "type": "ノーマル",
+    "power": 75,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "しんぴのつるぎ",
+    "type": "かくとう",
+    "power": 85,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "こごえるせかい",
+    "type": "こおり",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みずでっぽう",
+    "type": "みず",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "らいげき",
+    "type": "でんき",
+    "power": 130,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "あおいほのお",
+    "type": "ほのお",
+    "power": 130,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ほのおのまい",
+    "type": "ほのお",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "フリーズボルト",
+    "type": "こおり",
+    "power": 140,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "コールドフレア",
+    "type": "こおり",
+    "power": 140,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "バークアウト",
+    "type": "あく",
+    "power": 55,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "つららおとし",
+    "type": "こおり",
+    "power": 85,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "Ｖジェネレート",
+    "type": "ほのお",
+    "power": 180,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "クロスフレイム",
+    "type": "ほのお",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "クロスサンダー",
+    "type": "でんき",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ハイドロポンプ",
+    "type": "みず",
+    "power": 110,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "フライングプレス",
+    "type": "かくとう",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "たたみがえし",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ゲップ",
+    "type": "どく",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "たがやす",
+    "type": "じめん",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ねばねばネット",
+    "type": "むし",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "とどめばり",
+    "type": "むし",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ゴーストダイブ",
+    "type": "ゴースト",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ハロウィン",
+    "type": "ゴースト",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "おたけび",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "プラズマシャワー",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "なみのり",
+    "type": "みず",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "パラボラチャージ",
+    "type": "でんき",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "もりののろい",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "はなふぶき",
+    "type": "くさ",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "フリーズドライ",
+    "type": "こおり",
+    "power": 70,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "チャームボイス",
+    "type": "フェアリー",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "すてゼリフ",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ひっくりかえす",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ドレインキッス",
+    "type": "フェアリー",
+    "power": 50,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "トリックガード",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "フラワーガード",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "れいとうビーム",
+    "type": "こおり",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "グラスフィールド",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ミストフィールド",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "そうでん",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "じゃれつく",
+    "type": "フェアリー",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ようせいのかぜ",
+    "type": "フェアリー",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ムーンフォース",
+    "type": "フェアリー",
+    "power": 95,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ばくおんぱ",
+    "type": "ノーマル",
+    "power": 140,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "フェアリーロック",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "キングシールド",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "なかよくする",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ふぶき",
+    "type": "こおり",
+    "power": 110,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ないしょばなし",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ダイヤストーム",
+    "type": "いわ",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "スチームバースト",
+    "type": "みず",
+    "power": 110,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "いじげんホール",
+    "type": "エスパー",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みずしゅりけん",
+    "type": "みず",
+    "power": 15,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "マジカルフレイム",
+    "type": "ほのお",
+    "power": 75,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ニードルガード",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "アロマミスト",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かいでんぱ",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ベノムトラップ",
+    "type": "どく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ネコにこばん",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "サイケこうせん",
+    "type": "エスパー",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ふんじん",
+    "type": "むし",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ジオコントロール",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "じばそうさ",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ハッピータイム",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "エレキフィールド",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "マジカルシャイン",
+    "type": "フェアリー",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "おいわい",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "てをつなぐ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "つぶらなひとみ",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ほっぺすりすり",
+    "type": "でんき",
+    "power": 20,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "バブルこうせん",
+    "type": "みず",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "てかげん",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "まとわりつく",
+    "type": "むし",
+    "power": 20,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "グロウパンチ",
+    "type": "かくとう",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "デスウイング",
+    "type": "ひこう",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "サウザンアロー",
+    "type": "じめん",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "サウザンウェーブ",
+    "type": "じめん",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "グランドフォース",
+    "type": "じめん",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "はめつのひかり",
+    "type": "フェアリー",
+    "power": 140,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "こんげんのはどう",
+    "type": "みず",
+    "power": 110,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "だんがいのつるぎ",
+    "type": "じめん",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "オーロラビーム",
+    "type": "こおり",
+    "power": 65,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ガリョウテンセイ",
+    "type": "ひこう",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "いじげんラッシュ",
+    "type": "あく",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ウルトラダッシュアタック",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ウルトラダッシュアタック",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ぜんりょくむそうげきれつけん",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ぜんりょくむそうげきれつけん",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ファイナルダイブクラッシュ",
+    "type": "ひこう",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ファイナルダイブクラッシュ",
+    "type": "ひこう",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "アシッドポイズンデリート",
+    "type": "どく",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "アシッドポイズンデリート",
+    "type": "どく",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "はかいこうせん",
+    "type": "ノーマル",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ライジングランドオーバー",
+    "type": "じめん",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ライジングランドオーバー",
+    "type": "じめん",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ワールズエンドフォール",
+    "type": "いわ",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ワールズエンドフォール",
+    "type": "いわ",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ぜったいほしょくかいてんざん",
+    "type": "むし",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ぜったいほしょくかいてんざん",
+    "type": "むし",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "むげんあんやへのいざない",
+    "type": "ゴースト",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "むげんあんやへのいざない",
+    "type": "ゴースト",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ちょうぜつらせんれんげき",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ちょうぜつらせんれんげき",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  { "name": "つつく", "type": "ひこう", "power": 35, "damage_class": "ぶつり" },
+  {
+    "name": "ダイナミックフルフレイム",
+    "type": "ほのお",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイナミックフルフレイム",
+    "type": "ほのお",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "スーパーアクアトルネード",
+    "type": "みず",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "スーパーアクアトルネード",
+    "type": "みず",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ブルームシャインエクストラ",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ブルームシャインエクストラ",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "スパーキングギガボルト",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "スパーキングギガボルト",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "マキシマムサイブレイカー",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "マキシマムサイブレイカー",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ドリルくちばし",
+    "type": "ひこう",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "レイジングジオフリーズ",
+    "type": "こおり",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "レイジングジオフリーズ",
+    "type": "こおり",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "アルティメットドラゴンバーン",
+    "type": "ドラゴン",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "アルティメットドラゴンバーン",
+    "type": "ドラゴン",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ブラックホールイクリプス",
+    "type": "あく",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ブラックホールイクリプス",
+    "type": "あく",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ラブリースターインパクト",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ラブリースターインパクト",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ひっさつのピカチュート",
+    "type": "でんき",
+    "power": 210,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "すなあつめ",
+    "type": "じめん",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "じごくぐるま",
+    "type": "かくとう",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "であいがしら",
+    "type": "むし",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "トーチカ",
+    "type": "どく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かげぬい",
+    "type": "ゴースト",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ＤＤラリアット",
+    "type": "あく",
+    "power": 85,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "うたかたのアリア",
+    "type": "みず",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "アイスハンマー",
+    "type": "こおり",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "フラワーヒール",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "１０まんばりき",
+    "type": "じめん",
+    "power": 95,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ちからをすいとる",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ソーラーブレード",
+    "type": "くさ",
+    "power": 125,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "けたぐり",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  { "name": "このは", "type": "くさ", "power": 40, "damage_class": "ぶつり" },
+  {
+    "name": "スポットライト",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "どくのいと",
+    "type": "どく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "とぎすます",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "アシストギア",
+    "type": "はがね",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "じごくづき",
+    "type": "あく",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "かふんだんご",
+    "type": "むし",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "アンカーショット",
+    "type": "はがね",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "サイコフィールド",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "とびかかる",
+    "type": "むし",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "カウンター",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ほのおのムチ",
+    "type": "ほのお",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "つけあがる",
+    "type": "あく",
+    "power": 20,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "もえつきる",
+    "type": "ほのお",
+    "power": 130,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "スピードスワップ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "スマートホーン",
+    "type": "はがね",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "じょうか",
+    "type": "どく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "めざめるダンス",
+    "type": "ノーマル",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "コアパニッシャー",
+    "type": "ドラゴン",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "トロピカルキック",
+    "type": "くさ",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "さいはい",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ちきゅうなげ",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "くちばしキャノン",
+    "type": "ひこう",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "スケイルノイズ",
+    "type": "ドラゴン",
+    "power": 110,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ドラゴンハンマー",
+    "type": "ドラゴン",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ぶんまわす",
+    "type": "あく",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "オーロラベール",
+    "type": "こおり",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "シャドーアローズストライク",
+    "type": "ゴースト",
+    "power": 180,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ハイパーダーククラッシャー",
+    "type": "あく",
+    "power": 180,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "わだつみのシンフォニア",
+    "type": "みず",
+    "power": 195,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ガーディアン・デ・アローラ",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "しちせいだっこんたい",
+    "type": "ゴースト",
+    "power": 195,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ほのおのパンチ",
+    "type": "ほのお",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "かいりき",
+    "type": "ノーマル",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ライトニングサーフライド",
+    "type": "でんき",
+    "power": 175,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ほんきをだす　こうげき",
+    "type": "ノーマル",
+    "power": 210,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ナインエボルブースト",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "オリジンズスーパーノヴァ",
+    "type": "エスパー",
+    "power": 185,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "トラップシェル",
+    "type": "ほのお",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "フルールカノン",
+    "type": "フェアリー",
+    "power": 130,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "サイコファング",
+    "type": "エスパー",
+    "power": 85,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "じだんだ",
+    "type": "じめん",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "シャドーボーン",
+    "type": "ゴースト",
+    "power": 85,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "アクセルロック",
+    "type": "いわ",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "すいとる",
+    "type": "くさ",
+    "power": 20,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "アクアブレイク",
+    "type": "みず",
+    "power": 85,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "プリズムレーザー",
+    "type": "エスパー",
+    "power": 160,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "シャドースチール",
+    "type": "ゴースト",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "メテオドライブ",
+    "type": "はがね",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "シャドーレイ",
+    "type": "ゴースト",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "なみだめ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "びりびりちくちく",
+    "type": "でんき",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "しぜんのいかり",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "マルチアタック",
+    "type": "ノーマル",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "１０００まんボルト",
+    "type": "でんき",
+    "power": 195,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "メガドレイン",
+    "type": "くさ",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ビックリヘッド",
+    "type": "ほのお",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "プラズマフィスト",
+    "type": "でんき",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "フォトンゲイザー",
+    "type": "エスパー",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "てんこがすめつぼうのひかり",
+    "type": "エスパー",
+    "power": 200,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "サンシャインスマッシャー",
+    "type": "はがね",
+    "power": 200,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ムーンライトブラスター",
+    "type": "ゴースト",
+    "power": 200,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ぽかぼかフレンドタイム",
+    "type": "フェアリー",
+    "power": 190,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ラジアルエッジストーム",
+    "type": "いわ",
+    "power": 190,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ブレイジングソウルビート",
+    "type": "ドラゴン",
+    "power": 185,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ばちばちアクセル",
+    "type": "でんき",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "やどりぎのタネ",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ざぶざぶサーフ",
+    "type": "みず",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ふわふわフォール",
+    "type": "ひこう",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ピカピカサンダー",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "いきいきバブル",
+    "type": "みず",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "びりびりエレキ",
+    "type": "でんき",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "めらめらバーン",
+    "type": "ほのお",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "どばどばオーラ",
+    "type": "エスパー",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "わるわるゾーン",
+    "type": "あく",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "すくすくボンバー",
+    "type": "くさ",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "こちこちフロスト",
+    "type": "こおり",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "せいちょう",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "きらきらストーム",
+    "type": "フェアリー",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ブイブイブレイク",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダブルパンツァー",
+    "type": "はがね",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイウォール",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ダイマックスほう",
+    "type": "ドラゴン",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ねらいうち",
+    "type": "みず",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "くらいつく",
+    "type": "あく",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ほおばる",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "はいすいのじん",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "タールショット",
+    "type": "いわ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "はっぱカッター",
+    "type": "くさ",
+    "power": 55,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "まほうのこな",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ドラゴンアロー",
+    "type": "ドラゴン",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "おちゃかい",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "たこがため",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "でんげきくちばし",
+    "type": "でんき",
+    "power": 85,
+    "damage_class": "ぶつり"
+  },
+  { "name": "エラがみ", "type": "みず", "power": 85, "damage_class": "ぶつり" },
+  {
+    "name": "コートチェンジ",
+    "type": "ノーマル",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ダイバーン",
+    "type": "ほのお",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイワーム",
+    "type": "むし",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイサンダー",
+    "type": "でんき",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ソーラービーム",
+    "type": "くさ",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ダイアタック",
+    "type": "ノーマル",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイナックル",
+    "type": "かくとう",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイホロウ",
+    "type": "ゴースト",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイアイス",
+    "type": "こおり",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイアシッド",
+    "type": "どく",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイストリーム",
+    "type": "みず",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイジェット",
+    "type": "ひこう",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイフェアリー",
+    "type": "フェアリー",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイドラグーン",
+    "type": "ドラゴン",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイサイコ",
+    "type": "エスパー",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "どくのこな",
+    "type": "どく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ダイロック",
+    "type": "いわ",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイアース",
+    "type": "じめん",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイアーク",
+    "type": "あく",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイソウゲン",
+    "type": "くさ",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダイスチル",
+    "type": "はがね",
+    "power": 10,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ソウルビート",
+    "type": "ドラゴン",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ボディプレス",
+    "type": "かくとう",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "デコレーション",
+    "type": "フェアリー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ドラムアタック",
+    "type": "くさ",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "トラバサミ",
+    "type": "くさ",
+    "power": 35,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "しびれごな",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かえんボール",
+    "type": "ほのお",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "きょじゅうざん",
+    "type": "はがね",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "きょじゅうだん",
+    "type": "はがね",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "オーラぐるま",
+    "type": "でんき",
+    "power": 110,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ワイドブレイカー",
+    "type": "ドラゴン",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  { "name": "えだづき", "type": "くさ", "power": 40, "damage_class": "ぶつり" },
+  {
+    "name": "オーバードライブ",
+    "type": "でんき",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "りんごさん",
+    "type": "くさ",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "Ｇのちから",
+    "type": "くさ",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ソウルクラッシュ",
+    "type": "フェアリー",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ねむりごな",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ワンダースチーム",
+    "type": "フェアリー",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "いのちのしずく",
+    "type": "みず",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ブロッキング",
+    "type": "あく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "どげざつき",
+    "type": "あく",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "スターアサルト",
+    "type": "かくとう",
+    "power": 150,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ムゲンダイビーム",
+    "type": "ドラゴン",
+    "power": 160,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "てっていこうせん",
+    "type": "はがね",
+    "power": 140,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ワイドフォース",
+    "type": "エスパー",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "アイアンローラー",
+    "type": "はがね",
+    "power": 130,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "スケイルショット",
+    "type": "ドラゴン",
+    "power": 25,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "れいとうパンチ",
+    "type": "こおり",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "はなびらのまい",
+    "type": "くさ",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "メテオビーム",
+    "type": "いわ",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "シェルアームズ",
+    "type": "どく",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ミストバースト",
+    "type": "フェアリー",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "グラススライダー",
+    "type": "くさ",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ライジングボルト",
+    "type": "でんき",
+    "power": 70,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "だいちのはどう",
+    "type": "ノーマル",
+    "power": 50,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "はいよるいちげき",
+    "type": "むし",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "しっとのほのお",
+    "type": "ほのお",
+    "power": 70,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "うっぷんばらし",
+    "type": "あく",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ポルターガイスト",
+    "type": "ゴースト",
+    "power": 110,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "いとをはく",
+    "type": "むし",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ふしょくガス",
+    "type": "どく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "コーチング",
+    "type": "かくとう",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "クイックターン",
+    "type": "みず",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "トリプルアクセル",
+    "type": "こおり",
+    "power": 20,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダブルウイング",
+    "type": "ひこう",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ねっさのだいち",
+    "type": "じめん",
+    "power": 70,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ジャングルヒール",
+    "type": "くさ",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "あんこくきょうだ",
+    "type": "あく",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "すいりゅうれんだ",
+    "type": "みず",
+    "power": 25,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "サンダープリズン",
+    "type": "でんき",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "りゅうのいかり",
+    "type": "ドラゴン",
+    "power": null,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ドラゴンエナジー",
+    "type": "ドラゴン",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "いてつくしせん",
+    "type": "エスパー",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "もえあがるいかり",
+    "type": "あく",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "らいめいげり",
+    "type": "かくとう",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ブリザードランス",
+    "type": "こおり",
+    "power": 130,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "アストラルビット",
+    "type": "ゴースト",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ぶきみなじゅもん",
+    "type": "エスパー",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "フェイタルクロー",
+    "type": "どく",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "バリアーラッシュ",
+    "type": "エスパー",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "パワーシフト",
+    "type": "ノーマル",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ほのおのうず",
+    "type": "ほのお",
+    "power": 35,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "がんせきアックス",
+    "type": "いわ",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "はるのあらし",
+    "type": "フェアリー",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "しんぴのちから",
+    "type": "エスパー",
+    "power": 70,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "だいふんげき",
+    "type": "ほのお",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ウェーブタックル",
+    "type": "みず",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "クロロブラスト",
+    "type": "くさ",
+    "power": 150,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ひょうざんおろし",
+    "type": "こおり",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "しょうりのまい",
+    "type": "かくとう",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ぶちかまし",
+    "type": "じめん",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "どくばりセンボン",
+    "type": "どく",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "でんきショック",
+    "type": "でんき",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "オーラウイング",
+    "type": "エスパー",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "うらみつらみ",
+    "type": "ゴースト",
+    "power": 75,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "たてこもる",
+    "type": "はがね",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "３ぼんのや",
+    "type": "かくとう",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ひゃっきやこう",
+    "type": "ゴースト",
+    "power": 60,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ひけん・ちえなみ",
+    "type": "あく",
+    "power": 65,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "こがらしあらし",
+    "type": "ひこう",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "かみなりあらし",
+    "type": "でんき",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ねっさのあらし",
+    "type": "じめん",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "みかづきのいのり",
+    "type": "エスパー",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "１０まんボルト",
+    "type": "でんき",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ブレイブチャージ",
+    "type": "エスパー",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "テラバースト",
+    "type": "ノーマル",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "スレッドトラップ",
+    "type": "むし",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "かかとおとし",
+    "type": "かくとう",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "おはかまいり",
+    "type": "ゴースト",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ルミナコリジョン",
+    "type": "エスパー",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "いっちょうあがり",
+    "type": "ドラゴン",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ジェットパンチ",
+    "type": "みず",
+    "power": 60,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ハバネロエキス",
+    "type": "くさ",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ホイールスピン",
+    "type": "はがね",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "でんじは",
+    "type": "でんき",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ネズミざん",
+    "type": "ノーマル",
+    "power": 20,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "アイススピナー",
+    "type": "こおり",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "きょけんとつげき",
+    "type": "ドラゴン",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "さいきのいのり",
+    "type": "ノーマル",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  { "name": "しおづけ", "type": "いわ", "power": 40, "damage_class": "ぶつり" },
+  {
+    "name": "トリプルダイブ",
+    "type": "みず",
+    "power": 30,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "キラースピン",
+    "type": "どく",
+    "power": 30,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "うつしえ",
+    "type": "ノーマル",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "みおけずる",
+    "type": "ノーマル",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  { "name": "ドゲザン", "type": "あく", "power": 85, "damage_class": "ぶつり" },
+  {
+    "name": "かみなり",
+    "type": "でんき",
+    "power": 110,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "トリックフラワー",
+    "type": "くさ",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "フレアソング",
+    "type": "ほのお",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "アクアステップ",
+    "type": "みず",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "レイジングブル",
+    "type": "ノーマル",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ゴールドラッシュ",
+    "type": "はがね",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "はたく",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "はたく",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "カタストロフィ",
+    "type": "あく",
+    "power": 1,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "アクセルブレイク",
+    "type": "かくとう",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "イナズマドライブ",
+    "type": "でんき",
+    "power": 100,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "いわおとし",
+    "type": "いわ",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "しっぽきり",
+    "type": "ノーマル",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "さむいギャグ",
+    "type": "こおり",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "おかたづけ",
+    "type": "ノーマル",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ゆきげしき",
+    "type": "こおり",
+    "power": 0,
+    "damage_class": "へんか"
+  },
+  { "name": "とびつく", "type": "むし", "power": 50, "damage_class": "ぶつり" },
+  { "name": "くさわけ", "type": "くさ", "power": 50, "damage_class": "ぶつり" },
+  {
+    "name": "ひやみず",
+    "type": "みず",
+    "power": 50,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ハイパードリル",
+    "type": "ノーマル",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ツインビーム",
+    "type": "エスパー",
+    "power": 40,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "ふんどのこぶし",
+    "type": "ゴースト",
+    "power": 50,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "じしん",
+    "type": "じめん",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "アーマーキャノン",
+    "type": "ほのお",
+    "power": 120,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "むねんのつるぎ",
+    "type": "ほのお",
+    "power": 90,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "てんこうそうげき",
+    "type": "でんき",
+    "power": 120,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "デカハンマー",
+    "type": "はがね",
+    "power": 160,
+    "damage_class": "ぶつり"
+  },
+  { "name": "ほうふく", "type": "あく", "power": 1, "damage_class": "ぶつり" },
+  {
+    "name": "アクアカッター",
+    "type": "みず",
+    "power": 70,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "バーンアクセル",
+    "type": "ほのお",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ダークアクセル",
+    "type": "あく",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ポイズンアクセル",
+    "type": "どく",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "ファイトアクセル",
+    "type": "かくとう",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "かみなりパンチ",
+    "type": "でんき",
+    "power": 75,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "じわれ",
+    "type": "じめん",
+    "power": null,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "マジカルアクセル",
+    "type": "フェアリー",
+    "power": 100,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "あなをほる",
+    "type": "じめん",
+    "power": 80,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "どくどく",
+    "type": "どく",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ねんりき",
+    "type": "エスパー",
+    "power": 50,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "サイコキネシス",
+    "type": "エスパー",
+    "power": 90,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "さいみんじゅつ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "ヨガのポーズ",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "こうそくいどう",
+    "type": "エスパー",
+    "power": null,
+    "damage_class": "へんか"
+  },
+  {
+    "name": "でんこうせっか",
+    "type": "ノーマル",
+    "power": 40,
+    "damage_class": "ぶつり"
+  },
+  {
+    "name": "いかり",
+    "type": "ノーマル",
+    "power": 20,
+    "damage_class": "ぶつり"
+  }
+]

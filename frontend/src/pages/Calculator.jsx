@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useToggle } from "react-use";
-import Attacker from "./Attacker";
-import "./Calculator.css";
-import Defender from "./Defender";
-import Environment from "./Environment";
-import Footer from "./Footer";
-import TypeCompatibility from "./TypeCompatibility";
+import Attacker from "../components/Attacker";
+import "../components/Calculator.css";
+import Defender from "../components/Defender";
+import Environment from "../components/Environment";
+import Footer from "../components/Footer";
+import TypeCompatibility from "../components/TypeCompatibility";
 
 const Calculator = () => {
   const [attack, setAttack] = useState(100);
