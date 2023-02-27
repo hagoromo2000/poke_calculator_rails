@@ -6,6 +6,11 @@ const Environment = (props) => {
     const selectedValue = event.target.value;
     props.setWeather(selectedValue);
   }
+
+  function handleField(event) {
+    const selectedValue = event.target.value;
+    props.setField(selectedValue);
+  }
   return (
     <>
       <div className="artboard phone-6 bg-white rounded-lg shadow-xl mx-auto mt-10 mb-32 b-32">
@@ -44,19 +49,22 @@ const Environment = (props) => {
           </label>
           <select
             id="underline_select"
+            onChange={handleField}
             className=" block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
           >
-            <option className="text-center">フィールドを選択</option>
-            <option value="" className="text-center">
+            <option value="null" className="text-center">
+              フィールドを選択
+            </option>
+            <option value="エレキフィールド" className="text-center">
               エレキフィールド
             </option>
-            <option value="" className="text-center">
+            <option value="グラスフィールド" className="text-center">
               グラスフィールド
             </option>
-            <option value="" className="text-center">
+            <option value="サイコフィールド" className="text-center">
               サイコフィールド
             </option>
-            <option value="" className="text-center">
+            <option value="ミストフィールド" className="text-center">
               ミストフィールド
             </option>
           </select>
