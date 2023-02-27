@@ -5,7 +5,10 @@ import "../components/Calculator.css";
 import Defender from "../components/Defender";
 import Environment from "../components/Environment";
 import Footer from "../components/Footer";
-import TypeCompatibility from "../components/TypeCompatibility";
+import TypeCompatibility from "../calculator/TypeCompatibility";
+import WeatherDamageModifier from "../calculator/WeatherDamageModifier";
+import WeatherDefenseModifier from "../calculator/WeatherDefenseModifier";
+import WeatherSpecialDefenseModifier from "../calculator/WeatherSpecialDefenseModifier";
 
 const Calculator = () => {
   const [attack, setAttack] = useState(100);
@@ -26,10 +29,36 @@ const Calculator = () => {
   const [defenseType1, setDefenseType1] = useState(null);
   const [defenseType2, setDefenseType2] = useState(null);
 
+  const [weather, setWeather] = useState(null);
+  const [damageMultiplierByWeather, setDamageMultiplierByWeather] = useState(1);
+  const [defenseMultiplierByWeather, setDefenseMultiplierByWeather] =
+    useState(1);
+  const [
+    specialDefenseMultiplierByWeather,
+    setSpecialDefenseMultiplierByWeather,
+  ] = useState(1);
+
   const [damage, setDamage] = useState(0);
   const [minDamage, setMinDamage] = useState(0);
   const [maxDamage, setMaxDamage] = useState(0);
   const [compatibility, setCompatibility] = useState(1);
+
+  //環境による倍率の設定
+  useEffect(() => {
+    //天候による倍率の設定
+    setDamageMultiplierByWeather(WeatherDamageModifier(moveType, weather));
+    setDefenseMultiplierByWeather(
+      WeatherDefenseModifier(defenseType1, defenseType2, teraType, weather)
+    );
+    setSpecialDefenseMultiplierByWeather(
+      WeatherSpecialDefenseModifier(
+        defenseType1,
+        defenseType2,
+        teraType,
+        weather
+      )
+    );
+  }, [weather, moveType, teraType, defenseType1, defenseType2]);
 
   //　各種値が変化すると、副作用で基礎ダメージが計算される。
   useEffect(() => {
@@ -64,7 +93,7 @@ const Calculator = () => {
         baseDamage = Math.floor(
           Math.floor(
             (22 * power * (attack * attackRankMultiplier)) /
-              (defense * defenseRankMultiplier)
+              (defense * defenseMultiplierByWeather * defenseRankMultiplier)
           ) /
             50 +
             2
@@ -73,12 +102,17 @@ const Calculator = () => {
         baseDamage = Math.floor(
           Math.floor(
             (22 * power * (specialAttack * attackRankMultiplier)) /
-              (specialDefense * defenseRankMultiplier)
+              (specialDefense *
+                specialDefenseMultiplierByWeather *
+                defenseRankMultiplier)
           ) /
             50 +
             2
         );
       }
+
+      // はれかあめの時のダメージ倍率をかける
+      baseDamage = baseDamage * damageMultiplierByWeather;
 
       return baseDamage;
     });
@@ -92,6 +126,10 @@ const Calculator = () => {
     damageClass,
     attackerRank,
     defenseRank,
+    moveType,
+    damageMultiplierByWeather,
+    defenseMultiplierByWeather,
+    specialDefenseMultiplierByWeather,
   ]);
 
   // 基礎ダメージが計算されると、乱数幅を掛けた最大ダメージと最小ダメージが算出され、それに各種倍率を掛けて最終的なダメージが算出される。
@@ -154,7 +192,7 @@ const Calculator = () => {
         />
       </div>
       <div className="h-64 bg-blue-50">
-        <Environment />
+        <Environment setWeather={setWeather} />
       </div>
       <Footer
         damage={damage}
