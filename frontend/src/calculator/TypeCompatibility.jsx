@@ -1,5 +1,3 @@
-import React from "react";
-
 // タイプ相性による倍率の計算処理
 const TypeCompatibility = (moveType, teraType, type1, type2) => {
   let compatibility = 1;
