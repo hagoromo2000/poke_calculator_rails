@@ -7,10 +7,6 @@ erDiagram
 
   users{
     integer id
-    string name
-    string email
-    string crypted_password
-    string salt
     datetime created_at
     datetime updated_at
   }
