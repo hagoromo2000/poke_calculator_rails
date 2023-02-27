@@ -9,6 +9,7 @@ import TypeCompatibility from "../calculator/TypeCompatibility";
 import WeatherDamageModifier from "../calculator/WeatherDamageModifier";
 import WeatherDefenseModifier from "../calculator/WeatherDefenseModifier";
 import WeatherSpecialDefenseModifier from "../calculator/WeatherSpecialDefenseModifier";
+import FieldDamageModifier from "../calculator/FieldDamageModifier";
 
 const Calculator = () => {
   const [attack, setAttack] = useState(100);
@@ -38,6 +39,9 @@ const Calculator = () => {
     setSpecialDefenseMultiplierByWeather,
   ] = useState(1);
 
+  const [field, setField] = useState(null);
+  const [damageMultiplierByField, setDamageMultiplierByField] = useState(1);
+
   const [damage, setDamage] = useState(0);
   const [minDamage, setMinDamage] = useState(0);
   const [maxDamage, setMaxDamage] = useState(0);
@@ -58,7 +62,29 @@ const Calculator = () => {
         weather
       )
     );
-  }, [weather, moveType, teraType, defenseType1, defenseType2]);
+
+    //フィールドによる倍率の設定
+    setDamageMultiplierByField(
+      FieldDamageModifier(
+        attackerFirstType,
+        attackerSecondType,
+        defenseType1,
+        defenseType2,
+        teraType,
+        field,
+        moveType
+      )
+    );
+  }, [
+    weather,
+    field,
+    moveType,
+    teraType,
+    defenseType1,
+    defenseType2,
+    attackerFirstType,
+    attackerSecondType,
+  ]);
 
   //　各種値が変化すると、副作用で基礎ダメージが計算される。
   useEffect(() => {
@@ -112,7 +138,8 @@ const Calculator = () => {
       }
 
       // はれかあめの時のダメージ倍率をかける
-      baseDamage = baseDamage * damageMultiplierByWeather;
+      baseDamage =
+        baseDamage * damageMultiplierByWeather * damageMultiplierByField;
 
       return baseDamage;
     });
@@ -130,6 +157,7 @@ const Calculator = () => {
     damageMultiplierByWeather,
     defenseMultiplierByWeather,
     specialDefenseMultiplierByWeather,
+    damageMultiplierByField,
   ]);
 
   // 基礎ダメージが計算されると、乱数幅を掛けた最大ダメージと最小ダメージが算出され、それに各種倍率を掛けて最終的なダメージが算出される。
@@ -192,7 +220,7 @@ const Calculator = () => {
         />
       </div>
       <div className="h-64 bg-blue-50">
-        <Environment setWeather={setWeather} />
+        <Environment setWeather={setWeather} setField={setField} />
       </div>
       <Footer
         damage={damage}
