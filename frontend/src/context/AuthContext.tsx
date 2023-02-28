@@ -1,0 +1,30 @@
+import React, { createContext, useContext } from "react";
+import useFirebaseAuth from "../hooks/useFirebaseAuth";
+import { User } from "firebase/auth";
+
+interface AuthContext {
+  currentUser: User | null;
+  loading: boolean;
+  loginWithGoogle: () => Promise<User | undefined>;
+  logout: () => Promise<void>;
+}
+
+type AuthProviderProps = {
+  children: React.ReactNode;
+};
+
+const AuthCtx = createContext({} as AuthContext);
+
+export function AuthContextProvider({ children }: AuthProviderProps) {
+  const { currentUser, loading, loginWithGoogle, logout } = useFirebaseAuth();
+
+  const AuthContext: AuthContext = {
+    currentUser: currentUser,
+    loading: loading,
+    loginWithGoogle: loginWithGoogle,
+    logout: logout,
+  };
+  return <AuthCtx.Provider value={AuthContext}>{children}</AuthCtx.Provider>;
+}
+// userContextを使ってcurrentUserにアクセスし、ロードするためのカスタムフック
+export const useAuthContext = () => useContext(AuthCtx);

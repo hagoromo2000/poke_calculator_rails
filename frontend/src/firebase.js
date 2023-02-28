@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApp, getApps } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
@@ -13,7 +13,19 @@ const firebaseConfig = {
   measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
-const app = initializeApp(firebaseConfig);
+// Firebaseを初期化し、FirebaseAppオブジェクトを作成
+// appが既に存在する場合、そのappを取得する
+const getFirebaseApp = () => {
+  if (getApps().length === 0) {
+    return initializeApp(firebaseConfig);
+  } else {
+    return getApp();
+  }
+};
+
+const app = getFirebaseApp();
+
+// FirebaseAppに関連づけられたAuthインスタンスを取得
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 const analytics = getAnalytics(app);
