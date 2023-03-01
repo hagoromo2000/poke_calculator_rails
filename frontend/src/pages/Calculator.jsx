@@ -10,6 +10,7 @@ import WeatherDamageModifier from "../calculator/WeatherDamageModifier";
 import WeatherDefenseModifier from "../calculator/WeatherDefenseModifier";
 import WeatherSpecialDefenseModifier from "../calculator/WeatherSpecialDefenseModifier";
 import FieldDamageModifier from "../calculator/FieldDamageModifier";
+import roundToHalf from "../calculator/OverHalf";
 
 const Calculator = () => {
   const [attack, setAttack] = useState(100);
@@ -177,9 +178,13 @@ const Calculator = () => {
     let minBaseDamage = Math.floor(damage * 0.85);
     let maxBaseDamage = damage;
 
-    // 各種補正を乗算した後四捨五入（本来は五捨五超入だが、暫定的に設定)
-    minBaseDamage = Math.round(minBaseDamage * stab);
-    maxBaseDamage = Math.round(maxBaseDamage * stab);
+    // タイプ一致補正を乗算
+    minBaseDamage = minBaseDamage * stab;
+    maxBaseDamage = maxBaseDamage * stab;
+
+    // 五捨五超入
+    minBaseDamage = roundToHalf(minBaseDamage);
+    maxBaseDamage = roundToHalf(maxBaseDamage);
 
     console.log(compatibility);
     setMinDamage(Math.floor(minBaseDamage * compatibility));
