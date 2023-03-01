@@ -53,7 +53,13 @@ const Attacker = (props) => {
 
   // わざ、ダメージ種別(物理,特殊)の制御
   const [move, setMove] = useState({
-    value: Moves[0],
+    value: {
+      name: "１０まんボルト",
+      type: "でんき",
+      power: 90,
+      damage_class: "とくしゅ",
+    },
+    label: "１０まんボルト",
   });
   const handleMove = (move) => {
     setMove(move);

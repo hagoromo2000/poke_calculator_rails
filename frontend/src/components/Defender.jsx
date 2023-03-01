@@ -41,8 +41,8 @@ const all_types = [
 //　コンポーネント
 const Defender = (props) => {
   const [pokemon, setPokemon] = useState({
-    value: Pokemons[0],
-    label: Pokemons[0].name,
+    value: Pokemons[5],
+    label: Pokemons[5].name,
   });
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);

@@ -15,10 +15,10 @@ import roundToHalf from "../calculator/OverHalf";
 const Calculator = () => {
   const [attack, setAttack] = useState(100);
   const [specialAttack, setSpecialAttack] = useState(100);
-  const [moveType, setMoveType] = useState(null);
-  const [power, setPower] = useState(0);
-  const [damageClass, setDamageClass] = useState("ぶつり");
-  const [attackerFirstType, setAttackerFirstType] = useState(null);
+  const [moveType, setMoveType] = useState("でんき");
+  const [power, setPower] = useState(90);
+  const [damageClass, setDamageClass] = useState("とくしゅ");
+  const [attackerFirstType, setAttackerFirstType] = useState("でんき");
   const [attackerSecondType, setAttackerSecondType] = useState(null);
   const [attackerTerastal, setAttackerTerastal] = useToggle(false);
   const [attackerRank, setAttackerRank] = useState(0);
@@ -28,8 +28,8 @@ const Calculator = () => {
   const [specialDefense, setSpecialDefense] = useState(100);
   const [defenseRank, setDefenseRank] = useState(0);
   const [teraType, setTeraType] = useState(null);
-  const [defenseType1, setDefenseType1] = useState(null);
-  const [defenseType2, setDefenseType2] = useState(null);
+  const [defenseType1, setDefenseType1] = useState("ほのお");
+  const [defenseType2, setDefenseType2] = useState("ひこう");
 
   const [weather, setWeather] = useState(null);
   const [damageMultiplierByWeather, setDamageMultiplierByWeather] = useState(1);
