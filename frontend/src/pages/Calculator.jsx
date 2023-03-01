@@ -186,7 +186,6 @@ const Calculator = () => {
     minBaseDamage = roundToHalf(minBaseDamage);
     maxBaseDamage = roundToHalf(maxBaseDamage);
 
-    console.log(compatibility);
     setMinDamage(Math.floor(minBaseDamage * compatibility));
     setMaxDamage(Math.floor(maxBaseDamage * compatibility));
   }, [damage, attackerTerastal, moveType]);

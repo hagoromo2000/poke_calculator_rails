@@ -44,27 +44,6 @@ const Defender = (props) => {
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
 
-    // HP実数値のセット
-    const hp_value = Math.floor(
-      (pokemon.value.hp * 2 + 31 + hp_ev / 4) / 2 + 60
-    );
-    props.setHp(hp_value);
-
-    // 防御実数値のセット
-    const defense_value = Math.floor(
-      ((pokemon.value.defense * 2 + 31 + defense_ev / 4) / 2 + 5) *
-        defenseNature
-    );
-    props.setDefense(defense_value);
-
-    // 特防実数値のセット
-    const special_defense_value = Math.floor(
-      ((pokemon.value.special_defense * 2 + 31 + specialDefense_ev / 4) / 2 +
-        5) *
-        specialDefenseNature
-    );
-    props.setSpecialDefense(special_defense_value);
-
     // タイプのセット
     props.setDefenseType1(pokemon.value.type1);
     props.setDefenseType2(pokemon.value.type2);
@@ -121,7 +100,7 @@ const Defender = (props) => {
       (pokemon.value.hp * 2 + 31 + hp_ev / 4) / 2 + 60
     );
     props.setHp(hp_value);
-  }, [hp_ev]);
+  }, [hp_ev, pokemon]);
 
   // 防御努力値と実数値を連動させる処理
   const [defense_ev, setDefense_ev] = useState(0);
@@ -136,7 +115,7 @@ const Defender = (props) => {
         defenseNature
     );
     props.setDefense(defense_value);
-  }, [defense_ev, defenseNature]);
+  }, [defense_ev, defenseNature, pokemon]);
 
   // 特防努力値と実数値を連動させる処理
   const [specialDefense_ev, setSpecialDefense_ev] = useState(0);
@@ -152,7 +131,7 @@ const Defender = (props) => {
         specialDefenseNature
     );
     props.setSpecialDefense(special_defense_value);
-  }, [specialDefense_ev, specialDefenseNature]);
+  }, [specialDefense_ev, specialDefenseNature, pokemon]);
 
   return (
     <>
