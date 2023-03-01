@@ -40,7 +40,10 @@ const all_types = [
 
 //　コンポーネント
 const Defender = (props) => {
-  const [pokemon, setPokemon] = useState({ value: Pokemons[0] });
+  const [pokemon, setPokemon] = useState({
+    value: Pokemons[0],
+    label: Pokemons[0].name,
+  });
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
 
@@ -55,8 +58,7 @@ const Defender = (props) => {
   };
 
   const handleTeraType = (teraType) => {
-    props.setTeraType(teraType);
-    console.log(props.teraType);
+    props.setTeraType(teraType.value);
   };
 
   const [ability, setAbility] = useState(null);
@@ -94,7 +96,7 @@ const Defender = (props) => {
   const handleHp = (event) => {
     setHp_ev(event.target.value);
   };
-  // 努力値が変更されると副作用で実数値が計算される
+  // ポケモン、努力値が変化した時、副作用で実数値が計算される
   useEffect(() => {
     const hp_value = Math.floor(
       (pokemon.value.hp * 2 + 31 + hp_ev / 4) / 2 + 60
@@ -108,7 +110,7 @@ const Defender = (props) => {
     setDefense_ev(event.target.value);
   };
 
-  // 防御努力値と性格補正が変化した際、副作用で実数値を再計算
+  // ポケモン、防御努力値、性格補正が変化した際、副作用で実数値を再計算
   useEffect(() => {
     const defense_value = Math.floor(
       ((pokemon.value.defense * 2 + 31 + defense_ev / 4) / 2 + 5) *
@@ -123,7 +125,7 @@ const Defender = (props) => {
     setSpecialDefense_ev(event.target.value);
   };
 
-  // 特防努力値と性格補正が変化した際、副作用で実数値を再計算
+  // ポケモン、特防努力値、性格補正が変化した際、副作用で実数値を再計算
   useEffect(() => {
     const special_defense_value = Math.floor(
       ((pokemon.value.special_defense * 2 + 31 + specialDefense_ev / 4) / 2 +

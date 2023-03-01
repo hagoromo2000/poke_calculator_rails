@@ -48,7 +48,7 @@ const Calculator = () => {
   const [maxDamage, setMaxDamage] = useState(0);
   const [compatibility, setCompatibility] = useState(1);
 
-  //環境による倍率の設定
+  //環境、タイプ相性による倍率の設定
   useEffect(() => {
     //天候による倍率の設定
     setDamageMultiplierByWeather(WeatherDamageModifier(moveType, weather));
@@ -75,6 +75,11 @@ const Calculator = () => {
         field,
         moveType
       )
+    );
+
+    //タイプ相性による倍率の設定
+    setCompatibility(
+      TypeCompatibility(moveType, teraType, defenseType1, defenseType2)
     );
   }, [
     weather,
@@ -106,11 +111,6 @@ const Calculator = () => {
       } else {
         defenseRankMultiplier = 2 / (2 - defenseRank);
       }
-
-      //タイプ相性によるダメージ倍率の設定
-      setCompatibility(
-        TypeCompatibility(moveType, teraType, defenseType1, defenseType2)
-      );
 
       // ダメージ=攻撃側のレベル×2÷5+2→切り捨て 今回はレベル50固定なので22で確定
       // ×物理技(特殊技)の威力×(攻撃側のこうげき(とくこう)*ランク補正)÷(防御側のぼうぎょ(とくぼう)*ランク補正)→切り捨て
@@ -152,9 +152,9 @@ const Calculator = () => {
     specialDefense,
     hp,
     damageClass,
+    compatibility,
     attackerRank,
     defenseRank,
-    moveType,
     damageMultiplierByWeather,
     defenseMultiplierByWeather,
     specialDefenseMultiplierByWeather,
@@ -186,9 +186,10 @@ const Calculator = () => {
     minBaseDamage = roundToHalf(minBaseDamage);
     maxBaseDamage = roundToHalf(maxBaseDamage);
 
+    // タイプ相性をかける
     setMinDamage(Math.floor(minBaseDamage * compatibility));
     setMaxDamage(Math.floor(maxBaseDamage * compatibility));
-  }, [damage, attackerTerastal, moveType]);
+  }, [damage, attackerTerastal, moveType, compatibility]);
 
   return (
     <>

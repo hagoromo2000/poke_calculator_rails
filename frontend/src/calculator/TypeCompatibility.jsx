@@ -7,6 +7,7 @@ const TypeCompatibility = (moveType, teraType, type1, type2) => {
   if (teraType) {
     // テラスタルしている場合
     typeArray = [teraType];
+    console.log(teraType);
   } else {
     // テラスタルしていない場合
     typeArray = [type1, type2];

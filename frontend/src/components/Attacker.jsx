@@ -27,7 +27,10 @@ const all_abilities = Abilities.map((data) => {
 // コンポーネント
 const Attacker = (props) => {
   // ポケモンの種族値、タイプの制御
-  const [pokemon, setPokemon] = useState({ value: Pokemons[0] }); // {value : {ポケモンデータ}}の形にしないとhandleAttackで初期値を読み込めずエラー
+  const [pokemon, setPokemon] = useState({
+    value: Pokemons[24],
+    label: Pokemons[24].name,
+  }); // {value : {ポケモンデータ}}の形にしないとhandleAttackで初期値を読み込めずエラー
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
 
