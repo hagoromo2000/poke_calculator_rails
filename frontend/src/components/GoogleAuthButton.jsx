@@ -1,6 +1,6 @@
 import React from "react";
-import { auth, provider } from "../firebase";
-import { signInWithPopup } from "firebase/auth";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { FcGoogle } from "react-icons/fc";
 
 import useFirebaseAuth from "../hooks/useFirebaseAuth";
@@ -33,7 +33,9 @@ function SignInButton() {
 
       try {
         axios.post("/auth", null, config);
+        toast.success("ログインしました!");
       } catch (err) {
+        toast.error("ログインに失敗しました");
         let message;
         if (axios.isAxiosError(err) && err.response) {
           console.error(err.response.data.message);

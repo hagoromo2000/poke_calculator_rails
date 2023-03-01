@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import GoogleAuthButton from "./GoogleAuthButton";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase";
 
@@ -98,6 +100,12 @@ function UserInfo() {
   );
 }
 
+const logoutHandler = async () => {
+  // await logout();
+  auth.signOut();
+  toast.success("サインアウトしました！");
+};
+
 function SignOutButton() {
-  return <button onClick={() => auth.signOut()}>サインアウト</button>;
+  return <button onClick={logoutHandler}>サインアウト</button>;
 }
