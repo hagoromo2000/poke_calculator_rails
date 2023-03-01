@@ -15,10 +15,10 @@ import roundToHalf from "../calculator/OverHalf";
 const Calculator = () => {
   const [attack, setAttack] = useState(100);
   const [specialAttack, setSpecialAttack] = useState(100);
-  const [moveType, setMoveType] = useState(null);
-  const [power, setPower] = useState(0);
-  const [damageClass, setDamageClass] = useState("ぶつり");
-  const [attackerFirstType, setAttackerFirstType] = useState(null);
+  const [moveType, setMoveType] = useState("でんき");
+  const [power, setPower] = useState(90);
+  const [damageClass, setDamageClass] = useState("とくしゅ");
+  const [attackerFirstType, setAttackerFirstType] = useState("でんき");
   const [attackerSecondType, setAttackerSecondType] = useState(null);
   const [attackerTerastal, setAttackerTerastal] = useToggle(false);
   const [attackerRank, setAttackerRank] = useState(0);
@@ -28,8 +28,8 @@ const Calculator = () => {
   const [specialDefense, setSpecialDefense] = useState(100);
   const [defenseRank, setDefenseRank] = useState(0);
   const [teraType, setTeraType] = useState(null);
-  const [defenseType1, setDefenseType1] = useState(null);
-  const [defenseType2, setDefenseType2] = useState(null);
+  const [defenseType1, setDefenseType1] = useState("ほのお");
+  const [defenseType2, setDefenseType2] = useState("ひこう");
 
   const [weather, setWeather] = useState(null);
   const [damageMultiplierByWeather, setDamageMultiplierByWeather] = useState(1);
@@ -48,7 +48,7 @@ const Calculator = () => {
   const [maxDamage, setMaxDamage] = useState(0);
   const [compatibility, setCompatibility] = useState(1);
 
-  //環境による倍率の設定
+  //環境、タイプ相性による倍率の設定
   useEffect(() => {
     //天候による倍率の設定
     setDamageMultiplierByWeather(WeatherDamageModifier(moveType, weather));
@@ -75,6 +75,11 @@ const Calculator = () => {
         field,
         moveType
       )
+    );
+
+    //タイプ相性による倍率の設定
+    setCompatibility(
+      TypeCompatibility(moveType, teraType, defenseType1, defenseType2)
     );
   }, [
     weather,
@@ -106,11 +111,6 @@ const Calculator = () => {
       } else {
         defenseRankMultiplier = 2 / (2 - defenseRank);
       }
-
-      //タイプ相性によるダメージ倍率の設定
-      setCompatibility(
-        TypeCompatibility(moveType, teraType, defenseType1, defenseType2)
-      );
 
       // ダメージ=攻撃側のレベル×2÷5+2→切り捨て 今回はレベル50固定なので22で確定
       // ×物理技(特殊技)の威力×(攻撃側のこうげき(とくこう)*ランク補正)÷(防御側のぼうぎょ(とくぼう)*ランク補正)→切り捨て
@@ -152,9 +152,9 @@ const Calculator = () => {
     specialDefense,
     hp,
     damageClass,
+    compatibility,
     attackerRank,
     defenseRank,
-    moveType,
     damageMultiplierByWeather,
     defenseMultiplierByWeather,
     specialDefenseMultiplierByWeather,
@@ -186,10 +186,10 @@ const Calculator = () => {
     minBaseDamage = roundToHalf(minBaseDamage);
     maxBaseDamage = roundToHalf(maxBaseDamage);
 
-    console.log(compatibility);
+    // タイプ相性をかける
     setMinDamage(Math.floor(minBaseDamage * compatibility));
     setMaxDamage(Math.floor(maxBaseDamage * compatibility));
-  }, [damage, attackerTerastal, moveType]);
+  }, [damage, attackerTerastal, moveType, compatibility]);
 
   return (
     <>

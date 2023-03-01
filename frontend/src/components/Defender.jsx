@@ -18,7 +18,7 @@ const all_abilities = Abilities.map((data) => {
 });
 
 const all_types = [
-  { value: null, label: "なし" },
+  { value: null, label: "テラスタイプなし" },
   { value: "ノーマル", label: "ノーマル" },
   { value: "ほのお", label: "ほのお" },
   { value: "みず", label: "みず" },
@@ -40,30 +40,12 @@ const all_types = [
 
 //　コンポーネント
 const Defender = (props) => {
-  const [pokemon, setPokemon] = useState({ value: Pokemons[0] });
+  const [pokemon, setPokemon] = useState({
+    value: Pokemons[5],
+    label: Pokemons[5].name,
+  });
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
-
-    // HP実数値のセット
-    const hp_value = Math.floor(
-      (pokemon.value.hp * 2 + 31 + hp_ev / 4) / 2 + 60
-    );
-    props.setHp(hp_value);
-
-    // 防御実数値のセット
-    const defense_value = Math.floor(
-      ((pokemon.value.defense * 2 + 31 + defense_ev / 4) / 2 + 5) *
-        defenseNature
-    );
-    props.setDefense(defense_value);
-
-    // 特防実数値のセット
-    const special_defense_value = Math.floor(
-      ((pokemon.value.special_defense * 2 + 31 + specialDefense_ev / 4) / 2 +
-        5) *
-        specialDefenseNature
-    );
-    props.setSpecialDefense(special_defense_value);
 
     // タイプのセット
     props.setDefenseType1(pokemon.value.type1);
@@ -75,10 +57,15 @@ const Defender = (props) => {
     setItem(item);
   };
 
-  const handleTeraType = (teraType) => {
-    props.setTeraType(teraType);
-    console.log(props.teraType);
-  };
+  // const handleTeraType = (teraType) => {
+  //   props.setTeraType(teraType);
+  //   console.log(teraType);
+  // };
+
+  function handleTeraType(selectedOption) {
+    const value = selectedOption ? selectedOption.value : null;
+    props.setTeraType(value);
+  }
 
   const [ability, setAbility] = useState(null);
   const handleAbility = (ability) => {
@@ -115,13 +102,13 @@ const Defender = (props) => {
   const handleHp = (event) => {
     setHp_ev(event.target.value);
   };
-  // 努力値が変更されると副作用で実数値が計算される
+  // ポケモン、努力値が変化した時、副作用で実数値が計算される
   useEffect(() => {
     const hp_value = Math.floor(
       (pokemon.value.hp * 2 + 31 + hp_ev / 4) / 2 + 60
     );
     props.setHp(hp_value);
-  }, [hp_ev]);
+  }, [hp_ev, pokemon]);
 
   // 防御努力値と実数値を連動させる処理
   const [defense_ev, setDefense_ev] = useState(0);
@@ -129,14 +116,14 @@ const Defender = (props) => {
     setDefense_ev(event.target.value);
   };
 
-  // 防御努力値と性格補正が変化した際、副作用で実数値を再計算
+  // ポケモン、防御努力値、性格補正が変化した際、副作用で実数値を再計算
   useEffect(() => {
     const defense_value = Math.floor(
       ((pokemon.value.defense * 2 + 31 + defense_ev / 4) / 2 + 5) *
         defenseNature
     );
     props.setDefense(defense_value);
-  }, [defense_ev, defenseNature]);
+  }, [defense_ev, defenseNature, pokemon]);
 
   // 特防努力値と実数値を連動させる処理
   const [specialDefense_ev, setSpecialDefense_ev] = useState(0);
@@ -144,7 +131,7 @@ const Defender = (props) => {
     setSpecialDefense_ev(event.target.value);
   };
 
-  // 特防努力値と性格補正が変化した際、副作用で実数値を再計算
+  // ポケモン、特防努力値、性格補正が変化した際、副作用で実数値を再計算
   useEffect(() => {
     const special_defense_value = Math.floor(
       ((pokemon.value.special_defense * 2 + 31 + specialDefense_ev / 4) / 2 +
@@ -152,7 +139,7 @@ const Defender = (props) => {
         specialDefenseNature
     );
     props.setSpecialDefense(special_defense_value);
-  }, [specialDefense_ev, specialDefenseNature]);
+  }, [specialDefense_ev, specialDefenseNature, pokemon]);
 
   return (
     <>
@@ -206,7 +193,9 @@ const Defender = (props) => {
           <div className="ml-4 mt-2">
             <div className="w-32">
               <Select
-                value={props.teraType}
+                value={all_types.find(
+                  (option) => option.value === props.teraType
+                )}
                 onChange={handleTeraType}
                 options={all_types}
                 isSearchable={true}

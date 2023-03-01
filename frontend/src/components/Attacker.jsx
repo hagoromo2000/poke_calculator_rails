@@ -26,24 +26,13 @@ const all_abilities = Abilities.map((data) => {
 
 // コンポーネント
 const Attacker = (props) => {
-  // ポケモンの種族値、タイプの処理
-  const [pokemon, setPokemon] = useState({ value: Pokemons[0] }); // {value : {ポケモンデータ}}の形にしないとhandleAttackで初期値を読み込めずエラー
+  // ポケモンの種族値、タイプの制御
+  const [pokemon, setPokemon] = useState({
+    value: Pokemons[24],
+    label: Pokemons[24].name,
+  }); // {value : {ポケモンデータ}}の形にしないとhandleAttackで初期値を読み込めずエラー
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
-
-    // 攻撃実数値の計算
-    const attack_value = Math.floor(
-      ((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 + 5) * attackNature
-    );
-    props.setAttack(attack_value);
-
-    // 特攻実数値の計算
-    const special_attack_value = Math.floor(
-      ((pokemon.value.special_attack * 2 + 31 + special_attack_ev / 4) / 2 +
-        5) *
-        specialAttackNature
-    );
-    props.setSpecialAttack(special_attack_value);
 
     // タイプのセット
     props.setAttackerFirstType(pokemon.value.type1);
@@ -64,7 +53,13 @@ const Attacker = (props) => {
 
   // わざ、ダメージ種別(物理,特殊)の制御
   const [move, setMove] = useState({
-    value: Moves[0],
+    value: {
+      name: "１０まんボルト",
+      type: "でんき",
+      power: 90,
+      damage_class: "とくしゅ",
+    },
+    label: "１０まんボルト",
   });
   const handleMove = (move) => {
     setMove(move);
@@ -113,7 +108,7 @@ const Attacker = (props) => {
       ((pokemon.value.attack * 2 + 31 + attack_ev / 4) / 2 + 5) * attackNature
     );
     props.setAttack(attack_value);
-  }, [attack_ev, attackNature]);
+  }, [attack_ev, attackNature, pokemon]);
 
   // 特攻努力値と実数値を連動させる処理
   const [special_attack_ev, setSpecialAttack_ev] = useState(0);
@@ -129,7 +124,7 @@ const Attacker = (props) => {
         specialAttackNature
     );
     props.setSpecialAttack(special_attack_value);
-  }, [special_attack_ev, specialAttackNature]);
+  }, [special_attack_ev, specialAttackNature, pokemon]);
 
   // 技威力の制御　handleMoveに処理を移管したためコメントアウト(威力の入力受付をする際に復活の可能性あり)
   //const handlePower = (move) => {
