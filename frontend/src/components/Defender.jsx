@@ -144,7 +144,7 @@ const Defender = (props) => {
   return (
     <>
       <div className="artboard phone-5 bg-white rounded-lg shadow-xl mx-auto mt-10 ">
-        <div className="flex flex-row bg-gradient-to-r from-blue-200 to-blue-200">
+        <div className="flex flex-row bg-gradient-to-r rounded-t-lg from-blue-200 to-blue-200">
           <p className="pt-5 pl-5 font-bold ">防御側</p>
           <button className="btn btn-primary ml-32 mt-2 mb-2">
             育成論から呼び出す
