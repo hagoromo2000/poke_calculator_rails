@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useToggle } from "react-use";
 import Attacker from "../components/Attacker";
-import "../components/Calculator.css";
+import "../css/Calculator.css";
 import Defender from "../components/Defender";
 import Environment from "../components/Environment";
 import Footer from "../components/Footer";
@@ -10,7 +10,7 @@ import WeatherDamageModifier from "../calculator/WeatherDamageModifier";
 import WeatherDefenseModifier from "../calculator/WeatherDefenseModifier";
 import WeatherSpecialDefenseModifier from "../calculator/WeatherSpecialDefenseModifier";
 import FieldDamageModifier from "../calculator/FieldDamageModifier";
-import roundToHalf from "../calculator/OverHalf";
+import roundToHalf from "../calculator/RoundToHalf";
 
 const Calculator = () => {
   const [attack, setAttack] = useState(100);

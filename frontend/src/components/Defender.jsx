@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
-import "./Calculator.css";
+import "../css/Calculator.css";
 import Pokemons from "../json/all_pokemons.json";
 import Items from "../json/all_items.json";
 import Abilities from "../json/all_abilities.json";

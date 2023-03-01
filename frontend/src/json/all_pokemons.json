@@ -8106,6 +8106,20 @@
     "speed": 105
   },
   {
+    "name": "ゾロアーク(ヒスイのすがた)",
+    "type1": "ノーマル",
+    "type2": "ゴースト",
+    "ability1": "illusion",
+    "ability2": null,
+    "ability3": null,
+    "hp": 55,
+    "attack": 100,
+    "defense": 60,
+    "special_attack": 125,
+    "special_defense": 60,
+    "speed": 110
+  },
+  {
     "name": "チラーミィ",
     "type1": "ノーマル",
     "type2": null,
