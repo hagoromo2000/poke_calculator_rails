@@ -18,7 +18,7 @@ const all_abilities = Abilities.map((data) => {
 });
 
 const all_types = [
-  { value: null, label: "なし" },
+  { value: null, label: "テラスタイプなし" },
   { value: "ノーマル", label: "ノーマル" },
   { value: "ほのお", label: "ほのお" },
   { value: "みず", label: "みず" },
@@ -57,9 +57,15 @@ const Defender = (props) => {
     setItem(item);
   };
 
-  const handleTeraType = (teraType) => {
-    props.setTeraType(teraType.value);
-  };
+  // const handleTeraType = (teraType) => {
+  //   props.setTeraType(teraType);
+  //   console.log(teraType);
+  // };
+
+  function handleTeraType(selectedOption) {
+    const value = selectedOption ? selectedOption.value : null;
+    props.setTeraType(value);
+  }
 
   const [ability, setAbility] = useState(null);
   const handleAbility = (ability) => {
@@ -187,7 +193,9 @@ const Defender = (props) => {
           <div className="ml-4 mt-2">
             <div className="w-32">
               <Select
-                value={props.teraType}
+                value={all_types.find(
+                  (option) => option.value === props.teraType
+                )}
                 onChange={handleTeraType}
                 options={all_types}
                 isSearchable={true}
