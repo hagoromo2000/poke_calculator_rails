@@ -1792,6 +1792,48 @@
     "speed": 110
   },
   {
+    "name": "ケンタロス(パルデアのすがた・コンバット種",
+    "type1": "かくとう",
+    "type2": null,
+    "ability1": "intimidate",
+    "ability2": "anger-point",
+    "ability3": "sheer-force",
+    "hp": 75,
+    "attack": 110,
+    "defense": 105,
+    "special_attack": 30,
+    "special_defense": 70,
+    "speed": 100
+  },
+  {
+    "name": "ケンタロス(パルデアのすがた・ブレイズ種",
+    "type1": "かくとう",
+    "type2": "ほのお",
+    "ability1": "intimidate",
+    "ability2": "anger-point",
+    "ability3": "sheer-force",
+    "hp": 75,
+    "attack": 110,
+    "defense": 105,
+    "special_attack": 30,
+    "special_defense": 70,
+    "speed": 100
+  },
+  {
+    "name": "ケンタロス(パルデアのすがた・ウォーター種",
+    "type1": "かくとう",
+    "type2": "みず",
+    "ability1": "intimidate",
+    "ability2": "anger-point",
+    "ability3": "sheer-force",
+    "hp": 75,
+    "attack": 110,
+    "defense": 105,
+    "special_attack": 30,
+    "special_defense": 70,
+    "speed": 100
+  },
+  {
     "name": "コイキング",
     "type1": "みず",
     "type2": null,
@@ -6706,6 +6748,76 @@
     "speed": 91
   },
   {
+    "name": "ヒートロトム",
+    "type1": "でんき",
+    "type2": "ほのお",
+    "ability1": "levitate",
+    "ability2": null,
+    "ability3": null,
+    "hp": 50,
+    "attack": 65,
+    "defense": 107,
+    "special_attack": 105,
+    "special_defense": 107,
+    "speed": 86
+  },
+  {
+    "name": "ウォッシュロトム",
+    "type1": "でんき",
+    "type2": "みず",
+    "ability1": "levitate",
+    "ability2": null,
+    "ability3": null,
+    "hp": 50,
+    "attack": 65,
+    "defense": 107,
+    "special_attack": 105,
+    "special_defense": 107,
+    "speed": 86
+  },
+  {
+    "name": "フロストロトム",
+    "type1": "でんき",
+    "type2": "こおり",
+    "ability1": "levitate",
+    "ability2": null,
+    "ability3": null,
+    "hp": 50,
+    "attack": 65,
+    "defense": 107,
+    "special_attack": 105,
+    "special_defense": 107,
+    "speed": 86
+  },
+  {
+    "name": "スピンロトム",
+    "type1": "でんき",
+    "type2": "ひこう",
+    "ability1": "levitate",
+    "ability2": null,
+    "ability3": null,
+    "hp": 50,
+    "attack": 65,
+    "defense": 107,
+    "special_attack": 105,
+    "special_defense": 107,
+    "speed": 86
+  },
+  {
+    "name": "カットロトム",
+    "type1": "でんき",
+    "type2": "くさ",
+    "ability1": "levitate",
+    "ability2": null,
+    "ability3": null,
+    "hp": 50,
+    "attack": 65,
+    "defense": 107,
+    "special_attack": 105,
+    "special_defense": 107,
+    "speed": 86
+  },
+  {
     "name": "ユクシー",
     "type1": "エスパー",
     "type2": null,
@@ -10360,8 +10472,50 @@
     "speed": 43
   },
   {
-    "name": "オドリドリ",
+    "name": "オドリドリ(めらめらスタイル)",
     "type1": "ほのお",
+    "type2": "ひこう",
+    "ability1": "dancer",
+    "ability2": null,
+    "ability3": null,
+    "hp": 75,
+    "attack": 70,
+    "defense": 70,
+    "special_attack": 98,
+    "special_defense": 70,
+    "speed": 93
+  },
+  {
+    "name": "オドリドリ(ぱちぱちスタイル)",
+    "type1": "でんき",
+    "type2": "ひこう",
+    "ability1": "dancer",
+    "ability2": null,
+    "ability3": null,
+    "hp": 75,
+    "attack": 70,
+    "defense": 70,
+    "special_attack": 98,
+    "special_defense": 70,
+    "speed": 93
+  },
+  {
+    "name": "オドリドリ(ふらふらスタイル)",
+    "type1": "エスパー",
+    "type2": "ひこう",
+    "ability1": "dancer",
+    "ability2": null,
+    "ability3": null,
+    "hp": 75,
+    "attack": 70,
+    "defense": 70,
+    "special_attack": 98,
+    "special_defense": 70,
+    "speed": 93
+  },
+  {
+    "name": "オドリドリ(まいまいスタイル)",
+    "type1": "ゴースト",
     "type2": "ひこう",
     "ability1": "dancer",
     "ability2": null,
@@ -12810,7 +12964,7 @@
     "speed": 35
   },
   {
-    "name": "パフュートン",
+    "name": "パフュートン(オスのすがた)",
     "type1": "ノーマル",
     "type2": null,
     "ability1": "lingering-aroma",
@@ -12821,6 +12975,20 @@
     "defense": 75,
     "special_attack": 59,
     "special_defense": 80,
+    "speed": 65
+  },
+  {
+    "name": "パフュートン(メスのすがた)",
+    "type1": "ノーマル",
+    "type2": null,
+    "ability1": "aroma-veil",
+    "ability2": "gluttony",
+    "ability3": "thick-fat",
+    "hp": 115,
+    "attack": 90,
+    "defense": 70,
+    "special_attack": 59,
+    "special_defense": 90,
     "speed": 65
   },
   {
@@ -13482,7 +13650,7 @@
     "speed": 75
   },
   {
-    "name": "イルカマン",
+    "name": "イルカマン(ナイーブフォルム)",
     "type1": "みず",
     "type2": null,
     "ability1": "zero-to-hero",
@@ -13493,6 +13661,20 @@
     "defense": 72,
     "special_attack": 53,
     "special_defense": 62,
+    "speed": 100
+  },
+  {
+    "name": "イルカマン(マイティフォルム)",
+    "type1": "みず",
+    "type2": null,
+    "ability1": "zero-to-hero",
+    "ability2": "zero-to-hero",
+    "ability3": null,
+    "hp": 100,
+    "attack": 160,
+    "defense": 97,
+    "special_attack": 106,
+    "special_defense": 87,
     "speed": 100
   },
   {
@@ -14110,5 +14292,33 @@
     "special_attack": 135,
     "special_defense": 115,
     "speed": 135
+  },
+  {
+    "name": "ウネルミナモ",
+    "type1": "みず",
+    "type2": "ドラゴン",
+    "ability1": "protosynthesis",
+    "ability2": "protosynthesis",
+    "ability3": null,
+    "hp": 99,
+    "attack": 83,
+    "defense": 91,
+    "special_attack": 125,
+    "special_defense": 83,
+    "speed": 109
+  },
+  {
+    "name": "テツノイサハ",
+    "type1": "くさ",
+    "type2": "エスパー",
+    "ability1": "quark-drive",
+    "ability2": "quark-drive",
+    "ability3": null,
+    "hp": 90,
+    "attack": 130,
+    "defense": 88,
+    "special_attack": 70,
+    "special_defense": 108,
+    "speed": 104
   }
 ]

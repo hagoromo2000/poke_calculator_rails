@@ -5283,5 +5283,17 @@
     "type": "ノーマル",
     "power": 20,
     "damage_class": "ぶつり"
+  },
+  {
+    "name": "ハイドロスチーム",
+    "type": "みず",
+    "power": 80,
+    "damage_class": "とくしゅ"
+  },
+  {
+    "name": "サイコブレイド",
+    "type": "エスパー",
+    "power": 80,
+    "damage_class": "ぶつり"
   }
 ]
