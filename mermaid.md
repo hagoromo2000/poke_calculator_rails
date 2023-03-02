@@ -16,6 +16,7 @@ erDiagram
     integer user_id
     string title
     text body
+    string pokemon
     integer ev_hp
     integer ev_attack
     integer ev_defense
@@ -29,12 +30,13 @@ erDiagram
     string move4
     string ability
     string item
+    string nature
   }
 
   bookmarks{
     integer id
     integer user_id
-    integer pokemon_id
+    integer post_id
   }
 
 

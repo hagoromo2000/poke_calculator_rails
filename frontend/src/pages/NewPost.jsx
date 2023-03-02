@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import Select from "react-select";
 import "../css/NewPost.css";
 import Pokemons from "../json/all_pokemons.json";
 import Moves from "../json/all_moves.json";
 import Items from "../json/all_items.json";
 import Abilities from "../json/all_abilities.json";
+import { toast } from "react-toastify";
+
+import { useAuthContext } from "../context/AuthContext.tsx";
 
 const options = Moves.map((data) => {
   return { value: data.name, label: data.name };
@@ -43,7 +47,7 @@ const all_natures = [
   { value: "おくびょう", label: "おくびょう S↑A↓" },
   { value: "せっかち", label: "せっかち S↑B↓" },
   { value: "ようき", label: "ようき S↑C↓" },
-  { value: "むじゃき", label: "むじゃき S↑D↓" },
+  { value: "むじゃき", label: "むじゃき S↑D↓" }
 ];
 
 const all_types = [
@@ -63,53 +67,145 @@ const all_types = [
   { value: "ドラゴン", label: "ドラゴン" },
   { value: "あく", label: "あく" },
   { value: "はがね", label: "はがね" },
-  { value: "フェアリー", label: "フェアリー" },
+  { value: "フェアリー", label: "フェアリー" }
 ];
 
 const NewPost = () => {
+  const [title, setTitle] = useState(null);
+  const [body, setBody] = useState(null);
   const [pokemon, setPokemon] = useState(null);
+  const [item, setItem] = useState(null);
+  const [nature, setNature] = useState("すなお");
+  const [teraType, setTeraType] = useState("ノーマル");
+  const [ability, setAbility] = useState(null);
+  const [move1, setMove1] = useState(null);
+  const [move2, setMove2] = useState(null);
+  const [move3, setMove3] = useState(null);
+  const [move4, setMove4] = useState(null);
+  const [evHp, setEvHp] = useState(0);
+  const [evAttack, setEvAttack] = useState(0);
+  const [evDefense, setEvDefense] = useState(0);
+  const [evSpecialAttack, setEvSpecialAttack] = useState(0);
+  const [evSpecialDefense, setEvSpecialDefense] = useState(0);
+  const [evSpeed, setEvSpeed] = useState(0);
+
+  const handleTitle = (event) => {
+    setTitle(event.target.value);
+  };
+
+  const handleBody = (event) => {
+    setBody(event.target.value);
+  };
+
   const handlePokemon = (pokemon) => {
     setPokemon(pokemon);
   };
 
-  const [item, setItem] = useState(null);
   const handleItem = (item) => {
     setItem(item);
   };
 
-  const [nature, setNature] = useState("すなお");
   const handleNature = (nature) => {
     setNature(nature);
   };
 
-  const [teraType, setTeraType] = useState("ノーマル");
   const handleTeraType = (teraType) => {
     setTeraType(teraType);
   };
 
-  const [ability, setAbility] = useState(null);
   const handleAbility = (ability) => {
     setAbility(ability);
   };
 
-  const [move1, setMove1] = useState(null);
   const handleMove1 = (move1) => {
     setMove1(move1);
   };
 
-  const [move2, setMove2] = useState(null);
   const handleMove2 = (move2) => {
     setMove2(move2);
   };
 
-  const [move3, setMove3] = useState(null);
   const handleMove3 = (move3) => {
     setMove3(move3);
   };
 
-  const [move4, setMove4] = useState(null);
   const handleMove4 = (move4) => {
     setMove4(move4);
+  };
+
+  const handleEvHp = (event) => {
+    setEvHp(event.target.value);
+  };
+  const handleEvAttack = (event) => {
+    setEvAttack(event.target.value);
+  };
+  const handleEvDefense = (event) => {
+    setEvDefense(event.target.value);
+  };
+  const handleEvSpecialAttack = (event) => {
+    setEvSpecialAttack(event.target.value);
+  };
+  const handleEvSpecialDefense = (event) => {
+    setEvSpecialDefense(event.target.value);
+  };
+  const handleEvSpeed = (event) => {
+    setEvSpeed(event.target.value);
+  };
+
+  const { currentUser } = useAuthContext();
+  async function setConfig() {
+    const token = await currentUser?.getIdToken();
+    const config = {
+      headers: { authorization: `Bearer ${token}` }
+    };
+    return config;
+  }
+  const handleSubmit = async () => {
+    if (title && pokemon && ability && nature && move1 && teraType) {
+      const config = await setConfig();
+
+      const data = {
+        post: {
+          title: title,
+          body: body,
+          pokemon: pokemon.value,
+          ability: ability.value,
+          item: item.value,
+          nature: nature.value,
+          tera_type: teraType.value,
+          move1: move1.value,
+          move2: move2.value,
+          move3: move3.value,
+          move4: move4.value,
+          ev_hp: evHp,
+          ev_attack: evAttack,
+          ev_defense: evDefense,
+          ev_special_attack: evSpecialAttack,
+          ev_special_defense: evSpecialDefense,
+          ev_speed: evSpeed
+        }
+      };
+
+      try {
+        const response = await axios.post("/posts", data, config);
+        console.log(response.data);
+        if (response.status === 200) {
+          toast.success("育成論が投稿されました!");
+          return response.data;
+        }
+      } catch (err) {
+        toast.error("投稿に失敗しました。時間をおいてもう一度お試しください。");
+        let message;
+        if (axios.isAxiosError(err) && err.response) {
+          console.error(err.response.data.message);
+        } else {
+          message = String(err);
+          console.error(message);
+        }
+      }
+    } else {
+      toast.error("入力項目が不足しています。");
+    }
   };
 
   return (
@@ -127,8 +223,9 @@ const NewPost = () => {
           </label>
           <input
             type="text"
+            onChange={handleTitle}
             placeholder="最速CSサザンドラ"
-            className="input input-bordered w-full max-w-xs"
+            className="input input-bordered w-full max-w-xs text-gray-600"
           />
         </div>
 
@@ -200,12 +297,16 @@ const NewPost = () => {
           <div className="relative">
             <input
               type="number"
+              min="0"
+              max="252"
+              step="4"
+              onChange={handleEvHp}
               id="attack_ev_floating_filled"
               className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer "
-              placeholder=" "
+              defaultValue={0}
             />
             <label
-              htmlfor="attack_ev_floating_filled"
+              htmlFor="attack_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4  origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               HP
@@ -214,12 +315,16 @@ const NewPost = () => {
           <div className="relative ml-4">
             <input
               type="number"
+              min="0"
+              max="252"
+              step="4"
+              onChange={handleEvAttack}
               id="attack_ev_floating_filled"
               className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer "
-              placeholder=" "
+              defaultValue={0}
             />
             <label
-              htmlfor="attack_ev_floating_filled"
+              htmlFor="attack_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4  origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               攻撃
@@ -228,12 +333,16 @@ const NewPost = () => {
           <div className="relative ml-4">
             <input
               type="number"
+              min="0"
+              max="252"
+              step="4"
+              onChange={handleEvDefense}
               id="attack_ev_floating_filled"
               className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer "
-              placeholder=" "
+              defaultValue={0}
             />
             <label
-              htmlfor="attack_ev_floating_filled"
+              htmlFor="attack_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               防御
@@ -245,12 +354,16 @@ const NewPost = () => {
           <div className="relative">
             <input
               type="number"
+              min="0"
+              max="252"
+              step="4"
+              onChange={handleEvSpecialAttack}
               id="attack_ev_floating_filled"
               className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer "
-              placeholder=" "
+              defaultValue={0}
             />
             <label
-              htmlfor="attack_ev_floating_filled"
+              htmlFor="attack_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4  origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               特攻
@@ -259,12 +372,16 @@ const NewPost = () => {
           <div className="relative ml-4">
             <input
               type="number"
+              min="0"
+              max="252"
+              step="4"
+              onChange={handleEvSpecialDefense}
               id="attack_ev_floating_filled"
               className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer "
-              placeholder=" "
+              defaultValue={0}
             />
             <label
-              htmlfor="attack_ev_floating_filled"
+              htmlFor="attack_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4  origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               特防
@@ -273,12 +390,16 @@ const NewPost = () => {
           <div className="relative ml-4">
             <input
               type="number"
+              min="0"
+              max="252"
+              step="4"
+              onChange={handleEvSpeed}
               id="attack_ev_floating_filled"
               className="block rounded-t-lg px-1 pb-2.5 pt-5 w-20 text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer "
-              placeholder=" "
+              defaultValue={0}
             />
             <label
-              htmlfor="attack_ev_floating_filled"
+              htmlFor="attack_ev_floating_filled"
               className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4  origin-[0] left-2.5 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               素早さ
@@ -344,13 +465,17 @@ const NewPost = () => {
             <span className="label-text text-gray-600">概要</span>
           </label>
           <textarea
-            className="textarea textarea-bordered h-60"
+            onChange={handleBody}
+            className="textarea textarea-bordered h-60 text-gray-600"
             placeholder="おくびょう最速、とくこう252振りで、より多くの相手に上から負荷をかける運用をします。"
           ></textarea>
         </div>
 
         <div className="flex flex-row-reverse mt-4 mr-4">
-          <button className="btn btn-active btn-primary text-gray-200">
+          <button
+            onClick={handleSubmit}
+            className="btn btn-active btn-primary text-gray-200"
+          >
             投稿
           </button>
         </div>
