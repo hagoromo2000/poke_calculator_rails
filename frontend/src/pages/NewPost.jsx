@@ -36,7 +36,7 @@ const all_natures = [
   { value: "わんぱく", label: "わんぱく B↑C↓" },
   { value: "のうてんき", label: "のうてんき B↑D↓" },
   { value: "のんき", label: "のんき B↑S↓" },
-  { value: "ひかえめ", label: "ずぶとい C↑A↓" },
+  { value: "ひかえめ", label: "ひかえめ C↑A↓" },
   { value: "おっとり", label: "おっとり C↑B↓" },
   { value: "うっかりや", label: "うっかりや C↑D↓" },
   { value: "れいせい", label: "れいせい C↑S↓" },
@@ -152,6 +152,7 @@ const NewPost = () => {
     setEvSpeed(event.target.value);
   };
 
+  // tokenを取得
   const { currentUser } = useAuthContext();
   async function setConfig() {
     const token = await currentUser?.getIdToken();
@@ -161,50 +162,81 @@ const NewPost = () => {
     return config;
   }
   const handleSubmit = async () => {
-    if (title && pokemon && ability && nature && move1 && teraType) {
-      const config = await setConfig();
-
-      const data = {
-        post: {
-          title: title,
-          body: body,
-          pokemon: pokemon.value,
-          ability: ability.value,
-          item: item.value,
-          nature: nature.value,
-          tera_type: teraType.value,
-          move1: move1.value,
-          move2: move2.value,
-          move3: move3.value,
-          move4: move4.value,
-          ev_hp: evHp,
-          ev_attack: evAttack,
-          ev_defense: evDefense,
-          ev_special_attack: evSpecialAttack,
-          ev_special_defense: evSpecialDefense,
-          ev_speed: evSpeed
-        }
-      };
-
-      try {
-        const response = await axios.post("/posts", data, config);
-        console.log(response.data);
-        if (response.status === 200) {
-          toast.success("育成論が投稿されました!");
-          return response.data;
-        }
-      } catch (err) {
-        toast.error("投稿に失敗しました。時間をおいてもう一度お試しください。");
-        let message;
-        if (axios.isAxiosError(err) && err.response) {
-          console.error(err.response.data.message);
-        } else {
-          message = String(err);
-          console.error(message);
-        }
-      }
-    } else {
+    // 必須項目に漏れがないかチェック
+    if (!title || !pokemon || !ability || !nature || !move1 || !teraType) {
       toast.error("入力項目が不足しています。");
+      return;
+    }
+
+    //　努力値が252を超えているステータスがないかチェック
+    if (
+      evHp > 252 ||
+      evAttack > 252 ||
+      evDefense > 252 ||
+      evSpecialAttack > 252 ||
+      evSpecialDefense > 252 ||
+      evSpeed > 252
+    ) {
+      toast.error("努力値は252までの値で入力してください。");
+      return;
+    }
+
+    if (
+      // 努力値合計が510を超えてないかチェック（parseIntしないと文字列として連結される)
+      parseInt(evHp) +
+        parseInt(evAttack) +
+        parseInt(evDefense) +
+        parseInt(evSpecialAttack) +
+        parseInt(evSpecialDefense) +
+        parseInt(evSpeed) >
+      510
+    ) {
+      toast.error("努力値の合計は510以下にしてください。");
+      return;
+    }
+
+    // tokenをHTTPリクエストヘッダーにセット
+    const config = await setConfig();
+
+    // 投稿データをセット
+    const data = {
+      post: {
+        title,
+        body,
+        pokemon: pokemon.value,
+        ability: ability.value,
+        item: item.value,
+        nature: nature.value,
+        tera_type: teraType.value,
+        move1: move1.value,
+        move2: move2.value,
+        move3: move3.value,
+        move4: move4.value,
+        ev_hp: evHp,
+        ev_attack: evAttack,
+        ev_defense: evDefense,
+        ev_special_attack: evSpecialAttack,
+        ev_special_defense: evSpecialDefense,
+        ev_speed: evSpeed
+      }
+    };
+
+    try {
+      const response = await axios.post("/posts", data, config);
+      console.log(response.data);
+      if (response.status === 200) {
+        toast.success("育成論が投稿されました!");
+        return response.data;
+      }
+    } catch (err) {
+      toast.error("投稿に失敗しました。時間をおいてもう一度お試しください。");
+      let message;
+      if (axios.isAxiosError(err) && err.response) {
+        console.error(err.response.data.message);
+      } else {
+        message = String(err);
+        console.error(message);
+      }
     }
   };
 
