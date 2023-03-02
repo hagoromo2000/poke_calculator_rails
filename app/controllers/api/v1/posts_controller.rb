@@ -2,18 +2,21 @@ class Api::V1::PostsController < ApplicationController
   before_action :set_post, only: %i[show destroy update]
 
   def index
-    posts = Post.all.order(:id)
-    render json: posts
+    posts = Post.all.order(created_at: :desc)
+    json_string = PostSerializer.new(posts).serializable_hash.to_json
+    render json: json_string
   end
 
   def show
-    render json: @post
+    json_string = PostSerializer.new(@post).serializable_hash.to_json
+    render json: json_string
   end
 
   def create
-    post = Post.new(post_params)
+    post = current_user.posts.build(post_params)
     if post.save
-      render json: post
+      json_string = PostSerializer.new(post).serializable_hash.to_json
+      render json: json_string
     else
       render json: post.errors
     end
@@ -29,9 +32,9 @@ class Api::V1::PostsController < ApplicationController
 
   def destroy
     if @post.destroy
-      render json: @post
+      head :no_content
     else
-      render json: @post.errors
+      render json: { error: "Failed to destroy" }, status: 422
     end
   end
 
