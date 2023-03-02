@@ -10,10 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_28_101202) do
+ActiveRecord::Schema.define(version: 2023_03_02_023343) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "posts", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "title", null: false
+    t.text "body"
+    t.string "pokemon", null: false
+    t.string "tera_type", null: false
+    t.string "move1", null: false
+    t.string "move2"
+    t.string "move3"
+    t.string "move4"
+    t.string "ability", null: false
+    t.string "item"
+    t.string "nature", null: false
+    t.integer "ev_hp", default: 0, null: false
+    t.integer "ev_attack", default: 0, null: false
+    t.integer "ev_defense", default: 0, null: false
+    t.integer "ev_special_attack", default: 0, null: false
+    t.integer "ev_special_defense", default: 0, null: false
+    t.integer "ev_speed", default: 0, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_posts_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "uid", null: false
@@ -21,4 +45,5 @@ ActiveRecord::Schema.define(version: 2023_02_28_101202) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "posts", "users"
 end
