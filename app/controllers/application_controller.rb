@@ -7,6 +7,7 @@ class ApplicationController < ActionController::API
 
   def authenticate_token
     authenticate_with_http_token do |token, _options|
+
       result = verify_id_token(token)
 
       if result[:errors]
