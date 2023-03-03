@@ -1,0 +1,23 @@
+[
+  { "value": "すなお", "label": "すなお(性格補正なし)" },
+  { "value": "さみしがり", "label": "さみしがり A↑B↓" },
+  { "value": "いじっぱり", "label": "いじっぱり A↑C↓" },
+  { "value": "やんちゃ", "label": "やんちゃ A↑D↓" },
+  { "value": "ゆうかん", "label": "ゆうかん A↑S↓" },
+  { "value": "ずぶとい", "label": "ずぶとい B↑A↓" },
+  { "value": "わんぱく", "label": "わんぱく B↑C↓" },
+  { "value": "のうてんき", "label": "のうてんき B↑D↓" },
+  { "value": "のんき", "label": "のんき B↑S↓" },
+  { "value": "ひかえめ", "label": "ひかえめ C↑A↓" },
+  { "value": "おっとり", "label": "おっとり C↑B↓" },
+  { "value": "うっかりや", "label": "うっかりや C↑D↓" },
+  { "value": "れいせい", "label": "れいせい C↑S↓" },
+  { "value": "おだやか", "label": "おだやか D↑A↓" },
+  { "value": "おとなしい", "label": "おとなしい D↑B↓" },
+  { "value": "しんちょう", "label": "しんちょう D↑C↓" },
+  { "value": "なまいき", "label": "なまいき D↑S↓" },
+  { "value": "おくびょう", "label": "おくびょう S↑A↓" },
+  { "value": "せっかち", "label": "せっかち S↑B↓" },
+  { "value": "ようき", "label": "ようき S↑C↓" },
+  { "value": "むじゃき", "label": "むじゃき S↑D↓" }
+]

@@ -1,0 +1,19 @@
+[
+  { "value": "ノーマル", "label": "ノーマル" },
+  { "value": "ほのお", "label": "ほのお" },
+  { "value": "みず", "label": "みず" },
+  { "value": "くさ", "label": "くさ" },
+  { "value": "こおり", "label": "こおり" },
+  { "value": "かくとう", "label": "かくとう" },
+  { "value": "どく", "label": "どく" },
+  { "value": "じめん", "label": "じめん" },
+  { "value": "ひこう", "label": "ひこう" },
+  { "value": "エスパー", "label": "エスパー" },
+  { "value": "むし", "label": "むし" },
+  { "value": "いわ", "label": "いわ" },
+  { "value": "ゴースト", "label": "ゴースト" },
+  { "value": "ドラゴン", "label": "ドラゴン" },
+  { "value": "あく", "label": "あく" },
+  { "value": "はがね", "label": "はがね" },
+  { "value": "フェアリー", "label": "フェアリー" }
+]
