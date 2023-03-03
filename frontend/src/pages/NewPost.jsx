@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Select from "react-select";
 import "../css/NewPost.css";
@@ -71,6 +72,8 @@ const all_types = [
 ];
 
 const NewPost = () => {
+  const navigate = useNavigate();
+
   const [title, setTitle] = useState(null);
   const [body, setBody] = useState(null);
   const [pokemon, setPokemon] = useState(null);
@@ -152,7 +155,7 @@ const NewPost = () => {
     setEvSpeed(event.target.value);
   };
 
-  // tokenを取得
+  // tokenを取得（クライアント側でtokenを保存する処理を行なっていないので、都度firebaseから取得する必要あり)
   const { currentUser } = useAuthContext();
   async function setConfig() {
     const token = await currentUser?.getIdToken();
@@ -226,6 +229,7 @@ const NewPost = () => {
       console.log(response.data);
       if (response.status === 200) {
         toast.success("育成論が投稿されました!");
+        navigate("/");
         return response.data;
       }
     } catch (err) {
