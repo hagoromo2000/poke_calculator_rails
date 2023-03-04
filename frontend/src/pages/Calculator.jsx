@@ -37,7 +37,7 @@ const Calculator = () => {
     useState(1);
   const [
     specialDefenseMultiplierByWeather,
-    setSpecialDefenseMultiplierByWeather,
+    setSpecialDefenseMultiplierByWeather
   ] = useState(1);
 
   const [field, setField] = useState(null);
@@ -89,7 +89,7 @@ const Calculator = () => {
     defenseType1,
     defenseType2,
     attackerFirstType,
-    attackerSecondType,
+    attackerSecondType
   ]);
 
   //　各種値が変化すると、副作用で基礎ダメージが計算される。
@@ -138,7 +138,7 @@ const Calculator = () => {
         );
       }
 
-      // はれかあめの時のダメージ倍率をかける
+      // はれかあめの時のダメージ倍率、およびフィールドによるダメージ倍率をかける
       baseDamage =
         baseDamage * damageMultiplierByWeather * damageMultiplierByField;
 
@@ -158,7 +158,7 @@ const Calculator = () => {
     damageMultiplierByWeather,
     defenseMultiplierByWeather,
     specialDefenseMultiplierByWeather,
-    damageMultiplierByField,
+    damageMultiplierByField
   ]);
 
   // 基礎ダメージが計算されると、乱数幅を掛けた最大ダメージと最小ダメージが算出され、それに各種倍率を掛けて最終的なダメージが算出される。
