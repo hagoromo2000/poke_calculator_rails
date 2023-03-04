@@ -5,13 +5,45 @@ import axios from "axios";
 
 const IndexPosts = () => {
   const [posts, setPosts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredPosts, setFilteredPosts] = useState([]);
 
   useEffect(() => {
     axios.get("/posts").then((res) => {
       setPosts(res.data.data);
+      setFilteredPosts(res.data.data);
       console.log(res.data.data);
     });
   }, []);
+
+  const handleSearch = () => {
+    console.log(searchTerm);
+    setFilteredPosts(
+      posts.filter((post) => {
+        return (
+          post.attributes.pokemon
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase()) ||
+          post.attributes.title
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase()) ||
+          post.attributes.item
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase()) ||
+          post.attributes.move1
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase()) ||
+          post.attributes.move2
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase()) ||
+          post.attributes.move3
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase()) ||
+          post.attributes.move4.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+      })
+    );
+  };
 
   return (
     <>
@@ -20,10 +52,14 @@ const IndexPosts = () => {
           <div className="flex border border-purple-200 rounded">
             <input
               type="text"
-              className="block w-full px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
-              placeholder="ポケモン名を入力"
+              className=" block w-96 px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              placeholder="ポケモン、わざ、もちものなどを入力"
+              onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <button className="px-4 text-white bg-purple-600 border-l rounded ">
+            <button
+              className="px-4 text-white bg-purple-600 border-l rounded"
+              onClick={handleSearch}
+            >
               Search
             </button>
           </div>
@@ -31,8 +67,8 @@ const IndexPosts = () => {
       </div>
 
       <div className="md:flex flex-wrap justify-center">
-        {posts.length > 0 &&
-          posts.map((post) => (
+        {filteredPosts.length > 0 &&
+          filteredPosts.map((post) => (
             <PostCard key={post.id} post={post.attributes} id={post.id} />
           ))}
       </div>
