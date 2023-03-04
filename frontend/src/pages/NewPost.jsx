@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Select from "react-select";
 import { toast } from "react-toastify";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../firebase";
 
 import "../css/NewPost.css";
 import Pokemons from "../json/all_pokemons.json";
@@ -40,6 +42,7 @@ const all_types = Types.map((data) => {
 
 const NewPost = () => {
   const navigate = useNavigate();
+  const [user] = useAuthState(auth);
 
   const [title, setTitle] = useState(null);
   const [body, setBody] = useState(null);
@@ -132,8 +135,14 @@ const NewPost = () => {
     return config;
   }
   const handleSubmit = async () => {
-    // 必須項目に漏れがないかチェック
+    // ログイン状態を確認
+    if (!user) {
+      toast.error("ログインしてください。");
+      return;
+    }
+
     if (!title || !pokemon || !ability || !nature || !move1 || !teraType) {
+      // 必須項目に漏れがないかチェック
       toast.error("入力項目が不足しています。");
       return;
     }

@@ -37,7 +37,13 @@ const Header = () => {
                   <Link to={`/posts`}>育成論一覧</Link>
                 </li>
                 <li>
-                  <Link to={`/posts/new/`}>育成論投稿</Link>
+                  {user ? (
+                    <>
+                      <Link to={`/posts/new/`}>育成論投稿</Link>
+                    </>
+                  ) : (
+                    <label htmlFor="signup-modal">育成論投稿</label>
+                  )}
                 </li>
               </ul>
             </li>
@@ -63,6 +69,9 @@ const Header = () => {
           >
             ✕
           </label>
+          <p className="p-4 text-gray-600 flex justify-center">
+            Googleログインすると育成論投稿機能を利用できます。
+          </p>
           <GoogleAuthButton />
         </div>
       </div>
