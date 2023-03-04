@@ -62,7 +62,7 @@ const PostShowModal = (props) => {
             </div>
             <p className="col-span-2">もちもの: {props.post.item}</p>
             <p className="col-span-2">とくせい: {props.post.ability}</p>
-            <p className="col-span-4">わざ:</p>
+            <p className="col-span-4 pt-4">わざ:</p>
             <p className="col-span-1"> {props.post.move1}</p>
             <p className="col-span-1"> {props.post.move2}</p>
             <p className="col-span-1"> {props.post.move3}</p>
