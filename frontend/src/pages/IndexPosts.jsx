@@ -18,31 +18,24 @@ const IndexPosts = () => {
 
   const handleSearch = () => {
     console.log(searchTerm);
-    setFilteredPosts(
-      posts.filter((post) => {
+    const keywords = searchTerm.split(/\s+/);
+
+    const filteringPosts = posts.filter((post) => {
+      return keywords.every((keyword) => {
         return (
           post.attributes.pokemon
             .toLowerCase()
-            .includes(searchTerm.toLowerCase()) ||
-          post.attributes.title
-            .toLowerCase()
-            .includes(searchTerm.toLowerCase()) ||
-          post.attributes.item
-            .toLowerCase()
-            .includes(searchTerm.toLowerCase()) ||
-          post.attributes.move1
-            .toLowerCase()
-            .includes(searchTerm.toLowerCase()) ||
-          post.attributes.move2
-            .toLowerCase()
-            .includes(searchTerm.toLowerCase()) ||
-          post.attributes.move3
-            .toLowerCase()
-            .includes(searchTerm.toLowerCase()) ||
-          post.attributes.move4.toLowerCase().includes(searchTerm.toLowerCase())
+            .includes(keyword.toLowerCase()) ||
+          post.attributes.title.toLowerCase().includes(keyword.toLowerCase()) ||
+          post.attributes.item.toLowerCase().includes(keyword.toLowerCase()) ||
+          post.attributes.move1.toLowerCase().includes(keyword.toLowerCase()) ||
+          post.attributes.move2.toLowerCase().includes(keyword.toLowerCase()) ||
+          post.attributes.move3.toLowerCase().includes(keyword.toLowerCase()) ||
+          post.attributes.move4.toLowerCase().includes(keyword.toLowerCase())
         );
-      })
-    );
+      });
+    });
+    setFilteredPosts(filteringPosts);
   };
 
   return (
