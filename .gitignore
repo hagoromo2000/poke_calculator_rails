@@ -12,6 +12,7 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 .prettierrc
+frontend
 
 # Ignore all logfiles and tempfiles.
 /log/*
