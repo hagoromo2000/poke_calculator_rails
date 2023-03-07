@@ -1,6 +1,6 @@
 class Api::V1::PostsController < ApplicationController
-  skip_before_action :authenticate_token, only: %i[index show]
-  before_action :set_post, only: %i[show destroy update]
+  skip_before_action :authenticate_token, only: %i[index]
+  before_action :set_post, only: %i[destroy]
 
   def index
     posts = Post.all.order(created_at: :desc)
@@ -8,8 +8,9 @@ class Api::V1::PostsController < ApplicationController
     render json: json_string
   end
 
-  def show
-    json_string = PostSerializer.new(@post).serializable_hash.to_json
+  def mypage
+    posts = current_user.posts.order(created_at: :desc)
+    json_string = PostSerializer.new(posts).serializable_hash.to_json
     render json: json_string
   end
 
@@ -20,14 +21,6 @@ class Api::V1::PostsController < ApplicationController
       render json: json_string
     else
       render json: post.errors
-    end
-  end
-
-  def update
-    if @post.update(post_params)
-      render json: @post
-    else
-      render json: @post.errors
     end
   end
 
