@@ -32,6 +32,12 @@ class Api::V1::PostsController < ApplicationController
     end
   end
 
+  def likes
+    posts = current_user.like_posts.order(created_at: :desc)
+    json_string = PostSerializer.new(posts).serializable_hash.to_json
+    render json: json_string
+  end
+
   private
 
   def set_post

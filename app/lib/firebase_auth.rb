@@ -62,9 +62,9 @@ module FirebaseAuth
 
   private
 
-  # ここでは検証を行わない。verify``の引数は`false`に設定される。
-  # これは、トークンを検証するために適切な証明書を取得することを目的に、
-  # ヘッダーから鍵IDを抽出するためである
+  #   ここでは検証を行わない。verify``の引数は`false`に設定される。
+  #   これは、トークンを検証するために適切な証明書を取得することを目的に、
+  #   ヘッダーから鍵IDを抽出するためである
   def decode_unverified(token)
     decode_token(
       token: token,
@@ -80,7 +80,7 @@ module FirebaseAuth
   #   decodeメソッドの引数の中身は以下のようになる
   #   JWT.decode(token, key=nil, verify=false, option={algorithm: ALGORITHM})
   #
-  #   帰ってくるデータは以下
+  #   帰ってくるデータは、ヘッダーとペイロード二つのハッシュを含む配列
   #    Array: decoded data of ID token =>
   #     [
   #      {"data"=>"data"}, # payload部分
@@ -135,8 +135,8 @@ module FirebaseAuth
     return certificates
   end
 
-  # 与えられたJWTトークンの署名とデータの有効性を検証する
-  # トークンに何か問題がある場合は、エラーメッセージを返す。
+  #   与えられたJWTトークンの署名とデータの有効性を検証する
+  #   トークンに何か問題がある場合は、エラーメッセージを返す。
   def verify(token, key)
     errors = []
 
@@ -162,7 +162,7 @@ module FirebaseAuth
       errors << "Invalid ID token. #{e.message}"
     end
 
-    # subとargはJWT.decodeで自動検証できないため、追加検証が必要
+    #   subとargはJWT.decodeで自動検証できないため、追加検証が必要
     sub = decoded_token[0]["sub"]
     alg = decoded_token[1]["alg"]
 
