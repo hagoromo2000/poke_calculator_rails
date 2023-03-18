@@ -4,13 +4,9 @@ https://www.poke-calculator.com/
 
 ## フロントエンドのリポジトリ
 
----
-
 https://github.com/hagoromo2000/poke_calculator_react
 
 ## サービス概要
-
----
 
 ポケットモンスタースカーレットバイオレットに対応した  
 情報共有と高速ダメージ計算による快適化を提供する  
@@ -18,13 +14,9 @@ https://github.com/hagoromo2000/poke_calculator_react
 
 ## メインのターゲットユーザー
 
----
-
 - 「ポケットモンスタースカーレット・バイオレット」の、ランクマッチシングルバトルをメインにプレイしている人
 
 ## このサービスを制作した背景
-
----
 
 私は、趣味でポケモンのランクマッチをよく遊びます！  
 そんな中で、快適にポケモンバトルを遊ぶ上での課題を二つ感じておりました。  
@@ -43,8 +35,6 @@ https://github.com/hagoromo2000/poke_calculator_react
 
 ## ダメージ計算機能
 
----
-
 |[![Image from Gyazo](https://i.gyazo.com/90fb12fe0a22566483f9c0130e165a17.png)](https://gyazo.com/90fb12fe0a22566483f9c0130e165a17)
 |---------
 |**ダメージ計算**<br/>攻撃側、防御側、環境のそれぞれの情報を入力することで、計算結果がフッターの HP バーに反映されます。
@@ -56,15 +46,11 @@ https://github.com/hagoromo2000/poke_calculator_react
 
 ## 育成論投稿機能
 
----
-
 |[![Image from Gyazo](https://i.gyazo.com/7d2d6e08516fe67be617e5b99e786ee8.png)](https://gyazo.com/7d2d6e08516fe67be617e5b99e786ee8)
 |---------
 |**育成論投稿**<br/>育成論（ポケモンの能力値ふりや技構成などを記録した個体のデータ）を投稿できます。
 
 ## 育成論一覧機能
-
----
 
 |[![Image from Gyazo](https://i.gyazo.com/314575089b79213cc865e2f11c06bb02.png)](https://gyazo.com/314575089b79213cc865e2f11c06bb02)
 |---------
