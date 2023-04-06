@@ -75,3 +75,7 @@ https://github.com/hagoromo2000/poke_calculator_react
 | API     | その他                     |
 | ------- | -------------------------- |
 | PokeAPI | Google アナリティクス(GA4) |
+
+## インフラ構成図
+
+[![Image from Gyazo](https://i.gyazo.com/8b1056d490e9eea291cbe3d088e1a023.png)](https://gyazo.com/8b1056d490e9eea291cbe3d088e1a023)
